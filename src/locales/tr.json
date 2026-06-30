@@ -1,0 +1,431 @@
+{
+  "navbar": {
+    "services": "Hizmetler",
+    "gallery": "Galeri",
+    "doctor": "Doktorumuz",
+    "contact": "İletişim",
+    "appointment": "Randevu Al",
+    "clinicSubtitle": "Estetik ve Plastik Cerrahi"
+  },
+
+  "hero": {
+    "badge": "Kişiye Özel Altın Oran Analizi",
+    "title1": "Yüzünüzdeki Doğal Uyum",
+    "title2": "ve Eşsiz Zarafet",
+    "description": "Sıradan kalıpları geride bırakın. Op. Dr. Sefa Keşan liderliğinde tamamen sizin yüz anatominize sadık kalınarak tasarlanmış cerrahi sanat.",
+    "consultation": "Ücretsiz Konsültasyon",
+    "galleryButton": "Canlı Vakaları İncele"
+  },
+
+  "stats": {
+    "experience": "Yıllık Deneyim",
+    "cases": "Başarılı Vaka",
+    "clinic": "Klinik Akreditasyon",
+    "satisfaction": "Hasta Memnuniyeti"
+  },
+  "biography": {
+    "philosophy": "Cerrahın Felsefesi",
+    "title": "Estetikte Doğallık ve Fonksiyonellik",
+    "desc": "Her yüz kendine özgü bir hikaye anlatır. Benim felsefem, yüzün kendi altın oran sınırlarını bularak, simetriyle fonksiyonu harmanlamaktır. Cerrahpaşa Tıp Fakültesi'nden uzanan akademik yolculuğumu ve başarılarımı detaylıca inceleyebilirsiniz.",
+    "button": "Özgeçmiş & Başarıları İncele"
+  },
+  "address": {
+    "clinic": "Klinik Adres",
+    "clinicAddress": "Valikonağı Cad. No:142 Daire:4 Nişantaşı / İstanbul",
+    "contact": "Bize Ulaşın",
+    "number": "+90 (212) 000 00 00",
+    "workClock": "Çalışma Saatleri",
+    "workText": "Pazartesi - Cumartesi: 09:00 - 19:00"
+  },
+  "contactForm": {
+    "badge": "Hızlı İletişim",
+    "title": "Konsültasyon Planlayın",
+
+    "nameLabel": "Adınız Soyadınız",
+    "namePlaceholder": "Örn. Selin Yılmaz",
+
+    "phoneLabel": "Telefon Numaranız",
+    "phonePlaceholder": "Örn. 0532 XXX XX XX",
+
+    "treatmentLabel": "İlgilendiğiniz Estetik Süreç",
+
+    "submit": "Gönder ve WhatsApp Randevusu Oluştur",
+
+    "treatments": {
+      "rinoplasti": "Rinoplasti (Burun Estetiği)",
+      "revizyon": "Revizyon Burun Estetiği",
+      "otoplasti": "Otoplasti (Kulak Estetiği)",
+      "blefaroplasti": "Blefaroplasti (Göz Kapağı)",
+      "likit": "Likit Yüz Estetiği",
+      "profiloplasti": "Profiloplasti"
+    }
+  },
+
+  "treatments": {
+    "rinoplasti": {
+      "title": "Primer Rinoplasti",
+      "subtitle": "Burun Estetiği",
+      "desc": "Yüz hatlarınızla altın oran uyumu sağlayan estetik çözümler."
+    },
+    "revizyon-rinoplasti": {
+      "title": "Revizyon Rinoplasti",
+      "subtitle": "Düzeltme Cerrahisi",
+      "desc": "Başarısız operasyonların anatomik olarak yeniden yapılandırılması."
+    },
+    "otoplasti": {
+      "title": "Otoplasti",
+      "subtitle": "Kulak Estetiği",
+      "desc": "Kulak yapısındaki açısal problemleri düzelten cerrahi yöntem."
+    },
+    "blefaroplasti": {
+      "title": "Blefaroplasti",
+      "subtitle": "Göz Kapağı Estetiği",
+      "desc": "Bakışlara daha genç ve dinamik görünüm kazandırır."
+    },
+    "likit-yuz-estetigi": {
+      "title": "Likit Yüz Estetiği",
+      "subtitle": "Ameliyatsız Dokunuşlar",
+      "desc": "Dolgu ve botoks uygulamalarıyla yüz gençleştirme."
+    },
+    "profiloplasti": {
+      "title": "Profiloplasti",
+      "subtitle": "Çene ve Yüz Uyumu",
+      "desc": "Yüz profilinin bütünsel olarak dengelenmesi."
+    }
+  },
+  "treatmentsClinic": {
+    "process": "Süreç & Detaylar",
+
+    "rhinoplasty": {
+      "title": "Primer Rinoplasti",
+      "subtitle": "Burun Estetiği",
+      "desc": "Yüz hatlarınızla altın oran uyumu sağlayan, hem estetik hem de yüksek nefes konforuna sahip tasarımlar."
+    },
+
+    "revision": {
+      "title": "Revizyon Rinoplasti",
+      "subtitle": "Düzeltme Cerrahisi",
+      "desc": "Daha önce başarısız olmuş operasyonların, kaburga kıkırdağı greftleri kullanılarak anatomik olarak yeniden inşası."
+    },
+
+    "otoplasty": {
+      "title": "Otoplasti",
+      "subtitle": "Kulak Estetiği",
+      "desc": "Kulak yapısındaki açısal problemleri görünmez dikiş teknikleriyle düzelten, doğal kıvrımlı yüz simetrisi."
+    },
+
+    "blepharoplasty": {
+      "title": "Blefaroplasti",
+      "subtitle": "Göz Kapağı Estetiği",
+      "desc": "Bakışlardaki yorgun ve yaşlı ifadeyi silen, göz çevresini minimal dokunuşlarla gençleştiren cerrahi sanat."
+    },
+
+    "liquidFace": {
+      "title": "Likit Yüz Estetiği",
+      "subtitle": "Ameliyatsız Dokunuşlar",
+      "desc": "Cerrahi operasyon tercih etmeyenler için altın oran odaklı medikal dolgu, botoks ve gençlik aşısı kombinasyonları."
+    },
+
+    "profiloplasty": {
+      "title": "Profiloplasti",
+      "subtitle": "Çene & Yüz Uyumu",
+      "desc": "Burun, çene ve alın hattının yan profilden kusursuz bir dengeye ulaşmasını sağlayan bütünsel estetik yaklaşım."
+    }
+  },
+  "treatmentsSection": {
+    "badge": "Ayrıcalıklı Hizmetler",
+    "title": "Klinik Uzmanlık Alanları"
+  },
+  "gallery": {
+    "sectionBadge": "Kusursuz Dönüşümler",
+    "sectionTitle": "Doğal Dönüşüm Galerisi",
+
+    "tabs": {
+      "rinoplasti": "rinoplasti",
+      "revizyon-rinoplasti": "revizyon rinoplasti",
+      "otoplasti": "otoplasti",
+      "blefaroplasti": "blefaroplasti",
+      "likit-yuz-estetigi": "ameliyatsız yüz estetiği",
+      "profiloplasti": "profiloplasti"
+    },
+
+    "rinoplasti": {
+      "title": "Primer Rinoplasti Ameliyatı",
+      "vakaNo": "Vaka İncelemesi No: 214",
+      "details": "Burun kemer yapısı yüz oranlarıyla uyumlu şekilde düzenlenmiş, düşüklüğü olan burun ucu altın oran doğrultusunda yukarı kaldırılmıştır."
+    },
+
+    "revizyon-rinoplasti": {
+      "title": "Revizyon Rinoplasti",
+      "vakaNo": "Vaka İncelemesi No: 087",
+      "details": "Daha önce ameliyat olmuş ve kıkırdak çökmesi bulunan hastada, kaburga kıkırdağı grefti kullanılarak yeniden yapılandırma yapılmıştır."
+    },
+
+    "otoplasti": {
+      "title": "Otoplasti (Kulak Estetiği)",
+      "vakaNo": "Vaka İncelemesi No: 112",
+      "details": "Belirgin kulak açısı kulak arkasından yapılan kesi ile düzeltilmiş, doğal kıvrım ve simetri sağlanmıştır."
+    },
+
+    "blefaroplasti": {
+      "title": "Blefaroplasti (Göz Kapağı Estetiği)",
+      "vakaNo": "Vaka İncelemesi No: 304",
+      "details": "Üst göz kapağındaki fazla deri ve torbalanmalar alınarak daha genç ve dinç bir görünüm elde edilmiştir."
+    },
+
+    "likit-yuz-estetigi": {
+      "title": "Likit Yüz Estetiği (Ameliyatsız)",
+      "vakaNo": "Vaka İncelemesi No: 419",
+      "details": "Elmacık kemikleri ve çene hattına hyalüronik asit dolgular uygulanarak lifting ve gençleştirme etkisi sağlanmıştır."
+    },
+
+    "profiloplasti": {
+      "title": "Profiloplasti",
+      "vakaNo": "Vaka İncelemesi No: 052",
+      "details": "Burun ve çene şekillendirme işlemleri ile yüz profili dengeli bir görünüme kavuşturulmuştur."
+    }
+  },
+  "biographyPage": {
+    "back": "Ana Sayfaya Dön",
+    "role": "Estetik ve Plastik Cerrahi",
+    "heroBadge": "Kurucu & Başhekim",
+    "heroTitle1": "Güzelliğin Arkasındaki",
+    "heroTitle2": "Bilim ve Sanat",
+    "heroText": "Estetik cerrahi, sadece anatomik bir değişim değil;\nbireyin kendi özgüvenini, ifadesini ve yüzündeki saklı zarafeti en doğal altın oran sınırları içerisinde yeniden keşfetme yolculuğudur.",
+    "education": "Cerrahpaşa Tıp Fakültesi",
+    "certification": "EBOPRAS Tescilli",
+    "educationTitle": "Eğitim ve Mesleki Yolculuk",
+    "lifeStory": "Yaşam Öyküsü",
+
+    "about1Part1": "Op. Dr. Sefa Keşan, tıp eğitimine olan tutkusunu Türkiye'nin en köklü kurumlarından biri olan ",
+
+    "about1Strong": "İstanbul Üniversitesi Cerrahpaşa Tıp Fakültesi",
+
+    "about1Part2": "'nde taçlandırdı. Dereceyle tamamladığı tıp eğitiminin ardından estetik ve rekonstrüktif cerrahiye olan ilgisi doğrultusunda uzmanlık sınavında yüksek başarı göstererek Plastik, Rekonstrüktif ve Estetik Cerrahi ihtisasına başladı.",
+
+    "about2": "İhtisası süresince burun estetiği (rinoplasti) ve bütünsel yüz anatomisi üzerine odaklandı. Uluslararası alanda gelişmeleri yakından takip etmek adına Avrupa ve Amerika'da saygın kliniklerde gözlemci cerrah olarak bulundu. Özellikle revizyon rinoplasti cerrahisinde kaburga kıkırdağı mikro-greftleme teknikleri üzerine yenilikçi çalışmalar yürüttü.",
+
+    "about3": "Bugün, İstanbul Nişantaşı'ndaki kendi adını taşıyan özel lüks kliniğinde, dünyanın dört bir yanından gelen hastalarına 'kişiye özel altın oran tasarımı' anlayışıyla premium sağlık hizmeti sunmaya devam etmektedir.",
+
+    "membershipsTitle": "Uluslararası Bilimsel Üyelikler",
+    "memberships": [
+      "TPRECD (Türk Plastik, Rekonstrüktif ve Estetik Cerrahi Derneği)",
+      "EPCD (Estetik Plastik Cerrahi Derneği)",
+      "ISAPS (International Society of Aesthetic Plastic Surgery)",
+      "EAFPS (European Academy of Facial Plastic Surgery)"
+    ],
+    "timelineCards": [
+      {
+        "year": "2012",
+        "title": "Tıp Fakültesi Mezuniyeti",
+        "desc": "Cerrahpaşa Tıp Fakültesi'nden yüksek derece ile mezuniyet."
+      },
+      {
+        "year": "2018",
+        "title": "Uzmanlık & Üstün Başarı",
+        "desc": "Plastik, Rekonstrüktif ve Estetik Cerrahi Uzmanlığı unvanı ve yılın genç cerrahı sunum ödülü."
+      },
+      {
+        "year": "2021",
+        "title": "EBOPRAS Avrupa Yeterlilik",
+        "desc": "Avrupa Plastik Cerrahi Kurulu (EBOPRAS) tescili alarak uluslararası akreditasyon kazanılması."
+      },
+      {
+        "year": "2023",
+        "title": "Nişantaşı Premium Klinik",
+        "desc": "Uluslararası sağlık turizmi standartlarına uygun modern butik kliniğin kuruluşu."
+      }
+    ],
+
+    "achievementsTitle": "Öne Çıkan Başarılar",
+    "achievements": [
+      {
+        "value": "4000+",
+        "label": "Aktif Cerrahi Vaka"
+      },
+      {
+        "value": "25+",
+        "label": "Uluslararası Makale"
+      }
+    ],
+    "timeline": "Kilometre Taşları",
+    "timelineTitle": "Başarı Tablosu",
+    "appointment": "Muayene ve Analiz Randevusu",
+    "appointmentBtn": "Randevu Formuna Git",
+    "appointmentText": "Op. Dr. Sefa Keşan ile yüz yapınıza en uygun cerrahi veya medikal planlamayı dijital simülasyon eşliğinde tasarlamak için hemen iletişime geçebilirsiniz."
+  },
+  "footer": {
+    "subtitle": "Estetik ve Plastik Cerrahi",
+
+    "quote": "Gerçek güzellik, yüzdeki yabancı bir dokunuşta değil; ifadenin kendi saklı zarafetini ve kusursuz dengesini yeniden keşfetmesinde saklıdır.",
+
+    "description": "Nişantaşı kliniğimizde, uluslararası sağlık standartlarında, tamamen size ve kemik anatominize özel planlanan operasyon süreçleriyle yaşam kalitenizi artırıyoruz.",
+
+    "navigationTitle": "Kurumsal Navigasyon",
+
+    "home": "Ana Sayfa",
+    "story": "Cerrahın Hikayesi",
+    "services": "Uzmanlık Alanları",
+    "gallery": "Doğal Değişim Galerisi",
+    "contact": "VIP İletişim & Randevu",
+
+    "socialTitle": "Dijital Değişimleri Takip Edin",
+
+    "socialText": "Güncel vakalarımızı ve cerrahi süreçlerimizi sosyal medya hesaplarımızdan takip edebilirsiniz.",
+
+    "legal": "T.C. Sağlık Bakanlığı mevzuatları gereği, bu sitedeki bilgiler yalnızca bilgilendirme amaçlıdır ve tıbbi tavsiye niteliği taşımaz.",
+
+    "copyright": "Tüm Hakları Saklıdır",
+
+    "kvkk": "Aydınlatma Metni (KVKK)",
+    "cookies": "Çerez Politikası"
+  },
+  "procedures": {
+    "rinoplasti": {
+      "title": "Rinoplasti (Burun Estetiği)",
+      "subtitle": "Estetik ve Nefes Fonksiyonunun Senkronizasyonu",
+      "content": "Rinoplasti ameliyatı sadece dış görünüşü değiştirmekle kalmaz, aynı zamanda yaşam kalitenizi doğrudan etkileyen nefes alma fonksiyonunu da optimize eder. Her operasyon öncesinde kişinin yüz yapısı, çene ucu açısı ve alın mesafesi analiz edilerek kişiye en doğal duracak anatomi belirlenir.",
+      "steps": [
+        "Ameliyat Süresi: 2 - 3 Saat",
+        "Anestezi Türü: Genel Anestezi",
+        "Hastanede Kalış: 1 Gece",
+        "Sosyal Hayata Dönüş: 7. Gün"
+      ],
+      "symptoms": [
+        {
+          "id": "kemer",
+          "label": "Burun Kemeri (Hump)",
+          "path": "Ultrasonik Piezo cerrahi ile kemik doku kırılmadan milimetrik olarak törpülenir, doğal profil hattı korunur."
+        },
+        {
+          "id": "egrilik",
+          "label": "Burun Eğriliği (Deviasyon)",
+          "path": "Aks eğriliği fonksiyonel septoplasti teknikleriyle orta hatta getirilir, simetri ve nefes kanalı optimize edilir."
+        },
+        {
+          "id": "dusukluk",
+          "label": "Burun Ucu Düşüklüğü (Droopy Tip)",
+          "path": "Kıkırdak destek mekanizmaları güçlendirilerek dudak-burun açısı ideal 95-105 derece skalasına yükseltilir."
+        }
+      ]
+    },
+    "revizyon-rinoplasti": {
+      "title": "Revizyon Burun Estetiği",
+      "subtitle": "Daha Zorlu Vakalar, Kusursuz Deneyim",
+      "content": "Daha önce operasyon geçirmiş ancak istediği estetik ya da fonksiyonel sonucu alamamış hastalar için uygulanan düzeltme operasyonudur.",
+      "steps": [
+        "Ameliyat Süresi: 3 - 4 Saat",
+        "Anestezi Türü: Genel Anestezi",
+        "Kıkırdak Grefti Gerekebilir",
+        "Tam İyileşme: 1 Yıl"
+      ],
+      "symptoms": []
+    },
+    "otoplasti": {
+      "title": "Otoplasti (Kulak Estetiği)",
+      "subtitle": "Yüz Hatlarında Simetri ve Özgüven",
+      "content": "Kulakların kafa tabanı ile yaptığı açının normale getirilmesi işlemidir.",
+      "steps": [
+        "Ameliyat Süresi: 1 - 1.5 Saat",
+        "Anestezi: Lokal veya Genel",
+        "Bandaj Süresi: 3 Gün",
+        "İyileşme: Hemen Sosyal Hayat"
+      ],
+      "symptoms": [
+        {
+          "id": "kepce",
+          "label": "Belirgin Kulak Açısı (Kepçe)",
+          "path": "Kulak arkasından kalıcı dikişlerle düzeltilir."
+        }
+      ]
+    },
+    "blefaroplasti": {
+      "title": "Blefaroplasti (Göz Kapağı Estetiği)",
+      "subtitle": "Bakışlardaki Yorgun İfadeye Elveda",
+      "content": "Göz kapaklarındaki sarkma ve torbalanmaların giderilmesi işlemidir.",
+      "steps": [
+        "Ameliyat Süresi: 1 - 2 Saat",
+        "Anestezi: Lokal veya Genel",
+        "Taburcu: Aynı Gün",
+        "Dikiş Alımı: 5. Gün"
+      ],
+      "symptoms": [
+        {
+          "id": "sarkma",
+          "label": "Üst Kapak Sarkması",
+          "path": "Fazla deri çıkarılır."
+        }
+      ]
+    },
+    "likit-yuz-estetigi": {
+      "title": "Likit Yüz Estetiği",
+      "subtitle": "Ameliyatsız Altın Oran",
+      "content": "Dolgu ve botoks ile yapılan medikal estetik işlemdir.",
+      "steps": [
+        "İşlem Süresi: 30 - 45 dk",
+        "Anestezi: Topikal",
+        "Kalıcılık: 12 - 18 Ay",
+        "İyileşme: Hemen"
+      ],
+      "symptoms": [
+        {
+          "id": "hacim",
+          "label": "Hacim Kaybı",
+          "path": "Dolgu uygulanır."
+        }
+      ]
+    },
+    "profiloplasti": {
+      "title": "Profiloplasti",
+      "subtitle": "Yan Profil Dengesi",
+      "content": "Yüzün genel profil uyumunun sağlanmasıdır.",
+      "steps": [
+        "Ameliyat Süresi: Değişken",
+        "Anestezi: Genel",
+        "Planlama: Kişiye özel",
+        "İyileşme: 7-10 gün"
+      ],
+      "symptoms": [
+        {
+          "id": "cene",
+          "label": "Geride Çene",
+          "path": "Çene implantı veya dolgu uygulanır."
+        }
+      ]
+    }
+  },
+  "diseaseDetail": {
+    "interactiveSimulator": "İnteraktif Simülatör",
+    "anatomicalAnalysis": "Anatomik Analiz Modu",
+    "statusBefore": "Durum: Ameliyat Öncesi",
+    "statusAfter": "Durum: Ameliyat Sonrası",
+    "changeRate": "Değişim Oranı",
+    "before": "Öncesi",
+    "after": "Sonrası",
+    "profileChange": "Profil Değişimi",
+    "clinicalAlgorithm": "Klinik Algoritma",
+    "clinicalAlgorithmDesc": "Listeden karşılaştığınız problemi seçerek cerrahi yaklaşımı simüle edebilirsiniz.",
+    "complaintType": "Şikayet Tipi",
+    "generalProfile": "Genel / Doğal Profil",
+    "surgicalSolution": "Cerrahi Çözüm",
+    "selectComplaint": "Probleme özel hekim notunu görüntülemek için lütfen yukarıdan bir şikayet seçin.",
+    "consultation": "Konsültasyon",
+    "available": "Planlanabilir",
+    "segment": "Segment",
+    "premiumEnt": "Premium ENT",
+    "quickConsultation": "Hızlı Konsültasyon ve Randevu",
+    "aboutTreatment": "Tedavi Hakkında",
+    "operationProcess": "Klinik Operasyon Süreci"
+  },
+
+  "chatbot": {
+    "welcome": "Merhaba, ben Dr. Sefa Keşan’ın dijital asistanıyım. Size nasıl yardımcı olabilirim?",
+    "placeholder": "Sorunuzu yazın...",
+    "q1_label": "Rinoplasti",
+    "q1_val": "Rinoplasti ameliyatı hakkında bilgi almak istiyorum.",
+    "q2_label": "Otoplasti",
+    "q2_val": "Kulak estetiği sürecini anlatır mısınız?",
+    "q3_label": "Randevu",
+    "q3_val": "Randevu işlemleri hakkında bilgi almak istiyorum."
+  }
+}

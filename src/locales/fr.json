@@ -1,0 +1,413 @@
+{
+  "navbar": {
+    "services": "Services",
+    "gallery": "Galerie",
+    "doctor": "Notre Docteur",
+    "contact": "Contact",
+    "appointment": "Prendre Rendez-vous",
+    "clinicSubtitle": "Chirurgie esthétique et plastique"
+  },
+  "hero": {
+    "badge": "Analyse Personnalisée du Nombre d'Or",
+    "title1": "Harmonie Naturelle du Visage",
+    "title2": "et Élégance Unique",
+    "description": "Abandonnez les modèles standards. Chirurgie artistique adaptée à votre anatomie faciale par le Dr. Sefa Keşan.",
+    "consultation": "Consultation Gratuite",
+    "galleryButton": "Voir les Cas Réels"
+  },
+  "stats": {
+    "experience": "Années d'Expérience",
+    "cases": "Cas Réussis",
+    "clinic": "Accréditation Clinique",
+    "satisfaction": "Satisfaction des Patients"
+  },
+  "biography": {
+    "philosophy": "Philosophie du Chirurgien",
+    "title": "Naturalité et Fonctionnalité en Esthétique",
+    "desc": "Chaque visage raconte une histoire unique. Ma philosophie consiste à trouver les proportions du nombre d’or de chaque visage et à harmoniser symétrie et fonctionnalité. Vous pouvez découvrir en détail mon parcours académique à la Faculté de médecine de Cerrahpaşa et mes réalisations.",
+    "button": "Voir le CV & les Réalisations"
+  },
+  "address": {
+    "clinic": "Adresse de la Clinique",
+    "clinicAddress": "Avenue Valikonagi N°142 Appartement:4 Nişantaşı / Istanbul",
+    "contact": "Nous Contacter",
+    "number": "+90 (212) 000 00 00",
+    "workClock": "Heures d'Ouverture",
+    "workText": "Lundi - Samedi : 09h00 - 19h00"
+  },
+  "contactForm": {
+    "badge": "Contact Rapide",
+    "title": "Planifier une Consultation",
+
+    "nameLabel": "Nom et Prénom",
+    "namePlaceholder": "Ex. Selin Yılmaz",
+
+    "phoneLabel": "Numéro de Téléphone",
+    "phonePlaceholder": "Ex. +90 532 XXX XX XX",
+
+    "treatmentLabel": "Traitement Souhaité",
+
+    "submit": "Envoyer et Créer un Rendez-vous WhatsApp",
+
+    "treatments": {
+      "rinoplasti": "Rhinoplastie",
+      "revizyon": "Rhinoplastie de Révision",
+      "otoplasti": "Otoplastie",
+      "blefaroplasti": "Blépharoplastie",
+      "likit": "Esthétique Faciale Liquide",
+      "profiloplasti": "Profiloplastie"
+    }
+  },
+  "treatments": {
+    "rinoplasti": {
+      "title": "Rhinoplastie Primaire",
+      "subtitle": "Chirurgie du Nez",
+      "desc": "Solutions esthétiques selon le nombre d’or du visage."
+    },
+    "revizyon-rinoplasti": {
+      "title": "Rhinoplastie de Révision",
+      "subtitle": "Chirurgie Corrective",
+      "desc": "Reconstruction anatomique des échecs opératoires."
+    },
+    "otoplasti": {
+      "title": "Otoplastie",
+      "subtitle": "Oreilles",
+      "desc": "Correction des anomalies angulaires des oreilles."
+    },
+    "blefaroplasti": {
+      "title": "Blépharoplastie",
+      "subtitle": "Paupières",
+      "desc": "Donne un regard plus jeune et dynamique."
+    },
+    "likit-yuz-estetigi": {
+      "title": "Esthétique du Visage Liquide",
+      "subtitle": "Sans Chirurgie",
+      "desc": "Rajeunissement par injections et botox."
+    },
+    "profiloplasti": {
+      "title": "Profiloplastie",
+      "subtitle": "Harmonie du Visage",
+      "desc": "Équilibrage global du profil facial."
+    }
+  },
+  "treatmentsSection": {
+    "badge": "Services Exclusifs",
+    "title": "Domaines d’Expertise Clinique"
+  },
+  "treatmentsClinic": {
+    "process": "Procédure & Détails",
+
+    "rhinoplasty": {
+      "title": "Rhinoplastie Primaire",
+      "subtitle": "Esthétique du Nez",
+      "desc": "Des interventions personnalisées offrant une harmonie parfaite avec les proportions de votre visage."
+    },
+
+    "revision": {
+      "title": "Rhinoplastie de Révision",
+      "subtitle": "Chirurgie Correctrice",
+      "desc": "Reconstruction anatomique des interventions précédentes à l'aide de greffes de cartilage costal."
+    },
+
+    "otoplasty": {
+      "title": "Otoplastie",
+      "subtitle": "Esthétique des Oreilles",
+      "desc": "Correction des anomalies de position des oreilles grâce à des techniques discrètes."
+    },
+
+    "blepharoplasty": {
+      "title": "Blépharoplastie",
+      "subtitle": "Chirurgie des Paupières",
+      "desc": "Rajeunissement du regard grâce à une correction élégante des paupières."
+    },
+
+    "liquidFace": {
+      "title": "Esthétique Faciale Liquide",
+      "subtitle": "Traitements Non Chirurgicaux",
+      "desc": "Combinaisons avancées d'acide hyaluronique, de botox et de traitements anti-âge."
+    },
+
+    "profiloplasty": {
+      "title": "Profiloplastie",
+      "subtitle": "Harmonie du Profil",
+      "desc": "Approche globale visant à équilibrer le nez, le menton et le front."
+    }
+  },
+  "gallery": {
+    "sectionBadge": "Transformations Parfaites",
+    "sectionTitle": "Galerie de Transformation Naturelle",
+    "tabs": {
+      "rinoplasti": "rhinoplastie",
+      "revizyon-rinoplasti": "rhinoplastie de révision",
+      "otoplasti": "otoplastie",
+      "blefaroplasti": "blépharoplastie",
+      "likit-yuz-estetigi": "lifting liquide",
+      "profiloplasti": "profiloplastie"
+    },
+    "rinoplasti": {
+      "title": "Rhinoplastie Primaire",
+      "vakaNo": "Cas N° 214",
+      "details": "La bosse nasale a été harmonisée avec les proportions du visage et la pointe du nez a été relevée selon le nombre d’or."
+    },
+    "revizyon-rinoplasti": {
+      "title": "Rhinoplastie de Révision",
+      "vakaNo": "Cas N° 087",
+      "details": "Reconstruction du nez à l’aide de greffes de cartilage costal après une chirurgie antérieure."
+    },
+    "otoplasti": {
+      "title": "Otoplastie",
+      "vakaNo": "Cas N° 112",
+      "details": "Correction des oreilles décollées en créant des contours naturels et symétriques."
+    },
+    "blefaroplasti": {
+      "title": "Blépharoplastie",
+      "vakaNo": "Cas N° 304",
+      "details": "Réduction des paupières tombantes pour un regard plus jeune et reposé."
+    },
+    "likit-yuz-estetigi": {
+      "title": "Lifting Liquide",
+      "vakaNo": "Cas N° 419",
+      "details": "Injection d’acide hyaluronique pour un effet lifting naturel du visage."
+    },
+    "profiloplasti": {
+      "title": "Profiloplastie",
+      "vakaNo": "Cas N° 052",
+      "details": "Équilibre du profil facial grâce à des interventions combinées nez-menton."
+    }
+  },
+  "biographyPage": {
+    "back": "Retour à l'accueil",
+    "role": "Chirurgie Esthétique et Plastique",
+    "heroBadge": "Fondateur & Médecin Chef",
+    "heroTitle1": "Derrière la Beauté",
+    "heroTitle2": "Science et Art",
+    "heroText": "La chirurgie esthétique n’est pas seulement une transformation anatomique ; c’est un voyage de redécouverte de la confiance, de l’expression et de l’élégance naturelle du visage dans les limites du nombre d’or.",
+    "education": "Faculté de Médecine Cerrahpaşa",
+    "certification": "Certifié EBOPRAS",
+    "educationTitle": "Parcours Éducatif et Professionnel",
+    "lifeStory": "Histoire de Vie",
+
+    "about1Part1": "Le Dr. Sefa Keşan a terminé ses études de médecine dans l’une des institutions les plus prestigieuses de Turquie, ",
+
+    "about1Strong": "Université d’Istanbul Faculté de Médecine Cerrahpaşa",
+
+    "about1Part2": ". Après avoir obtenu son diplôme avec mention, il a réussi l’examen de spécialisation et a commencé sa formation en chirurgie plastique, reconstructrice et esthétique.",
+
+    "about2": "Pendant sa spécialisation, il s’est concentré sur la rhinoplastie et l’anatomie faciale globale. Il a également travaillé comme chirurgien observateur dans des cliniques renommées en Europe et aux États-Unis pour suivre les avancées internationales. Il a mené des recherches innovantes sur les micro-greffes de cartilage costal.",
+
+    "about3": "Aujourd’hui, il continue à offrir des soins de santé premium avec une approche personnalisée basée sur le nombre d’or dans sa clinique privée de luxe à Nişantaşı, Istanbul.",
+
+    "membershipsTitle": "Adhésions Scientifiques Internationales",
+    "memberships": [
+      "TPRECD (Société Turque de Chirurgie Plastique, Reconstructrice et Esthétique)",
+      "EPCD (Association de Chirurgie Esthétique Plastique)",
+      "ISAPS (Société Internationale de Chirurgie Esthétique Plastique)",
+      "EAFPS (Académie Européenne de Chirurgie Plastique Faciale)"
+    ],
+
+    "timelineCards": [
+      {
+        "year": "2012",
+        "title": "Diplôme de Médecine",
+        "desc": "Diplômé avec mention de la Faculté de Médecine Cerrahpaşa."
+      },
+      {
+        "year": "2018",
+        "title": "Spécialisation & Excellence",
+        "desc": "Spécialisation en chirurgie plastique, reconstructrice et esthétique et prix du jeune chirurgien."
+      },
+      {
+        "year": "2021",
+        "title": "Qualification Européenne EBOPRAS",
+        "desc": "Obtention de la certification EBOPRAS et accréditation internationale."
+      },
+      {
+        "year": "2023",
+        "title": "Clinique Premium Nişantaşı",
+        "desc": "Création d’une clinique boutique moderne conforme aux normes internationales de tourisme médical."
+      }
+    ],
+
+    "achievementsTitle": "Réalisations Principales",
+    "achievements": [
+      {
+        "value": "4000+",
+        "label": "Cas Chirurgicaux Actifs"
+      },
+      {
+        "value": "25+",
+        "label": "Publications Internationales"
+      }
+    ],
+
+    "timeline": "Jalons",
+    "timelineTitle": "Tableau de Réussite",
+    "appointment": "Rendez-vous de Consultation et Analyse",
+    "appointmentBtn": "Aller au Formulaire",
+    "appointmentText": "Vous pouvez contacter le Dr. Sefa Keşan pour concevoir le plan chirurgical ou médical le plus adapté à votre visage grâce à la simulation numérique."
+  },
+  "footer": {
+    "subtitle": "Chirurgie Esthétique et Plastique",
+
+    "quote": "La véritable beauté ne réside pas dans une touche étrangère, mais dans la redécouverte de l'élégance naturelle et de l'équilibre parfait déjà présents dans l'expression.",
+
+    "description": "Dans notre clinique de Nişantaşı, nous améliorons votre qualité de vie grâce à des traitements personnalisés répondant aux normes internationales de santé.",
+
+    "navigationTitle": "Navigation Institutionnelle",
+
+    "home": "Accueil",
+    "story": "Histoire du Chirurgien",
+    "services": "Domaines d'Expertise",
+    "gallery": "Galerie des Transformations",
+    "contact": "Contact VIP & Rendez-vous",
+
+    "socialTitle": "Suivez les Transformations",
+
+    "socialText": "Découvrez nos cas récents et nos interventions chirurgicales sur nos réseaux sociaux.",
+
+    "legal": "Conformément à la réglementation du Ministère turc de la Santé, les informations présentes sur ce site sont uniquement informatives.",
+
+    "copyright": "Tous droits réservés",
+
+    "kvkk": "Politique de Confidentialité",
+    "cookies": "Politique des Cookies"
+  },
+
+  "procedures": {
+    "rinoplasti": {
+      "title": "Rhinoplastie",
+      "subtitle": "Synchronisation de l'esthétique et de la respiration",
+      "content": "La rhinoplastie ne change pas seulement l'apparence, elle optimise aussi la fonction respiratoire.",
+      "steps": [
+        "Durée: 2 - 3 heures",
+        "Anesthésie: Générale",
+        "Hospitalisation: 1 nuit",
+        "Retour social: 7ème jour"
+      ],
+      "symptoms": [
+        {
+          "id": "kemer",
+          "label": "Bosse nasale",
+          "path": "Râpage millimétrique par technique piézoélectrique."
+        },
+        {
+          "id": "egrilik",
+          "label": "Déviation nasale",
+          "path": "Correction de l'axe par septoplastie fonctionnelle."
+        },
+        {
+          "id": "dusukluk",
+          "label": "Pointe tombante",
+          "path": "Renforcement des cartilages pour un angle idéal."
+        }
+      ]
+    },
+    "revizyon-rinoplasti": {
+      "title": "Rhinoplastie Secondaire",
+      "subtitle": "Cas complexes, expérience parfaite",
+      "content": "Chirurgie correctrice pour patients ayant déjà été opérés.",
+      "steps": [
+        "Durée: 3 - 4 heures",
+        "Anesthésie: Générale",
+        "Greffe cartilagineuse possible",
+        "Récupération: 1 an"
+      ],
+      "symptoms": []
+    },
+    "otoplasti": {
+      "title": "Otoplastie",
+      "subtitle": "Symétrie et confiance",
+      "content": "Correction de l'angle des oreilles par rapport au crâne.",
+      "steps": [
+        "Durée: 1 - 1.5 heures",
+        "Anesthésie: Locale ou générale",
+        "Pansement: 3 jours",
+        "Récupération: Immédiate"
+      ],
+      "symptoms": [
+        {
+          "id": "kepce",
+          "label": "Oreilles décollées",
+          "path": "Correction par sutures permanentes."
+        }
+      ]
+    },
+    "blefaroplasti": {
+      "title": "Blépharoplastie",
+      "subtitle": "Adieu au regard fatigué",
+      "content": "Élimination des poches et du relâchement des paupières.",
+      "steps": [
+        "Durée: 1 - 2 heures",
+        "Anesthésie: Locale ou générale",
+        "Sortie: Le jour même",
+        "Retrait des fils: 5ème jour"
+      ],
+      "symptoms": [
+        {
+          "id": "sarkma",
+          "label": "Paupière tombante",
+          "path": "Excision de l'excès de peau."
+        }
+      ]
+    },
+    "likit-yuz-estetigi": {
+      "title": "Lifting Médical",
+      "subtitle": "Nombre d'or sans chirurgie",
+      "content": "Procédure esthétique médicale par fillers et botox.",
+      "steps": [
+        "Durée: 30 - 45 min",
+        "Anesthésie: Topique",
+        "Durée: 12 - 18 mois",
+        "Récupération: Immédiate"
+      ],
+      "symptoms": [
+        {
+          "id": "hacim",
+          "label": "Perte de volume",
+          "path": "Application de fillers."
+        }
+      ]
+    },
+    "profiloplasti": {
+      "title": "Profiloplastie",
+      "subtitle": "Équilibre du profil latéral",
+      "content": "Harmonisation globale du profil facial.",
+      "steps": [
+        "Durée: Variable",
+        "Anesthésie: Générale",
+        "Planification: Personnalisée",
+        "Récupération: 7-10 jours"
+      ],
+      "symptoms": [
+        {
+          "id": "cene",
+          "label": "Menton fuyant",
+          "path": "Implant ou filler mentonnier."
+        }
+      ]
+    }
+  },
+  "diseaseDetail": {
+    "interactiveSimulator": "Simulateur Interactif",
+    "anatomicalAnalysis": "Mode d'Analyse Anatomique",
+    "statusBefore": "Statut : Avant l'opération",
+    "statusAfter": "Statut : Après l'opération",
+    "changeRate": "Taux de Changement",
+    "before": "Avant",
+    "after": "Après",
+    "profileChange": "Modification du Profil",
+    "clinicalAlgorithm": "Algorithme Clinique",
+    "clinicalAlgorithmDesc": "Sélectionnez votre problème dans la liste pour simuler l'approche chirurgicale appropriée.",
+    "complaintType": "Type de Problème",
+    "generalProfile": "Profil Général / Naturel",
+    "surgicalSolution": "Solution Chirurgicale",
+    "selectComplaint": "Veuillez sélectionner un problème ci-dessus pour afficher la solution recommandée.",
+    "consultation": "Consultation",
+    "available": "Disponible",
+    "segment": "Segment",
+    "premiumEnt": "Premium ENT",
+    "quickConsultation": "Consultation Rapide & Prise de Rendez-vous",
+    "aboutTreatment": "À propos du traitement",
+    "operationProcess": "Processus Opératoire Clinique"
+  }
+}

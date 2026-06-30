@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  /* Kontrastı artırılmış premium aydınlık renk paleti */
+  --color-darkBg: #F5F2EB;      /* Arka planı bir ton daha koyu, zengin bir keten/bej rengi yaptık */
+  --color-cardBg: #FFFFFF;      
+  --color-gold: #856C53;        /* Altın/vizon tonunu koyulaştırdık ki beyaz üstünde net okunsun */
+  --color-platinum: #E1DACF;    
+  
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Sitenin tüm ana yazılarını koyu antrasit yapıyoruz, böylece hiçbir şey kaybolmayacak */
+body {
+  color: #242220;
+}
