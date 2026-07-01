@@ -409,5 +409,26 @@
     "quickConsultation": "Consultation Rapide & Prise de Rendez-vous",
     "aboutTreatment": "À propos du traitement",
     "operationProcess": "Processus Opératoire Clinique"
+  },
+  "chatbot": {
+    "welcome": "Bonjour, je suis l’assistant numérique du Dr Sefa Keşan. Comment puis-je vous aider ?",
+    "placeholder": "Écrivez votre question...",
+    "q1_label": "Rhinoplastie",
+    "q1_val": "Je souhaite obtenir des informations sur la rhinoplastie.",
+    "q2_label": "Otoplastie",
+    "q2_val": "Pouvez-vous expliquer la chirurgie des oreilles ?",
+    "q3_label": "Rendez-vous",
+    "q3_val": "Je souhaite obtenir des informations sur la prise de rendez-vous.",
+    "whatsapp_message": "Vous pouvez nous contacter via WhatsApp pour une assistance plus rapide.",
+    "whatsapp_button": "Contacter via WhatsApp",
+    "form_title": "DEMANDE DE RENDEZ-VOUS",
+    "name_placeholder": "Nom et prénom",
+    "phone_placeholder": "Numéro de téléphone",
+    "treatment_placeholder": "Choisir un traitement",
+    "btn_send": "Envoyer via WhatsApp",
+    "error_name": "Veuillez entrer votre nom.",
+    "error_phone": "Veuillez entrer votre numéro.",
+    "error_treatment": "Veuillez sélectionner un traitement.",
+    "wp_message": "Bonjour Clinique Op. Dr. Sefa Keşan,\n\nJ’ai créé une nouvelle demande de rendez-vous via votre site.\n\n👤 Nom complet: {name}\n📞 Téléphone: {phone}\n🏥 Traitement souhaité: {treatment}"
   }
 }

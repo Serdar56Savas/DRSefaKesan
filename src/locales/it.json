@@ -409,5 +409,26 @@
     "quickConsultation": "Consulenza Rapida e Prenotazione",
     "aboutTreatment": "Informazioni sul trattamento",
     "operationProcess": "Processo Operativo Clinico"
+  },
+  "chatbot": {
+    "welcome": "Ciao, sono l’assistente digitale del Dott. Sefa Keşan. Come posso aiutarti?",
+    "placeholder": "Scrivi la tua domanda...",
+    "q1_label": "Rinoplastica",
+    "q1_val": "Vorrei informazioni sulla rinoplastica.",
+    "q2_label": "Otoplastica",
+    "q2_val": "Puoi spiegare la procedura di otoplastica?",
+    "q3_label": "Appuntamento",
+    "q3_val": "Vorrei informazioni sulla prenotazione di un appuntamento.",
+    "whatsapp_message": "Puoi contattarci su WhatsApp per un’assistenza più rapida.",
+    "whatsapp_button": "Contatta su WhatsApp",
+    "form_title": "RICHIESTA APPUNTAMENTO",
+    "name_placeholder": "Nome e cognome",
+    "phone_placeholder": "Numero di telefono",
+    "treatment_placeholder": "Seleziona trattamento",
+    "btn_send": "Invia via WhatsApp",
+    "error_name": "Inserisci il tuo nome.",
+    "error_phone": "Inserisci il tuo numero.",
+    "error_treatment": "Seleziona un trattamento.",
+    "wp_message": "Ciao Clinica Dott. Sefa Keşan,\n\nHo creato una nuova richiesta di appuntamento dal vostro sito.\n\n👤 Nome completo: {name}\n📞 Telefono: {phone}\n🏥 Trattamento: {treatment}"
   }
 }

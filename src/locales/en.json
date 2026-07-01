@@ -410,5 +410,27 @@
     "quickConsultation": "Quick Consultation & Appointment",
     "aboutTreatment": "About the Treatment",
     "operationProcess": "Clinical Operation Process"
+  },
+
+  "chatbot": {
+    "welcome": "Hello, I am the digital assistant of Dr. Sefa Keşan. How can I help you?",
+    "placeholder": "Type your question...",
+    "q1_label": "Rhinoplasty",
+    "q1_val": "I would like to get information about rhinoplasty surgery.",
+    "q2_label": "Otoplasty",
+    "q2_val": "Can you explain the ear aesthetic procedure?",
+    "q3_label": "Appointment",
+    "q3_val": "I would like to get information about appointment process.",
+    "whatsapp_message": "You can contact us via WhatsApp for faster assistance.",
+    "whatsapp_button": "Contact via WhatsApp",
+    "form_title": "APPOINTMENT REQUEST",
+    "name_placeholder": "Full Name",
+    "phone_placeholder": "Phone Number",
+    "treatment_placeholder": "Select Treatment",
+    "btn_send": "Send via WhatsApp",
+    "error_name": "Please enter your name.",
+    "error_phone": "Please enter your phone number.",
+    "error_treatment": "Please select a treatment.",
+    "wp_message": "Hello Op. Dr. Sefa Keşan Clinic,\n\nI have created a new appointment request via your website.\n\n👤 Full Name: {name}\n📞 Phone: {phone}\n🏥 Interested Treatment: {treatment}"
   }
 }

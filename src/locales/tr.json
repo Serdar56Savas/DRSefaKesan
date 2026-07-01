@@ -426,6 +426,17 @@
     "q2_label": "Otoplasti",
     "q2_val": "Kulak estetiği sürecini anlatır mısınız?",
     "q3_label": "Randevu",
-    "q3_val": "Randevu işlemleri hakkında bilgi almak istiyorum."
+    "q3_val": "Randevu işlemleri hakkında bilgi almak istiyorum.",
+    "whatsapp_message": "Size daha hızlı yardımcı olabilmem için WhatsApp üzerinden iletişime geçebilirsiniz.",
+    "whatsapp_button": "WhatsApp ile İletişime Geç",
+    "form_title": "RANDEVU TALEBİ",
+    "name_placeholder": "Adınız Soyadınız",
+    "phone_placeholder": "Telefon Numaranız",
+    "treatment_placeholder": "Tedavi Seçiniz",
+    "btn_send": "WhatsApp ile Gönder",
+    "error_name": "Lütfen adınızı girin.",
+    "error_phone": "Lütfen telefonunuzu girin.",
+    "error_treatment": "Lütfen bir tedavi seçin.",
+    "wp_message": "Merhaba Op. Dr. Sefa Keşan Kliniği,\n\nWeb siteniz üzerinden yeni bir randevu talebi oluşturdum.\n\n👤 Ad Soyad: {name}\n📞 Telefon: {phone}\n🏥 İlgilendiğim Tedavi: {treatment}"
   }
 }
