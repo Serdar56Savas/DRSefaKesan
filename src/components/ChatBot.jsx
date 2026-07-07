@@ -173,7 +173,6 @@ export default function ChatBot() {
                         </option>
                         <option value="Rinoplasti">Rinoplasti</option>
                         <option value="Otoplasti">Otoplasti</option>
-                        <option value="Blefaroplasti">Blefaroplasti</option>
                         <option value="Diğer">Diğer / Farklı</option>
                       </select>
                       {error && (

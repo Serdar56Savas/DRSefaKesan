@@ -78,7 +78,7 @@ export default function Biyografi() {
         <div className="relative z-10 max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
           <div className="md:col-span-5 aspect-[3/4] bg-white rounded-sm overflow-hidden shadow-xl border border-gray-100 relative group">
             <img
-              src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=600"
+              src="../../images/sefa-kesan.jpg"
               alt="Op. Dr. Sefa Keşan"
               className="w-full h-full object-cover filter grayscale contrast-105"
             />

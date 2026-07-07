@@ -12,6 +12,8 @@ import {
   Phone,
   Clock,
   Search,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 
 import LanguageSelector from "../components/LanguageSelector";
@@ -24,8 +26,14 @@ export default function Home() {
   const [sliderPos, setSliderPos] = useState(50);
   const [isLoaded, setIsLoaded] = useState(false);
   const isDragging = useRef(false);
+  const [caseIndex, setCaseIndex] = useState(0);
 
   const { t } = useTranslation();
+
+  useEffect(() => {
+    setCaseIndex(0);
+    setSliderPos(50);
+  }, [activeTab]);
 
   const treatments = [
     {
@@ -47,22 +55,16 @@ export default function Home() {
       desc: "treatmentsClinic.otoplasty.desc",
     },
     {
-      id: "blefaroplasti",
-      title: "treatmentsClinic.blepharoplasty.title",
-      subtitle: "treatmentsClinic.blepharoplasty.subtitle",
-      desc: "treatmentsClinic.blepharoplasty.desc",
+      id: "yag-enjeksiyonu",
+      title: "treatmentsClinic.yag-enjeksiyonu.title",
+      subtitle: "treatmentsClinic.yag-enjeksiyonu.subtitle",
+      desc: "treatmentsClinic.yag-enjeksiyonu.desc",
     },
     {
-      id: "likit-yuz-estetigi",
-      title: "treatmentsClinic.liquidFace.title",
-      subtitle: "treatmentsClinic.liquidFace.subtitle",
-      desc: "treatmentsClinic.liquidFace.desc",
-    },
-    {
-      id: "profiloplasti",
-      title: "treatmentsClinic.profiloplasty.title",
-      subtitle: "treatmentsClinic.profiloplasty.subtitle",
-      desc: "treatmentsClinic.profiloplasty.desc",
+      id: "bisektomi",
+      title: "treatmentsClinic.bisektomi.title",
+      subtitle: "treatmentsClinic.bisektomi.subtitle",
+      desc: "treatmentsClinic.bisektomi.desc",
     },
   ];
 
@@ -71,63 +73,108 @@ export default function Home() {
       titleKey: "gallery.rhinoplasty.title",
       caseKey: "gallery.rhinoplasty.caseNo",
       detailsKey: "gallery.rhinoplasty.details",
-      before:
-        "https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&q=80&w=600",
-      after:
-        "https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&q=80&w=600",
+
+      cases: [
+        {
+          before: "/images/gallery/rinoplasti/rino-1.png",
+          after: "/images/gallery/rinoplasti/rino-1.1.png",
+        },
+        {
+          before: "/images/gallery/rinoplasti/rino-2.png",
+          after: "/images/gallery/rinoplasti/rino-2.1.png",
+        },
+        {
+          before: "/images/gallery/rinoplasti/rino-3.png",
+          after: "/images/gallery/rinoplasti/rino-3.1.png",
+        },
+        {
+          before: "/images/gallery/rinoplasti/rino-4.png",
+          after: "/images/gallery/rinoplasti/rino-4.1.png",
+        },
+        {
+          before: "/images/gallery/rinoplasti/rino-5.png",
+          after: "/images/gallery/rinoplasti/rino-5.1.png",
+        },
+        {
+          before: "/images/gallery/rinoplasti/rino-6.png",
+          after: "/images/gallery/rinoplasti/rino-6.1.png",
+        },
+        {
+          before: "/images/gallery/rinoplasti/rino-7.png",
+          after: "/images/gallery/rinoplasti/rino-7.1.png",
+        },
+      ],
     },
 
     "revizyon-rinoplasti": {
       titleKey: "gallery.revision.title",
       caseKey: "gallery.revision.caseNo",
       detailsKey: "gallery.revision.details",
-      before:
-        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=600",
-      after:
-        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=600",
+
+      cases: [
+        {
+          before: "/images/gallery/revizyon/revi-1.png",
+          after: "/images/gallery/revizyon/revi-1.1.png",
+        },
+        {
+          before: "/images/gallery/revizyon/revi-2.png",
+          after: "/images/gallery/revizyon/revi-2.1.png",
+        },
+      ],
     },
 
     otoplasti: {
       titleKey: "gallery.otoplasty.title",
       caseKey: "gallery.otoplasty.caseNo",
       detailsKey: "gallery.otoplasty.details",
-      before:
-        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=600",
-      after:
-        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=600",
+
+      cases: [
+        {
+          before: "/images/gallery/otoplasti/otoplasti-1.png",
+          after: "/images/gallery/otoplasti/otoplasti-1.1.png",
+        },
+        {
+          before: "/images/gallery/otoplasti/otoplasti-2.png",
+          after: "/images/gallery/otoplasti/otoplasti-2.1.png",
+        },
+      ],
     },
 
-    blefaroplasti: {
-      titleKey: "gallery.blepharoplasty.title",
-      caseKey: "gallery.blepharoplasty.caseNo",
-      detailsKey: "gallery.blepharoplasty.details",
-      before:
-        "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=600",
-      after:
-        "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=600",
+    "yag-enjeksiyonu": {
+      titleKey: "gallery.yag-enjeksiyonu.title",
+      caseKey: "gallery.yag-enjeksiyonu.caseNo",
+      detailsKey: "gallery.yag-enjeksiyonu.details",
+
+      cases: [
+        {
+          before: "/images/gallery/yagEnjeksiyon/yag-1.png",
+          after: "/images/gallery/yagEnjeksiyon/yag-1.1.png",
+        },
+        {
+          before: "/images/gallery/yagEnjeksiyon/yag-2.png",
+          after: "/images/gallery/yagEnjeksiyon/yag-2.1.png",
+        },
+      ],
     },
 
-    "likit-yuz-estetigi": {
-      titleKey: "gallery.liquidFace.title",
-      caseKey: "gallery.liquidFace.caseNo",
-      detailsKey: "gallery.liquidFace.details",
-      before:
-        "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=600",
-      after:
-        "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=600",
-    },
+    bisektomi: {
+      titleKey: "gallery.bisektomi.title",
+      caseKey: "gallery.bisektomi.caseNo",
+      detailsKey: "gallery.bisektomi.details",
 
-    profiloplasti: {
-      titleKey: "gallery.profiloplasty.title",
-      caseKey: "gallery.profiloplasty.caseNo",
-      detailsKey: "gallery.profiloplasty.details",
-      before:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600",
-      after:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600",
+      cases: [
+        {
+          before: "/images/gallery/bisektomi/bisektomi-1.png",
+          after: "/images/gallery/bisektomi/bisektomi-1.1.png",
+        },
+        {
+          before: "/images/gallery/bisektomi/bisektomi-2.png",
+          after: "/images/gallery/bisektomi/bisektomi-2.1.png",
+        },
+      ],
     },
   };
-
+  const currentCase = galleryData[activeTab]?.cases?.[caseIndex];
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -139,9 +186,29 @@ export default function Home() {
 
   const handleMove = (clientX, rect) => {
     let x = clientX - rect.left;
-    if (x < 0) x = 0;
-    if (x > rect.width) x = rect.width;
-    setSliderPos((x / rect.width) * 100);
+    let percentage = (x / rect.width) * 100;
+    if (percentage < 0) percentage = 0;
+    if (percentage > 100) percentage = 100;
+    setSliderPos(percentage);
+  };
+  const isHomePage = location.pathname === "/";
+  const handleNavClick = (item) => {
+    if (item.type === "page") {
+      navigate(item.path);
+    } else {
+      if (!isHomePage) {
+        navigate("/");
+        setTimeout(() => {
+          document
+            .getElementById(item.id)
+            ?.scrollIntoView({ behavior: "smooth" });
+        }, 150);
+      } else {
+        document
+          .getElementById(item.id)
+          ?.scrollIntoView({ behavior: "smooth" });
+      }
+    }
   };
 
   const handleWhatsAppSubmit = (e) => {
@@ -366,7 +433,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="aspect-[3/4] bg-white rounded overflow-hidden shadow-md border border-gray-100 relative group">
             <img
-              src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=600"
+              src="/images/sefa-kesan.jpg"
               alt="Dr. Sefa Keşan"
               className="w-full h-full object-cover filter grayscale contrast-105 group-hover:scale-105 transition-transform duration-700"
             />
@@ -449,26 +516,30 @@ export default function Home() {
       {/* 4. BÖLÜM: 6 HASTALIK/TEDAVİ ENTEGRELİ GALERİ */}
       <section
         id="galeri"
-        className="py-24 max-w-6xl mx-auto px-6 border-b border-gray-200"
+        className="py-24 max-w-7xl mx-auto px-6 border-b border-gray-200"
       >
         <div className="text-center mb-12">
-          <span className="text-[#A68B6D] text-xs tracking-widest uppercase block mb-2">
+          <span className="text-[#A68B6D] text-xs tracking-[0.35em] uppercase block mb-2">
             {t("gallery.sectionBadge")}
           </span>
-          <h2 className="font-serif text-3xl md:text-5xl font-light text-gray-950">
+
+          <h2 className="font-serif text-4xl md:text-6xl font-light text-gray-950">
             {t("gallery.sectionTitle")}
           </h2>
         </div>
 
-        <div className="flex justify-start md:justify-center gap-4 md:gap-6 mb-16 border-b border-gray-200 pb-4 overflow-x-auto scrollbar-none">
+        {/* Tabs */}
+
+        <div className="flex justify-start md:justify-center gap-5 mb-14 border-b border-gray-200 pb-5 overflow-x-auto scrollbar-none">
           {Object.keys(galleryData).map((tabId) => (
             <button
               key={tabId}
               onClick={() => {
                 setActiveTab(tabId);
+                setCaseIndex(0);
                 setSliderPos(50);
               }}
-              className={`text-xs uppercase tracking-widest pb-3 font-medium transition-all cursor-pointer whitespace-nowrap ${
+              className={`text-xs uppercase tracking-[0.25em] pb-3 whitespace-nowrap transition-all ${
                 activeTab === tabId
                   ? "text-[#A68B6D] border-b-2 border-[#A68B6D] font-semibold"
                   : "text-gray-400 hover:text-gray-900"
@@ -479,9 +550,12 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        {/* BEFORE AFTER */}
+
+        <div className="max-w-4xl mx-auto">
+          {/* Sabit Boyutlu Slider Container */}
           <div
-            className="max-w-md w-full aspect-[4/5] mx-auto relative overflow-hidden select-none shadow-md border border-gray-100 rounded cursor-ew-resize"
+            className="relative w-full aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-2xl shadow-2xl border border-gray-100 cursor-col-resize select-none"
             onMouseMove={(e) =>
               isDragging.current &&
               handleMove(e.clientX, e.currentTarget.getBoundingClientRect())
@@ -499,43 +573,92 @@ export default function Home() {
             onTouchStart={() => (isDragging.current = true)}
             onTouchEnd={() => (isDragging.current = false)}
           >
+            {/* AFTER Görseli (Altta) */}
             <img
-              src={galleryData[activeTab]?.after}
-              alt="Sonrası"
+              src={currentCase?.after}
+              alt="after"
               className="absolute inset-0 w-full h-full object-cover"
+              draggable={false}
             />
+
+            {/* BEFORE Görseli (Üstte - Maskeli) */}
             <div
               className="absolute inset-0 overflow-hidden"
-              style={{ width: `${sliderPos}%` }}
+              style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
             >
               <img
-                src={galleryData[activeTab]?.before}
-                alt="Öncesi"
+                src={currentCase?.before}
+                alt="before"
                 className="absolute inset-0 w-full h-full object-cover"
+                draggable={false}
               />
             </div>
+
+            {/* Kaydırma Çubuğu */}
             <div
-              className="absolute top-0 bottom-0 w-0.5 bg-[#A68B6D]"
+              className="absolute top-0 bottom-0 w-[2px] bg-[#A68B6D] flex items-center justify-center pointer-events-none"
               style={{ left: `${sliderPos}%` }}
             >
-              <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-9 h-9 bg-[#A68B6D] text-white rounded-full flex items-center justify-center shadow-md">
-                <MoveHorizontal size={16} />
+              <div className="w-12 h-12 rounded-full bg-white border-2 border-[#A68B6D] text-[#A68B6D] flex items-center justify-center shadow-xl">
+                <MoveHorizontal size={24} />
               </div>
+            </div>
+
+            {/* Etiketler */}
+            <div className="absolute bottom-6 left-6 bg-black/50 backdrop-blur-md text-white px-4 py-2 rounded-full text-xs uppercase tracking-widest">
+              {t("gallery.before")}
+            </div>
+            <div className="absolute bottom-6 right-6 bg-[#A68B6D]/90 backdrop-blur-md text-white px-4 py-2 rounded-full text-xs uppercase tracking-widest">
+              {t("gallery.after")}
             </div>
           </div>
 
-          <div className="space-y-6">
-            <div className="border-l-2 border-[#A68B6D] pl-4">
-              <span className="text-xs text-[#A68B6D] uppercase tracking-widest font-semibold block">
-                {t(`gallery.${activeTab}.vakaNo`)}
-              </span>
+          {/* Navigasyon Okları */}
+          <div className="flex justify-center items-center gap-8 mt-10">
+            <button
+              onClick={() => {
+                setCaseIndex((prev) =>
+                  prev === 0
+                    ? galleryData[activeTab].cases.length - 1
+                    : prev - 1,
+                );
+                setSliderPos(50);
+              }}
+              className="w-14 h-14 rounded-full border border-gray-200 hover:border-[#A68B6D] hover:text-[#A68B6D] transition flex items-center justify-center"
+            >
+              <ChevronLeft />
+            </button>
 
-              <h3 className="font-serif text-2xl md:text-3xl font-light text-gray-950 mt-1">
-                {t(`gallery.${activeTab}.title`)}
-              </h3>
+            <div className="flex gap-3">
+              {galleryData[activeTab].cases.map((_, i) => (
+                <div
+                  key={i}
+                  className={`transition-all duration-300 ${caseIndex === i ? "w-12 h-2 rounded-full bg-[#A68B6D]" : "w-2 h-2 rounded-full bg-gray-300"}`}
+                />
+              ))}
             </div>
 
-            <p className="text-gray-600 font-light text-sm md:text-base leading-relaxed">
+            <button
+              onClick={() => {
+                setCaseIndex((prev) =>
+                  prev === galleryData[activeTab].cases.length - 1
+                    ? 0
+                    : prev + 1,
+                );
+                setSliderPos(50);
+              }}
+              className="w-14 h-14 rounded-full border border-gray-200 hover:border-[#A68B6D] hover:text-[#A68B6D] transition flex items-center justify-center"
+            >
+              <ChevronRight />
+            </button>
+          </div>
+
+          {/* Detay Bilgisi */}
+          <div className="max-w-3xl mx-auto mt-16 text-center">
+            <h3 className="font-serif text-4xl font-light text-gray-950">
+              {t(`gallery.${activeTab}.title`)}
+            </h3>
+            <p className="mt-8 text-gray-600 leading-9 text-lg font-light">
               {t(`gallery.${activeTab}.details`)}
             </p>
           </div>
@@ -609,14 +732,11 @@ export default function Home() {
                     <option value="Otoplasti (Kulak Estetiği)">
                       {t("contactForm.treatments.otoplasti")}
                     </option>
-                    <option value="Blefaroplasti (Göz Kapağı)">
-                      {t("contactForm.treatments.blefaroplasti")}
-                    </option>
                     <option value="Likit Yüz Estetiği">
                       {t("contactForm.treatments.likit")}
                     </option>
-                    <option value="Profiloplasti">
-                      {t("contactForm.treatments.profiloplasti")}
+                    <option value="bisektomi">
+                      {t("contactForm.treatments.bisektomi")}
                     </option>
                   </select>
                 </div>

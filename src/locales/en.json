@@ -8,10 +8,10 @@
     "clinicSubtitle": "Aesthetic and Plastic Surgery"
   },
   "hero": {
-    "badge": "Personal Golden Ratio Analysis",
-    "title1": "Natural Harmony in Your Face",
+    "badge": "Personalized Golden Ratio Analysis",
+    "title1": "Natural Harmony",
     "title2": "and Unique Elegance",
-    "description": "Leave standard templates behind. Surgical art tailored completely to your facial anatomy under Op. Dr. Sefa Keşan.",
+    "description": "Leave ordinary patterns behind. Surgical art designed strictly according to your unique facial anatomy under the leadership of Op. Dr. Sefa Keşan.",
     "consultation": "Free Consultation",
     "galleryButton": "View Live Cases"
   },
@@ -24,179 +24,148 @@
   "biography": {
     "philosophy": "Surgeon's Philosophy",
     "title": "Naturalness and Functionality in Aesthetics",
-    "desc": "Every face tells a unique story. My philosophy is to discover each face’s golden ratio boundaries and combine symmetry with functionality. You can explore my academic journey from Cerrahpaşa Faculty of Medicine and my professional achievements in detail.",
+    "desc": "Every face tells a unique story. My philosophy is to find the face's own golden ratio boundaries and blend symmetry with functionality. You can review my academic journey spanning from Cerrahpaşa Faculty of Medicine and my achievements in detail.",
     "button": "View CV & Achievements"
   },
   "address": {
     "clinic": "Clinic Address",
-    "clinicAddress": "Valikonagi Avenue No:142 Apartment:4 Nisantasi / Istanbul",
+    "clinicAddress": "Valikonağı Cad. No:142 Daire:4 Nişantaşı / Istanbul",
     "contact": "Contact Us",
     "number": "+90 (212) 000 00 00",
     "workClock": "Working Hours",
-    "workText": "Monday - Saturday: 09:00 AM - 07:00 PM"
+    "workText": "Monday - Saturday: 09:00 - 19:00"
   },
   "contactForm": {
     "badge": "Quick Contact",
     "title": "Schedule a Consultation",
-
     "nameLabel": "Full Name",
     "namePlaceholder": "e.g. Selin Yılmaz",
-
     "phoneLabel": "Phone Number",
-    "phonePlaceholder": "e.g. +90 532 XXX XX XX",
-
-    "treatmentLabel": "Treatment of Interest",
-
-    "submit": "Send & Create WhatsApp Appointment",
-
+    "phonePlaceholder": "e.g. 0532 XXX XX XX",
+    "treatmentLabel": "Aesthetic Procedure of Interest",
+    "submit": "Submit and Create WhatsApp Appointment",
     "treatments": {
       "rinoplasti": "Rhinoplasty (Nose Surgery)",
       "revizyon": "Revision Rhinoplasty",
       "otoplasti": "Otoplasty (Ear Surgery)",
-      "blefaroplasti": "Blepharoplasty (Eyelid Surgery)",
-      "likit": "Liquid Facial Aesthetics",
-      "profiloplasti": "Profileplasty"
+      "yag-enjeksiyonu": "Fat Injection",
+      "bisektomi": "Bichectomy (Buccal Fat Removal)"
     }
   },
   "treatments": {
     "rinoplasti": {
       "title": "Primary Rhinoplasty",
       "subtitle": "Nose Surgery",
-      "desc": "Aesthetic solutions aligned with the golden ratio of your face."
+      "desc": "Aesthetic solutions providing golden ratio harmony with your facial features."
     },
     "revizyon-rinoplasti": {
       "title": "Revision Rhinoplasty",
-      "subtitle": "Corrective Surgery",
-      "desc": "Reconstruction of failed operations anatomically."
+      "subtitle": "Correction Surgery",
+      "desc": "Anatomical reconstruction of previously unsuccessful operations."
     },
     "otoplasti": {
       "title": "Otoplasty",
-      "subtitle": "Ear Surgery",
-      "desc": "Correcting angular ear deformities."
+      "subtitle": "Ear Aesthetics",
+      "desc": "Surgical method correcting angular problems in ear structure."
     },
-    "blefaroplasti": {
-      "title": "Blepharoplasty",
-      "subtitle": "Eyelid Surgery",
-      "desc": "Gives a younger and more dynamic look."
+    "yag-enjeksiyonu": {
+      "title": "Fat Injection",
+      "subtitle": "Autologous Tissue Transfer",
+      "desc": "Natural rejuvenation process adding volume to your facial features using your own tissue."
     },
-    "likit-yuz-estetigi": {
-      "title": "Liquid Face Aesthetics",
-      "subtitle": "Non-surgical Touches",
-      "desc": "Facial rejuvenation with fillers and Botox."
-    },
-    "profiloplasti": {
-      "title": "Profiloplasty",
-      "subtitle": "Jaw and Facial Harmony",
-      "desc": "Overall balancing of facial profile."
+    "bisektomi": {
+      "title": "Bichectomy",
+      "subtitle": "Facial Slimming",
+      "desc": "Procedure of removing fat pads inside the cheeks to make the face slimmer and features more defined."
     }
   },
   "treatmentsClinic": {
-    "process": "Procedure & Details",
-
+    "process": "Process & Details",
     "rhinoplasty": {
       "title": "Primary Rhinoplasty",
-      "subtitle": "Nose Aesthetics",
-      "desc": "Customized designs that harmonize with your facial proportions while providing both aesthetic refinement and optimal breathing comfort."
+      "subtitle": "Nose Surgery",
+      "desc": "Designs that provide golden ratio harmony with your facial features, offering both aesthetics and high breathing comfort."
     },
-
     "revision": {
       "title": "Revision Rhinoplasty",
-      "subtitle": "Corrective Surgery",
-      "desc": "Anatomical reconstruction of previously unsuccessful surgeries using rib cartilage graft techniques."
+      "subtitle": "Correction Surgery",
+      "desc": "Anatomical reconstruction of previously unsuccessful operations using rib cartilage grafts."
     },
-
     "otoplasty": {
       "title": "Otoplasty",
       "subtitle": "Ear Aesthetics",
-      "desc": "Correction of ear angle deformities using invisible suturing techniques for natural facial symmetry."
+      "desc": "Natural curved facial symmetry correcting angular problems in ear structure with invisible suture techniques."
     },
-
-    "blepharoplasty": {
-      "title": "Blepharoplasty",
-      "subtitle": "Eyelid Surgery",
-      "desc": "A refined surgical approach that rejuvenates the eye area and eliminates tired expressions."
+    "yag-enjeksiyonu": {
+      "title": "Fat Injection",
+      "subtitle": "Autologous Tissue Transfer",
+      "desc": "Creating a natural and permanent youth effect by transferring fat tissue taken from specific body areas to regions with volume loss."
     },
-
-    "liquidFace": {
-      "title": "Liquid Facial Aesthetics",
-      "subtitle": "Non-Surgical Treatments",
-      "desc": "Advanced filler, botox and skin rejuvenation combinations for patients seeking non-surgical facial enhancement."
-    },
-
-    "profiloplasty": {
-      "title": "Profiloplasty",
-      "subtitle": "Chin & Facial Harmony",
-      "desc": "A holistic aesthetic approach that creates perfect balance between the nose, chin and forehead profile."
+    "bisektomi": {
+      "title": "Bichectomy",
+      "subtitle": "Facial Slimming",
+      "desc": "Procedure of removing fat pads inside the cheeks to make the face slimmer and features more defined."
     }
   },
   "treatmentsSection": {
     "badge": "Exclusive Services",
-    "title": "Clinical Areas of Expertise"
+    "title": "Clinic Areas of Expertise"
   },
   "gallery": {
-    "sectionBadge": "Perfect Transformations",
+    "sectionBadge": "Flawless Transformations",
     "sectionTitle": "Natural Transformation Gallery",
+    "before": "Before",
+    "after": "After",
+    "case": "Case",
     "tabs": {
-      "rinoplasti": "rhinoplasty",
-      "revizyon-rinoplasti": "revision rhinoplasty",
-      "otoplasti": "otoplasty",
-      "blefaroplasti": "blepharoplasty",
-      "likit-yuz-estetigi": "liquid facelift",
-      "profiloplasti": "profiloplasty"
+      "rinoplasti": "Rhinoplasty",
+      "revizyon-rinoplasti": "Revision Rhinoplasty",
+      "otoplasti": "Otoplasty",
+      "yag-enjeksiyonu": "Fat Injection",
+      "bisektomi": "Bichectomy"
     },
     "rinoplasti": {
-      "title": "Primary Rhinoplasty Procedure",
-      "vakaNo": "Case Review No: 214",
-      "details": "The nasal hump structure was refined in harmony with facial proportions, and the drooping tip projection was elevated according to the golden ratio."
+      "title": "Primary Rhinoplasty Surgery",
+      "vakaNo": "Case Study No: 214",
+      "details": "The nasal bridge structure has been adjusted in harmony with facial proportions, and the droopy nasal tip has been lifted according to the golden ratio."
     },
     "revizyon-rinoplasti": {
       "title": "Revision Rhinoplasty",
-      "vakaNo": "Case Review No: 087",
-      "details": "For a patient with previous surgery and cartilage collapse, reconstruction was performed using rib cartilage grafts."
+      "vakaNo": "Case Study No: 087",
+      "details": "Reconstruction was performed using rib cartilage grafts in a patient who had previous surgery and suffered from cartilage collapse."
     },
     "otoplasti": {
-      "title": "Otoplasty (Ear Surgery)",
-      "vakaNo": "Case Review No: 112",
-      "details": "Prominent ear angles were corrected through posterior ear incisions, creating natural folds and symmetry."
+      "title": "Otoplasty (Ear Aesthetics)",
+      "vakaNo": "Case Study No: 112",
+      "details": "The prominent ear angle was corrected with an incision made from behind the ear, ensuring natural curvature and symmetry."
     },
-    "blefaroplasti": {
-      "title": "Blepharoplasty",
-      "vakaNo": "Case Review No: 304",
-      "details": "Excess skin and bags around the upper eyelids were removed, resulting in a refreshed and younger appearance."
+    "yag-enjeksiyonu": {
+      "title": "Fat Injection (Autologous Transfer)",
+      "vakaNo": "Case Study No: 419",
+      "details": "Long-term volume, lifting, and rejuvenating effect provided by injecting the patient's own fat tissue into cheekbones and jawline."
     },
-    "likit-yuz-estetigi": {
-      "title": "Liquid Facelift (Non-Surgical)",
-      "vakaNo": "Case Review No: 419",
-      "details": "Hyaluronic acid fillers were applied to the cheekbones and jawline for a lifting and rejuvenating effect."
-    },
-    "profiloplasti": {
-      "title": "Profiloplasty",
-      "vakaNo": "Case Review No: 052",
-      "details": "Balanced facial profile achieved through combined nose and chin contouring procedures."
+    "bisektomi": {
+      "title": "Bichectomy (Cheek Aesthetics)",
+      "vakaNo": "Case Study No: 088",
+      "details": "By controlled removal of fat pads in the cheek area, cheekbones were highlighted and a sharper facial contour was achieved."
     }
   },
   "biographyPage": {
     "back": "Back to Home",
     "role": "Aesthetic and Plastic Surgery",
     "heroBadge": "Founder & Chief Physician",
-    "heroTitle1": "Behind Beauty",
-    "heroTitle2": "Science and Art",
-    "heroText": "Aesthetic surgery is not only an anatomical transformation;\nit is a journey of rediscovering one's confidence, expression, and hidden facial elegance within the most natural golden ratio boundaries.",
+    "heroTitle1": "Science and Art",
+    "heroTitle2": "Behind Beauty",
+    "heroText": "Aesthetic surgery is not just an anatomical change; it is a journey of re-discovering an individual's own self-confidence, expression, and the hidden elegance in their face within the most natural golden ratio boundaries.",
     "education": "Cerrahpaşa Faculty of Medicine",
     "certification": "EBOPRAS Certified",
     "educationTitle": "Education and Professional Journey",
     "lifeStory": "Life Story",
-
-    "about1Part1": "Op. Dr. Sefa Keşan completed his medical education at one of Turkey's most prestigious institutions, ",
-
+    "about1Part1": "Op. Dr. Sefa Keşan crowned his passion for medical education at one of Turkey's most established institutions, ",
     "about1Strong": "Istanbul University Cerrahpaşa Faculty of Medicine",
-
-    "about1Part2": ". After graduating with high honors, he successfully passed the specialization exam and began his residency in Plastic, Reconstructive and Aesthetic Surgery driven by his interest in aesthetic and reconstructive surgery.",
-
-    "about2": "During his residency, he focused on rhinoplasty and holistic facial anatomy. He also worked as an observer surgeon in reputable clinics across Europe and the United States to closely follow international developments. He conducted innovative studies on rib cartilage micro-grafting techniques, especially in revision rhinoplasty.",
-
-    "about3": "Today, he continues to provide premium healthcare services with a 'custom golden ratio design' approach to patients from all around the world at his private luxury clinic in Nişantaşı, Istanbul.",
-
+    "about1Part2": ". After completing his medical education with high honors, he pursued his interest in aesthetic and reconstructive surgery and began his residency in Plastic, Reconstructive, and Aesthetic Surgery with high success in the specialty exam.",
+    "about2": "During his residency, he focused on rhinoplasty and holistic facial anatomy. To closely follow international developments, he served as a visiting surgeon in reputable clinics in Europe and America. He carried out innovative studies, especially on rib cartilage micro-grafting techniques in revision rhinoplasty.",
+    "about3": "Today, he continues to provide premium health services with a 'personalized golden ratio design' approach to patients from all over the world at his own private luxury clinic in Nişantaşı, Istanbul.",
     "membershipsTitle": "International Scientific Memberships",
     "memberships": [
       "TPRECD (Turkish Society of Plastic, Reconstructive and Aesthetic Surgery)",
@@ -204,31 +173,29 @@
       "ISAPS (International Society of Aesthetic Plastic Surgery)",
       "EAFPS (European Academy of Facial Plastic Surgery)"
     ],
-
     "timelineCards": [
       {
         "year": "2012",
         "title": "Medical School Graduation",
-        "desc": "Graduated with high honors from Cerrahpaşa Faculty of Medicine."
+        "desc": "Graduation from Cerrahpaşa Faculty of Medicine with high honors."
       },
       {
         "year": "2018",
-        "title": "Specialization & Excellence",
-        "desc": "Completed specialization in Plastic, Reconstructive and Aesthetic Surgery and received the Young Surgeon of the Year presentation award."
+        "title": "Residency & Excellence",
+        "desc": "Title of Plastic, Reconstructive and Aesthetic Surgery Specialist and Young Surgeon of the Year presentation award."
       },
       {
         "year": "2021",
         "title": "EBOPRAS European Qualification",
-        "desc": "Obtained EBOPRAS certification and achieved international accreditation."
+        "desc": "Achieving international accreditation by receiving the European Board of Plastic, Reconstructive and Aesthetic Surgery (EBOPRAS) certification."
       },
       {
         "year": "2023",
         "title": "Nişantaşı Premium Clinic",
-        "desc": "Establishment of a modern boutique clinic aligned with international medical tourism standards."
+        "desc": "Establishment of a modern boutique clinic in accordance with international health tourism standards."
       }
     ],
-
-    "achievementsTitle": "Key Achievements",
+    "achievementsTitle": "Featured Achievements",
     "achievements": [
       {
         "value": "4000+",
@@ -236,192 +203,161 @@
       },
       {
         "value": "25+",
-        "label": "International Publications"
+        "label": "International Articles"
       }
     ],
-
     "timeline": "Milestones",
-    "timelineTitle": "Success Chart",
-    "appointment": "Consultation & Analysis Appointment",
+    "timelineTitle": "Achievement Table",
+    "appointment": "Examination and Analysis Appointment",
     "appointmentBtn": "Go to Appointment Form",
-    "appointmentText": "You can contact Op. Dr. Sefa Keşan to design the most suitable surgical or medical plan for your facial structure with digital simulation support."
+    "appointmentText": "You can contact us immediately to design the most suitable surgical or medical planning for your facial structure with Op. Dr. Sefa Keşan, accompanied by digital simulation."
   },
-
+  "footer": {
+    "subtitle": "Aesthetic and Plastic Surgery",
+    "quote": "True beauty does not lie in a foreign touch to the face; it lies in the expression re-discovering its own hidden elegance and flawless balance.",
+    "description": "At our Nişantaşı clinic, we improve your quality of life with operation processes planned entirely for you and your bone anatomy, adhering to international health standards.",
+    "navigationTitle": "Corporate Navigation",
+    "home": "Home",
+    "story": "Surgeon's Story",
+    "services": "Areas of Expertise",
+    "gallery": "Natural Transformation Gallery",
+    "contact": "VIP Contact & Appointment",
+    "socialTitle": "Follow Digital Transformations",
+    "socialText": "You can follow our current cases and surgical processes from our social media accounts.",
+    "legal": "In accordance with T.R. Ministry of Health regulations, the information on this site is for informational purposes only and does not constitute medical advice.",
+    "copyright": "All Rights Reserved",
+    "kvkk": "Clarification Text (KVKK)",
+    "cookies": "Cookie Policy"
+  },
   "procedures": {
     "rinoplasti": {
       "title": "Rhinoplasty (Nose Surgery)",
       "subtitle": "Synchronization of Aesthetics and Breathing Function",
-      "content": "Rhinoplasty surgery not only changes the outer appearance but also optimizes the breathing function.",
+      "content": "Rhinoplasty surgery does not only change external appearance, but also optimizes the breathing function that directly affects your quality of life. Before each operation, the person's facial structure, chin angle, and forehead distance are analyzed to determine the anatomy that will look most natural.",
       "steps": [
-        "Surgery Duration: 2 - 3 Hours",
-        "Anesthesia: General Anesthesia",
+        "Operation Time: 2 - 3 Hours",
+        "Anesthesia Type: General Anesthesia",
         "Hospital Stay: 1 Night",
         "Return to Social Life: 7th Day"
       ],
       "symptoms": [
         {
-          "id": "kemer",
+          "id": "hump",
           "label": "Nasal Hump",
-          "path": "Bone tissue is filed down millimeter by millimeter using ultrasonic Piezo surgery."
+          "path": "Using Ultrasonic Piezo surgery, bone tissue is filed millimetrically without breaking, preserving the natural profile line."
         },
         {
-          "id": "egrilik",
+          "id": "deviaiton",
           "label": "Nasal Deviation",
-          "path": "Axis curvature is brought to the center line with functional septoplasty techniques."
+          "path": "Axis deviation is brought to the midline with functional septoplasty techniques; symmetry and breathing channels are optimized."
         },
         {
-          "id": "dusukluk",
-          "label": "Droopy Tip",
-          "path": "Cartilage support mechanisms are strengthened to reach the ideal lip-nose angle."
+          "id": "droopy",
+          "label": "Droopy Nasal Tip",
+          "path": "Cartilage support mechanisms are strengthened, raising the lip-nose angle to the ideal 95-105 degree scale."
         }
       ]
     },
     "revizyon-rinoplasti": {
       "title": "Revision Rhinoplasty",
-      "subtitle": "More Challenging Cases, Perfect Experience",
-      "content": "A corrective procedure applied to patients who have had previous surgery but did not get the desired result.",
+      "subtitle": "More Challenging Cases, Flawless Experience",
+      "content": "A correction operation performed for patients who have had a previous operation but could not achieve the desired aesthetic or functional result.",
       "steps": [
-        "Surgery Duration: 3 - 4 Hours",
-        "Anesthesia: General Anesthesia",
-        "Cartilage Graft May Be Needed",
+        "Operation Time: 3 - 4 Hours",
+        "Anesthesia Type: General Anesthesia",
+        "Cartilage Graft May Be Required",
         "Full Recovery: 1 Year"
       ],
       "symptoms": []
     },
     "otoplasti": {
       "title": "Otoplasty (Ear Aesthetics)",
-      "subtitle": "Symmetry and Confidence in Facial Features",
-      "content": "The process of bringing the angle of the ears with the base of the skull to normal.",
+      "subtitle": "Symmetry and Self-Confidence in Facial Features",
+      "content": "The process of bringing the angle the ears make with the skull base to normal.",
       "steps": [
-        "Surgery Duration: 1 - 1.5 Hours",
+        "Operation Time: 1 - 1.5 Hours",
         "Anesthesia: Local or General",
         "Bandage Duration: 3 Days",
-        "Recovery: Immediate"
+        "Recovery: Immediate Social Life"
       ],
       "symptoms": [
         {
-          "id": "kepce",
-          "label": "Prominent Ear",
-          "path": "Corrected with permanent sutures behind the ear."
+          "id": "prominent",
+          "label": "Prominent Ear Angle",
+          "path": "Corrected with permanent sutures from behind the ear."
         }
       ]
     },
-    "blefaroplasti": {
-      "title": "Blepharoplasty (Eyelid Surgery)",
-      "subtitle": "Goodbye to the Tired Expression",
-      "content": "The process of removing sagging and bagging in the eyelids.",
+    "yag-enjeksiyonu": {
+      "title": "Fat Injection",
+      "subtitle": "Autologous Tissue Transfer",
+      "content": "The process of injecting fat tissues taken from the person's own body into areas of the face experiencing volume loss. Since it is your own tissue, it fully adapts to the body and offers natural results.",
       "steps": [
-        "Surgery Duration: 1 - 2 Hours",
-        "Anesthesia: Local or General",
-        "Discharge: Same Day",
-        "Suture Removal: 5th Day"
+        "Procedure Time: 1 - 1.5 Hours",
+        "Anesthesia: Local or Sedation",
+        "Permanence: Long-Term",
+        "Recovery: 3-5 Days"
       ],
       "symptoms": [
         {
-          "id": "sarkma",
-          "label": "Upper Eyelid Sagging",
-          "path": "Excess skin is carefully removed."
-        }
-      ]
-    },
-    "likit-yuz-estetigi": {
-      "title": "Liquid Face Lift",
-      "subtitle": "Non-Surgical Golden Ratio",
-      "content": "Medical aesthetic procedure performed with fillers and botox.",
-      "steps": [
-        "Procedure Time: 30 - 45 min",
-        "Anesthesia: Topical",
-        "Durability: 12 - 18 Months",
-        "Recovery: Immediate"
-      ],
-      "symptoms": [
-        {
-          "id": "hacim",
+          "id": "volume-loss",
           "label": "Volume Loss",
-          "path": "Hyaluronic acid filler is applied."
+          "path": "Fat transfer is performed to needed areas to strengthen tissue support and reshape facial features."
         }
       ]
     },
-    "profiloplasti": {
-      "title": "Profiloplasty",
-      "subtitle": "Side Profile Balance",
-      "content": "Ensuring the general profile harmony of the face.",
+    "bisektomi": {
+      "title": "Bichectomy",
+      "subtitle": "Facial Slimming",
+      "content": "Procedure of removing fat pads inside the cheeks to make the face slimmer and features more defined.",
       "steps": [
-        "Surgery Duration: Variable",
-        "Anesthesia: General",
+        "Operation Time: 30-45 Minutes",
+        "Anesthesia: Local or Sedation",
         "Planning: Personalized",
-        "Recovery: 7-10 days"
+        "Recovery: 3-5 days"
       ],
       "symptoms": [
         {
-          "id": "cene",
-          "label": "Receding Chin",
-          "path": "Chin implant or filler is applied."
+          "id": "fullness",
+          "label": "Cheek Fullness",
+          "path": "Fat pads inside the cheeks are reduced to create sharper features."
         }
       ]
     }
   },
-
-  "footer": {
-    "subtitle": "Aesthetic and Plastic Surgery",
-
-    "quote": "True beauty is not found in an artificial touch, but in rediscovering the hidden elegance and perfect balance already present in one's expression.",
-
-    "description": "At our Nişantaşı clinic, we improve your quality of life with personalized treatments planned according to your unique facial and bone anatomy under international healthcare standards.",
-
-    "navigationTitle": "Corporate Navigation",
-
-    "home": "Home",
-    "story": "Surgeon's Story",
-    "services": "Areas of Expertise",
-    "gallery": "Transformation Gallery",
-    "contact": "VIP Contact & Appointment",
-
-    "socialTitle": "Follow the Transformations",
-
-    "socialText": "Follow our latest cases and surgical journeys through our social media channels.",
-
-    "legal": "According to Turkish Ministry of Health regulations, the information on this website is for informational purposes only and does not constitute medical advice.",
-
-    "copyright": "All Rights Reserved",
-
-    "kvkk": "Privacy Notice",
-    "cookies": "Cookie Policy"
-  },
   "diseaseDetail": {
     "interactiveSimulator": "Interactive Simulator",
     "anatomicalAnalysis": "Anatomical Analysis Mode",
-    "statusBefore": "Status: Before Surgery",
-    "statusAfter": "Status: After Surgery",
+    "statusBefore": "Status: Pre-operative",
+    "statusAfter": "Status: Post-operative",
     "changeRate": "Change Rate",
     "before": "Before",
     "after": "After",
     "profileChange": "Profile Change",
     "clinicalAlgorithm": "Clinical Algorithm",
-    "clinicalAlgorithmDesc": "Select your concern from the list to simulate the recommended surgical approach.",
-    "complaintType": "Concern Type",
+    "clinicalAlgorithmDesc": "You can simulate the surgical approach by selecting the problem you are facing from the list.",
+    "complaintType": "Complaint Type",
     "generalProfile": "General / Natural Profile",
     "surgicalSolution": "Surgical Solution",
-    "selectComplaint": "Please select a concern above to view the recommended medical approach.",
+    "selectComplaint": "Please select a complaint above to view the physician's note specific to the problem.",
     "consultation": "Consultation",
-    "available": "Available",
+    "available": "Schedulable",
     "segment": "Segment",
     "premiumEnt": "Premium ENT",
-    "quickConsultation": "Quick Consultation & Appointment",
-    "aboutTreatment": "About the Treatment",
+    "quickConsultation": "Quick Consultation and Appointment",
+    "aboutTreatment": "About Treatment",
     "operationProcess": "Clinical Operation Process"
   },
-
   "chatbot": {
-    "welcome": "Hello, I am the digital assistant of Dr. Sefa Keşan. How can I help you?",
-    "placeholder": "Type your question...",
+    "welcome": "Hello, I am Dr. Sefa Keşan’s digital assistant. How can I help you?",
+    "placeholder": "Write your question...",
     "q1_label": "Rhinoplasty",
     "q1_val": "I would like to get information about rhinoplasty surgery.",
     "q2_label": "Otoplasty",
-    "q2_val": "Can you explain the ear aesthetic procedure?",
+    "q2_val": "Can you explain the ear aesthetics process?",
     "q3_label": "Appointment",
-    "q3_val": "I would like to get information about appointment process.",
-    "whatsapp_message": "You can contact us via WhatsApp for faster assistance.",
+    "q3_val": "I would like to get information about appointment procedures.",
+    "whatsapp_message": "For faster assistance, you can contact us via WhatsApp.",
     "whatsapp_button": "Contact via WhatsApp",
     "form_title": "APPOINTMENT REQUEST",
     "name_placeholder": "Full Name",
@@ -431,6 +367,6 @@
     "error_name": "Please enter your name.",
     "error_phone": "Please enter your phone number.",
     "error_treatment": "Please select a treatment.",
-    "wp_message": "Hello Op. Dr. Sefa Keşan Clinic,\n\nI have created a new appointment request via your website.\n\n👤 Full Name: {name}\n📞 Phone: {phone}\n🏥 Interested Treatment: {treatment}"
+    "wp_message": "Hello Op. Dr. Sefa Keşan Clinic,\n\nI have created a new appointment request through your website.\n\n👤 Full Name: {name}\n📞 Phone: {phone}\n🏥 Treatment of Interest: {treatment}"
   }
 }

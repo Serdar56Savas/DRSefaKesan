@@ -7,7 +7,6 @@
     "appointment": "Randevu Al",
     "clinicSubtitle": "Estetik ve Plastik Cerrahi"
   },
-
   "hero": {
     "badge": "Kişiye Özel Altın Oran Analizi",
     "title1": "Yüzünüzdeki Doğal Uyum",
@@ -16,7 +15,6 @@
     "consultation": "Ücretsiz Konsültasyon",
     "galleryButton": "Canlı Vakaları İncele"
   },
-
   "stats": {
     "experience": "Yıllık Deneyim",
     "cases": "Başarılı Vaka",
@@ -40,27 +38,20 @@
   "contactForm": {
     "badge": "Hızlı İletişim",
     "title": "Konsültasyon Planlayın",
-
     "nameLabel": "Adınız Soyadınız",
     "namePlaceholder": "Örn. Selin Yılmaz",
-
     "phoneLabel": "Telefon Numaranız",
     "phonePlaceholder": "Örn. 0532 XXX XX XX",
-
     "treatmentLabel": "İlgilendiğiniz Estetik Süreç",
-
     "submit": "Gönder ve WhatsApp Randevusu Oluştur",
-
     "treatments": {
       "rinoplasti": "Rinoplasti (Burun Estetiği)",
       "revizyon": "Revizyon Burun Estetiği",
       "otoplasti": "Otoplasti (Kulak Estetiği)",
-      "blefaroplasti": "Blefaroplasti (Göz Kapağı)",
-      "likit": "Likit Yüz Estetiği",
-      "profiloplasti": "Profiloplasti"
+      "yag-enjeksiyonu": "Yağ Enjeksiyonu",
+      "bisektomi": "Bişektomi (Yanak Estetiği)"
     }
   },
-
   "treatments": {
     "rinoplasti": {
       "title": "Primer Rinoplasti",
@@ -77,59 +68,43 @@
       "subtitle": "Kulak Estetiği",
       "desc": "Kulak yapısındaki açısal problemleri düzelten cerrahi yöntem."
     },
-    "blefaroplasti": {
-      "title": "Blefaroplasti",
-      "subtitle": "Göz Kapağı Estetiği",
-      "desc": "Bakışlara daha genç ve dinamik görünüm kazandırır."
+    "yag-enjeksiyonu": {
+      "title": "Yağ Enjeksiyonu",
+      "subtitle": "Otolog Doku Transferi",
+      "desc": "Kendi dokunuzla yüz hatlarınıza hacim kazandıran doğal gençleştirme işlemi."
     },
-    "likit-yuz-estetigi": {
-      "title": "Likit Yüz Estetiği",
-      "subtitle": "Ameliyatsız Dokunuşlar",
-      "desc": "Dolgu ve botoks uygulamalarıyla yüz gençleştirme."
-    },
-    "profiloplasti": {
-      "title": "Profiloplasti",
-      "subtitle": "Çene ve Yüz Uyumu",
-      "desc": "Yüz profilinin bütünsel olarak dengelenmesi."
+    "bisektomi": {
+      "title": "Bişektomi",
+      "subtitle": "Yüz İncelendirme",
+      "desc": "Yanak içindeki yağ yastıklarının çıkarılarak yüzün daha ince ve hatların daha belirgin hale getirilmesi işlemidir."
     }
   },
   "treatmentsClinic": {
     "process": "Süreç & Detaylar",
-
     "rhinoplasty": {
       "title": "Primer Rinoplasti",
       "subtitle": "Burun Estetiği",
       "desc": "Yüz hatlarınızla altın oran uyumu sağlayan, hem estetik hem de yüksek nefes konforuna sahip tasarımlar."
     },
-
     "revision": {
       "title": "Revizyon Rinoplasti",
       "subtitle": "Düzeltme Cerrahisi",
       "desc": "Daha önce başarısız olmuş operasyonların, kaburga kıkırdağı greftleri kullanılarak anatomik olarak yeniden inşası."
     },
-
     "otoplasty": {
       "title": "Otoplasti",
       "subtitle": "Kulak Estetiği",
       "desc": "Kulak yapısındaki açısal problemleri görünmez dikiş teknikleriyle düzelten, doğal kıvrımlı yüz simetrisi."
     },
-
-    "blepharoplasty": {
-      "title": "Blefaroplasti",
-      "subtitle": "Göz Kapağı Estetiği",
-      "desc": "Bakışlardaki yorgun ve yaşlı ifadeyi silen, göz çevresini minimal dokunuşlarla gençleştiren cerrahi sanat."
+    "yag-enjeksiyonu": {
+      "title": "Yağ Enjeksiyonu",
+      "subtitle": "Otolog Doku Transferi",
+      "desc": "Vücudun belirli bölgelerinden alınan yağ dokusunun, yüzdeki hacim kaybı yaşayan bölgelere transfer edilerek doğal ve kalıcı gençlik etkisi yaratılmasıdır."
     },
-
-    "liquidFace": {
-      "title": "Likit Yüz Estetiği",
-      "subtitle": "Ameliyatsız Dokunuşlar",
-      "desc": "Cerrahi operasyon tercih etmeyenler için altın oran odaklı medikal dolgu, botoks ve gençlik aşısı kombinasyonları."
-    },
-
-    "profiloplasty": {
-      "title": "Profiloplasti",
-      "subtitle": "Çene & Yüz Uyumu",
-      "desc": "Burun, çene ve alın hattının yan profilden kusursuz bir dengeye ulaşmasını sağlayan bütünsel estetik yaklaşım."
+    "bisektomi": {
+      "title": "Bişektomi",
+      "subtitle": "Yüz İncelendirme",
+      "desc": "Yanak içindeki yağ yastıklarının çıkarılarak yüzün daha ince ve hatların daha belirgin hale getirilmesi işlemidir."
     }
   },
   "treatmentsSection": {
@@ -139,50 +114,40 @@
   "gallery": {
     "sectionBadge": "Kusursuz Dönüşümler",
     "sectionTitle": "Doğal Dönüşüm Galerisi",
-
+    "before": "Öncesi",
+    "after": "Sonrası",
+    "case": "Vaka",
     "tabs": {
       "rinoplasti": "rinoplasti",
       "revizyon-rinoplasti": "revizyon rinoplasti",
       "otoplasti": "otoplasti",
-      "blefaroplasti": "blefaroplasti",
-      "likit-yuz-estetigi": "ameliyatsız yüz estetiği",
-      "profiloplasti": "profiloplasti"
+      "yag-enjeksiyonu": "yağ enjeksiyonu",
+      "bisektomi": "bisektomi"
     },
-
     "rinoplasti": {
       "title": "Primer Rinoplasti Ameliyatı",
       "vakaNo": "Vaka İncelemesi No: 214",
       "details": "Burun kemer yapısı yüz oranlarıyla uyumlu şekilde düzenlenmiş, düşüklüğü olan burun ucu altın oran doğrultusunda yukarı kaldırılmıştır."
     },
-
     "revizyon-rinoplasti": {
       "title": "Revizyon Rinoplasti",
       "vakaNo": "Vaka İncelemesi No: 087",
       "details": "Daha önce ameliyat olmuş ve kıkırdak çökmesi bulunan hastada, kaburga kıkırdağı grefti kullanılarak yeniden yapılandırma yapılmıştır."
     },
-
     "otoplasti": {
       "title": "Otoplasti (Kulak Estetiği)",
       "vakaNo": "Vaka İncelemesi No: 112",
       "details": "Belirgin kulak açısı kulak arkasından yapılan kesi ile düzeltilmiş, doğal kıvrım ve simetri sağlanmıştır."
     },
-
-    "blefaroplasti": {
-      "title": "Blefaroplasti (Göz Kapağı Estetiği)",
-      "vakaNo": "Vaka İncelemesi No: 304",
-      "details": "Üst göz kapağındaki fazla deri ve torbalanmalar alınarak daha genç ve dinç bir görünüm elde edilmiştir."
-    },
-
-    "likit-yuz-estetigi": {
-      "title": "Likit Yüz Estetiği (Ameliyatsız)",
+    "yag-enjeksiyonu": {
+      "title": "Yağ Enjeksiyonu (Otolog Transfer)",
       "vakaNo": "Vaka İncelemesi No: 419",
-      "details": "Elmacık kemikleri ve çene hattına hyalüronik asit dolgular uygulanarak lifting ve gençleştirme etkisi sağlanmıştır."
+      "details": "Elmacık kemikleri ve çene hattına hastanın kendi yağ dokusu enjekte edilerek uzun vadeli hacim, lifting ve gençleştirme etkisi sağlanmıştır."
     },
-
-    "profiloplasti": {
-      "title": "Profiloplasti",
-      "vakaNo": "Vaka İncelemesi No: 052",
-      "details": "Burun ve çene şekillendirme işlemleri ile yüz profili dengeli bir görünüme kavuşturulmuştur."
+    "bisektomi": {
+      "title": "Bişektomi (Yanak Estetiği)",
+      "vakaNo": "Vaka İncelemesi No: 088",
+      "details": "Yanak bölgesindeki yağ yastıklarının kontrollü bir şekilde alınmasıyla, elmacık kemikleri belirginleştirilmiş ve daha keskin bir yüz hattı elde edilmiştir."
     }
   },
   "biographyPage": {
@@ -196,17 +161,11 @@
     "certification": "EBOPRAS Tescilli",
     "educationTitle": "Eğitim ve Mesleki Yolculuk",
     "lifeStory": "Yaşam Öyküsü",
-
     "about1Part1": "Op. Dr. Sefa Keşan, tıp eğitimine olan tutkusunu Türkiye'nin en köklü kurumlarından biri olan ",
-
     "about1Strong": "İstanbul Üniversitesi Cerrahpaşa Tıp Fakültesi",
-
     "about1Part2": "'nde taçlandırdı. Dereceyle tamamladığı tıp eğitiminin ardından estetik ve rekonstrüktif cerrahiye olan ilgisi doğrultusunda uzmanlık sınavında yüksek başarı göstererek Plastik, Rekonstrüktif ve Estetik Cerrahi ihtisasına başladı.",
-
     "about2": "İhtisası süresince burun estetiği (rinoplasti) ve bütünsel yüz anatomisi üzerine odaklandı. Uluslararası alanda gelişmeleri yakından takip etmek adına Avrupa ve Amerika'da saygın kliniklerde gözlemci cerrah olarak bulundu. Özellikle revizyon rinoplasti cerrahisinde kaburga kıkırdağı mikro-greftleme teknikleri üzerine yenilikçi çalışmalar yürüttü.",
-
     "about3": "Bugün, İstanbul Nişantaşı'ndaki kendi adını taşıyan özel lüks kliniğinde, dünyanın dört bir yanından gelen hastalarına 'kişiye özel altın oran tasarımı' anlayışıyla premium sağlık hizmeti sunmaya devam etmektedir.",
-
     "membershipsTitle": "Uluslararası Bilimsel Üyelikler",
     "memberships": [
       "TPRECD (Türk Plastik, Rekonstrüktif ve Estetik Cerrahi Derneği)",
@@ -236,7 +195,6 @@
         "desc": "Uluslararası sağlık turizmi standartlarına uygun modern butik kliniğin kuruluşu."
       }
     ],
-
     "achievementsTitle": "Öne Çıkan Başarılar",
     "achievements": [
       {
@@ -256,27 +214,18 @@
   },
   "footer": {
     "subtitle": "Estetik ve Plastik Cerrahi",
-
     "quote": "Gerçek güzellik, yüzdeki yabancı bir dokunuşta değil; ifadenin kendi saklı zarafetini ve kusursuz dengesini yeniden keşfetmesinde saklıdır.",
-
     "description": "Nişantaşı kliniğimizde, uluslararası sağlık standartlarında, tamamen size ve kemik anatominize özel planlanan operasyon süreçleriyle yaşam kalitenizi artırıyoruz.",
-
     "navigationTitle": "Kurumsal Navigasyon",
-
     "home": "Ana Sayfa",
     "story": "Cerrahın Hikayesi",
     "services": "Uzmanlık Alanları",
     "gallery": "Doğal Değişim Galerisi",
     "contact": "VIP İletişim & Randevu",
-
     "socialTitle": "Dijital Değişimleri Takip Edin",
-
     "socialText": "Güncel vakalarımızı ve cerrahi süreçlerimizi sosyal medya hesaplarımızdan takip edebilirsiniz.",
-
     "legal": "T.C. Sağlık Bakanlığı mevzuatları gereği, bu sitedeki bilgiler yalnızca bilgilendirme amaçlıdır ve tıbbi tavsiye niteliği taşımaz.",
-
     "copyright": "Tüm Hakları Saklıdır",
-
     "kvkk": "Aydınlatma Metni (KVKK)",
     "cookies": "Çerez Politikası"
   },
@@ -339,57 +288,39 @@
         }
       ]
     },
-    "blefaroplasti": {
-      "title": "Blefaroplasti (Göz Kapağı Estetiği)",
-      "subtitle": "Bakışlardaki Yorgun İfadeye Elveda",
-      "content": "Göz kapaklarındaki sarkma ve torbalanmaların giderilmesi işlemidir.",
+    "yag-enjeksiyonu": {
+      "title": "Yağ Enjeksiyonu",
+      "subtitle": "Otolog Doku Transferi",
+      "content": "Kişinin kendi vücudundan alınan yağ dokularının, yüzün hacim kaybı yaşayan bölgelerine enjekte edilmesi işlemidir. Kendi dokunuz olduğu için vücutla tam uyum sağlar ve doğal sonuçlar sunar.",
       "steps": [
-        "Ameliyat Süresi: 1 - 2 Saat",
-        "Anestezi: Lokal veya Genel",
-        "Taburcu: Aynı Gün",
-        "Dikiş Alımı: 5. Gün"
-      ],
-      "symptoms": [
-        {
-          "id": "sarkma",
-          "label": "Üst Kapak Sarkması",
-          "path": "Fazla deri çıkarılır."
-        }
-      ]
-    },
-    "likit-yuz-estetigi": {
-      "title": "Likit Yüz Estetiği",
-      "subtitle": "Ameliyatsız Altın Oran",
-      "content": "Dolgu ve botoks ile yapılan medikal estetik işlemdir.",
-      "steps": [
-        "İşlem Süresi: 30 - 45 dk",
-        "Anestezi: Topikal",
-        "Kalıcılık: 12 - 18 Ay",
-        "İyileşme: Hemen"
+        "İşlem Süresi: 1 - 1.5 Saat",
+        "Anestezi: Lokal veya Sedasyon",
+        "Kalıcılık: Uzun Vadeli",
+        "İyileşme: 3-5 Gün"
       ],
       "symptoms": [
         {
           "id": "hacim",
           "label": "Hacim Kaybı",
-          "path": "Dolgu uygulanır."
+          "path": "İhtiyaç duyulan bölgelere yağ transferi yapılarak doku desteği güçlendirilir ve yüz hatları yeniden şekillendirilir."
         }
       ]
     },
-    "profiloplasti": {
-      "title": "Profiloplasti",
-      "subtitle": "Yan Profil Dengesi",
-      "content": "Yüzün genel profil uyumunun sağlanmasıdır.",
+    "bisektomi": {
+      "title": "Bişektomi",
+      "subtitle": "Yüz İncelendirme",
+      "content": "Yanak içindeki yağ yastıklarının çıkarılarak yüzün daha ince ve hatların daha belirgin hale getirilmesi işlemidir.",
       "steps": [
-        "Ameliyat Süresi: Değişken",
-        "Anestezi: Genel",
+        "Ameliyat Süresi: 30-45 Dakika",
+        "Anestezi: Lokal veya Sedasyon",
         "Planlama: Kişiye özel",
-        "İyileşme: 7-10 gün"
+        "İyileşme: 3-5 gün"
       ],
       "symptoms": [
         {
-          "id": "cene",
-          "label": "Geride Çene",
-          "path": "Çene implantı veya dolgu uygulanır."
+          "id": "yanak",
+          "label": "Yanak Dolgunluğu",
+          "path": "Yanak içi yağ yastıkları azaltılarak daha keskin hatlar oluşturulur."
         }
       ]
     }
@@ -417,7 +348,6 @@
     "aboutTreatment": "Tedavi Hakkında",
     "operationProcess": "Klinik Operasyon Süreci"
   },
-
   "chatbot": {
     "welcome": "Merhaba, ben Dr. Sefa Keşan’ın dijital asistanıyım. Size nasıl yardımcı olabilirim?",
     "placeholder": "Sorunuzu yazın...",

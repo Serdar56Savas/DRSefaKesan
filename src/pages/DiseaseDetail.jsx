@@ -16,137 +16,7 @@ import LanguageSelector from "../components/LanguageSelector";
 export default function DiseaseDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
-  // const fullData = {
-  //   rinoplasti: {
-  //     title: "Rinoplasti (Burun Estetiği)",
-  //     subtitle: "Estetik ve Nefes Fonksiyonunun Senkronizasyonu",
-  //     content:
-  //       "Rinoplasti ameliyatı sadece dış görünüşü değiştirmekle kalmaz, aynı zamanda yaşam kalitenizi doğrudan etkileyen nefes alma fonksiyonunu da optimize eder. Her operasyon öncesinde kişinin yüz yapısı, çene ucu açısı ve alın mesafesi analiz edilerek kişiye en doğal duracak anatomi belirlenir.",
-  //     steps: [
-  //       "Ameliyat Süresi: 2 - 3 Saat",
-  //       "Anestezi Türü: Genel Anestezi",
-  //       "Hastanede Kalış: 1 Gece",
-  //       "Sosyal Hayata Dönüş: 7. Gün",
-  //     ],
-  //     symptoms: [
-  //       {
-  //         id: "kemer",
-  //         label: "Burun Kemeri (Hump)",
-  //         path: "Ultrasonik Piezo cerrahi ile kemik doku kırılmadan milimetrik olarak törpülenir, doğal profil hattı korunur.",
-  //       },
-  //       {
-  //         id: "egrilik",
-  //         label: "Burun Eğriliği (Deviasyon)",
-  //         path: "Aks eğriliği fonksiyonel septoplasti teknikleriyle orta hatta getirilir, simetri ve nefes kanalı optimize edilir.",
-  //       },
-  //       {
-  //         id: "dusukluk",
-  //         label: "Burun Ucu Düşüklüğü (Droopy Tip)",
-  //         path: "Kıkırdak destek mekanizmaları güçlendirilerek dudak-burun açısı ideal 95-105 derece skalasına yükseltilir.",
-  //       },
-  //     ],
-  //   },
-  //   "revizyon-rinoplasti": {
-  //     title: "Revizyon Burun Estetiği",
-  //     subtitle: "Daha Zorlu Vakalar, Kusursuz Deneyim",
-  //     content:
-  //       "Daha önce operasyon geçirmiş ancak istediği estetik ya da fonksiyonel sonucu alamamış hastalar için uygulanan düzeltme operasyonudur. Dokuların durumu ve kıkırdak eksiklikleri yüksek cerrahi tecrübe gerektirir.",
-  //     steps: [
-  //       "Ameliyat Süresi: 3 - 4 Saat",
-  //       "Anestezi Türü: Genel Anestezi",
-  //       "Kıkırdak Grefti Gerekebilir",
-  //       "Tam İyileşme: 1 Yıl",
-  //     ],
-  //     symptoms: [
-  //       {
-  //         id: "cokme",
-  //         label: "Burun Sırtında Çökme (Saddle Nose)",
-  //         path: "Kaburga kıkırdağı (otolog greft) kullanılarak burun anatomisi aslına uygun olarak yeniden yapılandırılır.",
-  //       },
-  //       {
-  //         id: "asimetri",
-  //         label: "Burun Ucu Asimetrisi",
-  //         path: "Zayıflamış veya hasar görmüş uç kıkırdakları özel dikiş teknikleri ve destek greftleri ile simetrik forma kavuşturulur.",
-  //       },
-  //     ],
-  //   },
-  //   otoplasti: {
-  //     title: "Otoplasti (Kulak Estetiği)",
-  //     subtitle: "Yüz Hatlarında Simetri ve Özgüven",
-  //     content:
-  //       "Kulakların kafa tabanı ile yaptığı açının normale getirilmesi işlemidir. Genellikle lokal veya sedasyon anestezisi altında, kulak arkasından yapılan minimal kesilerle gerçekleştirilir.",
-  //     steps: [
-  //       "Ameliyat Süresi: 1 - 1.5 Saat",
-  //       "Anestezi: Lokal veya Genel",
-  //       "Bandaj Süresi: 3 Gün",
-  //       "İyileşme: Hemen Sosyal Hayat",
-  //     ],
-  //     symptoms: [
-  //       {
-  //         id: "kepce",
-  //         label: "Belirgin Kulak Açısı (Kepçe)",
-  //         path: "Kulak arkasından kalıcı medikal dikişler yerleştirilerek kulak kıvrımı doğal açısına geriye doğru yatırılır.",
-  //       },
-  //     ],
-  //   },
-  //   blefaroplasti: {
-  //     title: "Blefaroplasti (Göz Kapağı Estetiği)",
-  //     subtitle: "Bakışlardaki Yorgun İfadeye Elveda",
-  //     content:
-  //       "Zamanla yer çevrimi ve yaş alma etkisiyle üst göz kapaklarında oluşan sarkmalar ile alt göz kapaklarındaki torbalanmaların giderilmesi sürecidir.",
-  //     steps: [
-  //       "Ameliyat Süresi: 1 - 2 Saat",
-  //       "Anestezi: Lokal veya Genel",
-  //       "Hastanede Kalış: Aynı Gün Taburcu",
-  //       "Dikiş Alımı: 5. Gün",
-  //     ],
-  //     symptoms: [
-  //       {
-  //         id: "sarkma",
-  //         label: "Üst Kapak Deri Sarkması",
-  //         path: "Doğal katlanma çizgisine gizlenen kesi ile fazla deri ve fıtıklaşmış yağ dokusu hassasça çıkarılır.",
-  //       },
-  //     ],
-  //   },
-  //   "likit-yuz-estetigi": {
-  //     title: "Likit Yüz Estetiği",
-  //     subtitle: "Ameliyatsız Altın Oran Dokunuşları",
-  //     content:
-  //       "Cerrahi müdahale istemeyen hastalarımız için geliştirilen; hyalüronik asit dolgular, botoks ve gençlik aşılarının kombine edildiği bütünsel bir medikal estetik protokolüdür.",
-  //     steps: [
-  //       "İşlem Süresi: 30 - 45 Dokunuş",
-  //       "Anestezi: Topikal Krem",
-  //       "Kalıcılık: 12 - 18 Ay",
-  //       "İyileşme: Hemen Sosyal Hayat",
-  //     ],
-  //     symptoms: [
-  //       {
-  //         id: "hacim",
-  //         label: "Hacim Kaybı / Çökme",
-  //         path: "Elmacık kemiği ve orta yüze hiyalüronik asit takviyesi yapılarak yüze anında V-Shape formu kazandırılır.",
-  //       },
-  //     ],
-  //   },
-  //   profiloplasti: {
-  //     title: "Profiloplasti (Profil Yönetimi)",
-  //     subtitle: "Yüzün Yan Profildeki Matematiksel Dengesi",
-  //     content:
-  //       "Yüz estetiğine tek bir organ odaklı değil, bütünsel yaklaşma sanatıdır. Alın, burun, dudak ve çene ucunun birbirine olan mesafeleri ve açıları incelenerek profil dengelenir.",
-  //     steps: [
-  //       "Ameliyat Süresi: Kombinasyona Göre",
-  //       "Anestezi Türü: Genel Anestezi",
-  //       "Kişiye Özel Profil Analizi",
-  //       "Sosyal Hayata Dönüş: 7 - 10 Gün",
-  //     ],
-  //     symptoms: [
-  //       {
-  //         id: "cene",
-  //         label: "Geride Duran Çene Ucu",
-  //         path: "Burun operasyonuna ek olarak çene ucuna özel medikal dolgu veya çene implantı uygulanarak profil dengesi kurulur.",
-  //       },
-  //     ],
-  //   },
-  // };
+
   const { t } = useTranslation();
 
   const data = t(`procedures.${id}`, { returnObjects: true }) || {};
@@ -210,11 +80,57 @@ export default function DiseaseDetail() {
   const renderSpecializedSVG = () => {
     const correction = sliderPos / 100;
     const defect = 1 - correction;
+    const strokeColor = sliderPos > 80 ? "#D4AF37" : "#525252";
+    const strokeWidth = 6;
 
+    // SEMPTOM EŞLEŞTİRME (Dilden bağımsız çalışması için)
+    const symptomMap = {
+      // --- Rinoplasti ---
+      kemer: "kemer",
+      hump: "kemer",
+      bosse: "kemer",
+      gobba: "kemer",
+      حدبة: "kemer",
+      egrilik: "egrilik",
+      deviation: "egrilik",
+      deviation: "egrilik",
+      deviazione: "egrilik",
+      انحراف: "egrilik",
+      dusukluk: "dusukluk",
+      droopy: "dusukluk",
+      tombant: "dusukluk",
+      cadente: "dusukluk",
+      تدلي: "dusukluk",
+
+      // --- Otoplasti ---
+      kepce: "kepce",
+      prominent: "kepce",
+      decollees: "kepce",
+      sporgenti: "kepce",
+      "اذن-بارزة": "kepce",
+
+      // --- Yağ Enjeksiyonu ---
+      hacim: "hacim",
+      volume: "hacim",
+      volume: "hacim",
+      volume: "hacim",
+      "فقدان-حجم": "hacim",
+
+      // --- Bişektomi ---
+      yanak: "yanak",
+      fullness: "yanak",
+      joues: "yanak",
+      guance: "yanak",
+      "امتلاء-الخد": "yanak",
+    };
+
+    const normalizedSymptom = symptomMap[selectedSymptom] || selectedSymptom;
+
+    // 1. OTOPLASTİ
     if (id === "otoplasti") {
-      let earAngleOffset = selectedSymptom === "kepce" ? defect * 25 : 0;
+      let earAngleOffset = normalizedSymptom === "kepce" ? defect * 60 : 0;
       return (
-        <g transform="translate(35, 20)">
+        <g transform="translate(45, 20)">
           <path
             d="M 30 10 Q 45 80, 45 150"
             fill="none"
@@ -225,131 +141,114 @@ export default function DiseaseDetail() {
           <path
             d={`M 45 50 C ${70 + earAngleOffset} 20, ${115 + earAngleOffset} 60, ${100 + earAngleOffset} 100 C ${90 + earAngleOffset} 125, ${65 + earAngleOffset} 135, 45 120`}
             fill="none"
-            stroke={sliderPos > 80 ? "#A68B6D" : "#737373"}
-            strokeWidth="3.5"
+            stroke={strokeColor}
+            strokeWidth={strokeWidth}
             strokeLinecap="round"
-          />
-          <path
-            d={`M 55 70 Q ${80 + earAngleOffset * 0.5} 75, 70 105`}
-            fill="none"
-            stroke="#A3A3A3"
-            strokeWidth="2"
           />
         </g>
       );
     }
 
-    if (id === "blefaroplasti") {
-      let sagFactor = selectedSymptom === "sarkma" ? defect * 14 : 0;
+    // 2. BİŞEKTOMİ
+    if (id === "bisektomi") {
+      let curveX = normalizedSymptom === "yanak" ? 90 - correction * 45 : 60;
       return (
-        <g transform="translate(20, 30)">
-          <circle
-            cx="80"
-            cy="70"
-            r="18"
-            fill="none"
-            stroke="#E5E5E5"
-            strokeWidth="2"
-            strokeDasharray="3,3"
-          />
-          <circle cx="80" cy="70" r="6" fill="#A3A3A3" />
+        <g transform="translate(20, 10)">
           <path
-            d="M 35 70 Q 80 100, 125 70"
+            d={`M 60 20 Q ${curveX} 90, 60 160`}
             fill="none"
-            stroke="#D4D4D4"
-            strokeWidth="2"
-          />
-          <path
-            d={`M 35 70 Q 80 ${35 + sagFactor}, 125 70`}
-            fill="none"
-            stroke={sliderPos > 80 ? "#A68B6D" : "#737373"}
-            strokeWidth="3.5"
-            strokeLinecap="round"
-          />
-          <path
-            d="M 30 30 Q 80 20, 130 35"
-            fill="none"
-            stroke="#E5E5E5"
-            strokeWidth="2"
-          />
-        </g>
-      );
-    }
-
-    if (id === "likit-yuz-estetigi" || id === "profiloplasti") {
-      let jawOffset =
-        id === "profiloplasti" && selectedSymptom === "cene" ? defect * -18 : 0;
-      let cheekOffset =
-        id === "likit-yuz-estetigi" && selectedSymptom === "hacim"
-          ? defect * -10
-          : 0;
-      return (
-        <g transform="translate(20, 15)">
-          <path
-            d={`M 40 20 Q 80 20, 85 45 Q ${95 + cheekOffset} 65, 80 85 Q 115 110, 95 125 Q 90 135, ${85 + jawOffset} 150 Q 60 165, 45 160`}
-            fill="none"
-            stroke={sliderPos > 80 ? "#A68B6D" : "#737373"}
-            strokeWidth="3"
+            stroke={strokeColor}
+            strokeWidth={strokeWidth}
             strokeLinecap="round"
           />
           <line
-            x1="85"
-            y1="15"
-            x2="85"
-            y2="170"
+            x1="60"
+            y1="5"
+            x2="60"
+            y2="175"
+            stroke="#A3A3A3"
+            strokeWidth="2"
+            strokeDasharray="6,6"
+          />
+        </g>
+      );
+    }
+
+    // 3. YAĞ ENJEKSİYONU
+    if (id === "yag-enjeksiyonu") {
+      let volumeX = 60 + correction * 30;
+      return (
+        <g transform="translate(20, 15)">
+          <path
+            d={`M 60 20 Q 60 85, 60 150`}
+            fill="none"
+            stroke="#525252"
+            strokeWidth="3"
+          />
+          {normalizedSymptom === "hacim" && (
+            <path
+              d={`M 60 45 C ${volumeX + 20} 45, ${volumeX + 20} 115, 60 115 Z`}
+              fill="#D4AF37"
+              fillOpacity={0.2 + correction * 0.5}
+              stroke="#D4AF37"
+              strokeWidth="2"
+            />
+          )}
+          <line
+            x1="60"
+            y1="5"
+            x2="60"
+            y2="165"
             stroke="#E5E5E5"
-            strokeWidth="1.5"
+            strokeWidth="1"
             strokeDasharray="4,4"
           />
         </g>
       );
     }
 
-    let startX = 60,
-      startY = 40;
-    let bridgeX = 110,
-      bridgeY = 90;
-    let tipX = 140,
-      tipY = 130;
-    let baseX = 110,
-      baseY = 150;
-
-    if (selectedSymptom === "kemer") {
-      const humpIntensity = defect * 35;
-      bridgeX += humpIntensity;
-      bridgeY -= humpIntensity * 0.2;
-    } else if (selectedSymptom === "egrilik") {
-      const deviationIntensity = defect * 30;
-      bridgeX += deviationIntensity;
-      tipX -= deviationIntensity * 0.3;
-    } else if (selectedSymptom === "dusukluk") {
-      const dropIntensity = defect * 25;
-      tipY += dropIntensity;
-      tipX -= dropIntensity * 0.2;
-    } else if (selectedSymptom === "cokme") {
-      const saddleIntensity = defect * 20;
-      bridgeX -= saddleIntensity;
+    // 4. RİNOPLASTİ
+    if (id === "rinoplasti") {
+      let bridgeX = 110,
+        bridgeY = 90,
+        tipX = 140,
+        tipY = 130;
+      if (normalizedSymptom === "kemer") {
+        const h = defect * 70;
+        bridgeX += h;
+        bridgeY -= h * 0.2;
+      } else if (normalizedSymptom === "egrilik") {
+        const d = defect * 60;
+        bridgeX += d;
+        tipX -= d * 0.5;
+      } else if (normalizedSymptom === "dusukluk") {
+        const dr = defect * 50;
+        tipY += dr;
+        tipX -= dr * 0.3;
+      }
+      return (
+        <g transform="translate(-10, -10)">
+          <line
+            x1="110"
+            y1="10"
+            x2="110"
+            y2="190"
+            stroke="#A3A3A3"
+            strokeWidth="2"
+            strokeDasharray="4,4"
+          />
+          <path
+            d={`M 60 40 Q ${bridgeX} ${bridgeY}, ${tipX} ${tipY} Q 110 150, 110 170`}
+            fill="none"
+            stroke={strokeColor}
+            strokeWidth={strokeWidth}
+            strokeLinecap="round"
+          />
+        </g>
+      );
     }
 
-    return (
-      <g>
-        <line
-          x1="110"
-          y1="20"
-          x2="110"
-          y2="180"
-          stroke="#E5E5E5"
-          strokeDasharray="3,3"
-        />
-        <path
-          d={`M ${startX} ${startY} Q ${bridgeX} ${bridgeY}, ${tipX} ${tipY} Q ${baseX} ${baseY}, ${baseX} ${baseY + 20}`}
-          fill="none"
-          stroke={sliderPos > 80 ? "#A68B6D" : "#737373"}
-          strokeWidth="3"
-          strokeLinecap="round"
-        />
-      </g>
-    );
+    return <g />;
   };
 
   return (

@@ -2,11 +2,11 @@
 
 @theme {
   /* Kontrastı artırılmış premium aydınlık renk paleti */
-  --color-darkBg: #F5F2EB;      /* Arka planı bir ton daha koyu, zengin bir keten/bej rengi yaptık */
-  --color-cardBg: #FFFFFF;      
-  --color-gold: #856C53;        /* Altın/vizon tonunu koyulaştırdık ki beyaz üstünde net okunsun */
-  --color-platinum: #E1DACF;    
-  
+  --color-darkBg: #f5f2eb; /* Arka planı bir ton daha koyu, zengin bir keten/bej rengi yaptık */
+  --color-cardBg: #ffffff;
+  --color-gold: #856c53; /* Altın/vizon tonunu koyulaştırdık ki beyaz üstünde net okunsun */
+  --color-platinum: #e1dacf;
+
   --font-serif: "Playfair Display", serif;
   --font-sans: "Inter", sans-serif;
 }
@@ -20,4 +20,11 @@ html {
 /* Sitenin tüm ana yazılarını koyu antrasit yapıyoruz, böylece hiçbir şey kaybolmayacak */
 body {
   color: #242220;
+}
+/* Slider içindeki görseller için */
+.slider-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Bu özellik, iki farklı fotoğrafı slider alanına tam sığdırır */
+  object-position: 50% 50%; /* İki fotoğrafın da merkezini birbirine hizalar */
 }
