@@ -174,19 +174,19 @@ export default function Home() {
       ],
     },
   };
-  // Slider bileşeninin içinde:
+
   useEffect(() => {
-    // Mevcut galeri tabındaki tüm vakaların resimlerini önceden yükle
-    const cases = galleryData[activeTab].cases;
+    // Tüm kategorilerdeki tüm vakaları döngüye al
+    Object.values(galleryData).forEach((tab) => {
+      tab.cases.forEach((c) => {
+        const imgBefore = new Image();
+        imgBefore.src = c.before; // Tarayıcı bu resmi cache'e alır
 
-    cases.forEach((c) => {
-      const imgBefore = new Image();
-      imgBefore.src = c.before;
-
-      const imgAfter = new Image();
-      imgAfter.src = c.after;
+        const imgAfter = new Image();
+        imgAfter.src = c.after;
+      });
     });
-  }, [activeTab, galleryData]); // Tab değiştiğinde yeni grubu yükle
+  }, []);
   const currentCase = galleryData[activeTab]?.cases?.[caseIndex];
   const [formData, setFormData] = useState({
     name: "",
