@@ -174,6 +174,19 @@ export default function Home() {
       ],
     },
   };
+  // Slider bileşeninin içinde:
+  useEffect(() => {
+    // Mevcut galeri tabındaki tüm vakaların resimlerini önceden yükle
+    const cases = galleryData[activeTab].cases;
+
+    cases.forEach((c) => {
+      const imgBefore = new Image();
+      imgBefore.src = c.before;
+
+      const imgAfter = new Image();
+      imgAfter.src = c.after;
+    });
+  }, [activeTab, galleryData]); // Tab değiştiğinde yeni grubu yükle
   const currentCase = galleryData[activeTab]?.cases?.[caseIndex];
   const [formData, setFormData] = useState({
     name: "",
@@ -590,9 +603,10 @@ export default function Home() {
             >
               <img
                 src={currentCase?.before}
+                key={currentCase?.before} // Bu key, resim değişince animasyonu tetikler
                 alt="before"
                 loading="eager"
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500"
                 draggable={false}
               />
             </div>
