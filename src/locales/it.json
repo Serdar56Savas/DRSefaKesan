@@ -28,12 +28,13 @@
     "button": "Vedi CV e Risultati"
   },
   "address": {
-    "clinic": "Indirizzo della Clinica",
-    "clinicAddress": "Valikonağı Cad. No:142 Daire:4 Nişantaşı / Istanbul",
-    "contact": "Contattaci",
-    "number": "+90 (212) 000 00 00",
-    "workClock": "Orari di Apertura",
-    "workText": "Lunedì - Sabato: 09:00 - 19:00"
+    "clinic": "Indirizzo Clinica",
+    "clinicAddress": "Terazidere Mahallesi 60. Yıl Caddesi No:3 34035 Bayrampaşa / İSTANBUL",
+    "contact": "Contatti",
+    "mail": "info@drsefakesan.com.tr",
+    "number": "+90 (212) 539 05 39",
+    "workClock": "Orari di Lavoro",
+    "workText": "Giorni feriali: 09:00 - 18:00 / Sabato: 09:00 - 15:00"
   },
   "contactForm": {
     "badge": "Contatto Rapido",
@@ -150,67 +151,61 @@
       "details": "Tramite la rimozione controllata dei cuscinetti adiposi, gli zigomi sono stati esaltati ottenendo contorni del viso più affilati."
     }
   },
+
   "biographyPage": {
     "back": "Torna alla Home",
-    "role": "Chirurgia Plastica ed Estetica",
-    "heroBadge": "Fondatore e Primario",
-    "heroTitle1": "Scienza e Arte",
+    "role": "ORL e Chirurgia Cervico-Facciale",
+    "heroBadge": "Medico Specialista",
+    "heroTitle1": "L'Approccio Scientifico",
     "heroTitle2": "Dietro la Bellezza",
-    "heroText": "La chirurgia estetica non è solo un cambiamento anatomico; è un viaggio alla riscoperta della fiducia in sé, dell'espressione e dell'eleganza nascosta nel proprio volto, entro i limiti naturali della sezione aurea.",
-    "education": "Facoltà di Medicina di Cerrahpaşa",
-    "certification": "Certificato EBOPRAS",
+    "heroText": "L'obiettivo fondamentale della rinoplastica e dell'estetica facciale è creare un'espressione personalizzata, naturale ed estetica entro i confini della sezione aurea, preservando l'integrità funzionale.",
+    "education": "Facoltà di Medicina Dokuz Eylül",
+    "certification": "Specialista ORL",
     "educationTitle": "Istruzione e Percorso Professionale",
-    "lifeStory": "Storia di Vita",
-    "about1Part1": "Il Dr. Sefa Keşan ha coronato la sua passione per la formazione medica presso una delle istituzioni più prestigiose della Turchia, ",
-    "about1Strong": "l'Università di Istanbul, Facoltà di Medicina Cerrahpaşa",
-    "about1Part2": ". Dopo aver completato gli studi con il massimo dei voti, ha proseguito il suo interesse per la chirurgia estetica e ricostruttiva iniziando la specializzazione con eccellenti risultati.",
-    "about2": "Durante la specializzazione, si è concentrato sulla rinoplastica e sull'anatomia facciale olistica. Per seguire da vicino gli sviluppi internazionali, ha lavorato come chirurgo osservatore in cliniche rinomate in Europa e America. Ha condotto studi innovativi sulle tecniche di micro-innesto di cartilagine costale.",
-    "about3": "Oggi, continua a offrire servizi sanitari premium con un approccio di 'design personalizzato della sezione aurea' a pazienti di tutto il mondo presso la sua clinica di lusso a Nişantaşı, Istanbul.",
-    "membershipsTitle": "Affiliazioni Scientifiche Internazionali",
+    "lifeStory": "Biografia",
+    "about1Part1": "Il Dott. Sefa Keşan ha completato i suoi studi medici presso la ",
+    "about1Strong": "Facoltà di Medicina dell'Università Dokuz Eylül",
+    "about1Part2": ". Dopo la formazione medica, ha completato con successo la specializzazione in Otorinolaringoiatria e Chirurgia Cervico-Facciale presso l'Università di Ankara e l'Università di Çukurova, ottenendo il titolo di medico specialista.",
+    "about2": "Nella sua pratica professionale, si concentra in particolare sulla rinoplastica funzionale, la rinoplastica estetica e l'estetica facciale olistica. Seguendo da vicino la letteratura scientifica, applica un approccio terapeutico che unisce le aspettative dei pazienti con la realtà anatomica, ottenendo i risultati più naturali possibili.",
+    "about3": "Oggi, continua a fornire servizi sanitari moderni e personalizzati a pazienti provenienti dalla Turchia e dall'estero presso la sua clinica di Istanbul, offrendo soluzioni chirurgiche estetiche e funzionali.",
+    "membershipsTitle": "Affiliazioni Professionali",
     "memberships": [
-      "TPRECD (Società Turca di Chirurgia Plastica, Ricostruttiva ed Estetica)",
-      "EPCD (Associazione di Chirurgia Plastica Estetica)",
-      "ISAPS (Società Internazionale di Chirurgia Plastica Estetica)",
-      "EAFPS (Accademia Europea di Chirurgia Plastica Facciale)"
+      "Società Turca di Otorinolaringoiatria e Chirurgia Cervico-Facciale",
+      "Facial Plastic Surgery Society (FPS)",
+      "European Academy of Facial Plastic Surgery (EAFPS)"
     ],
     "timelineCards": [
       {
-        "year": "2012",
-        "title": "Laurea in Medicina",
-        "desc": "Laurea presso la Facoltà di Medicina di Cerrahpaşa con pieni voti."
+        "year": "Studi Medici",
+        "title": "Università Dokuz Eylül",
+        "desc": "Conseguimento del titolo di Medico Chirurgo."
       },
       {
-        "year": "2018",
-        "title": "Specializzazione ed Eccellenza",
-        "desc": "Titolo di specialista in Chirurgia Plastica, Ricostruttiva ed Estetica e premio come giovane chirurgo dell'anno."
+        "year": "Specializzazione",
+        "title": "ORL e Chirurgia Cervico-Facciale",
+        "desc": "Formazione specialistica presso le Università di Ankara e Çukurova."
       },
       {
-        "year": "2021",
-        "title": "Qualifica Europea EBOPRAS",
-        "desc": "Conseguimento dell'accreditamento internazionale con la certificazione EBOPRAS."
+        "year": "Esperienza",
+        "title": "Pratica Dedicata all'Estetica",
+        "desc": "Intenso lavoro clinico focalizzato su rinoplastica ed estetica facciale."
       },
       {
-        "year": "2023",
-        "title": "Clinica Premium Nişantaşı",
-        "desc": "Fondazione di una moderna boutique clinic conforme agli standard internazionali del turismo medico."
+        "year": "Clinica",
+        "title": "Sanità Boutique",
+        "desc": "Chirurgia estetica privata e trattamenti medici a Istanbul."
       }
     ],
-    "achievementsTitle": "Risultati Principali",
+    "achievementsTitle": "In Evidenza",
     "achievements": [
-      {
-        "value": "4000+",
-        "label": "Casi Chirurgici Attivi"
-      },
-      {
-        "value": "25+",
-        "label": "Articoli Internazionali"
-      }
+      { "value": "10+ Anni", "label": "Esperienza Professionale" },
+      { "value": "Migliaia", "label": "Operazioni Riuscite" }
     ],
-    "timeline": "Pietre Miliari",
-    "timelineTitle": "Tabella dei Successi",
+    "timeline": "Tappe Fondamentali",
+    "timelineTitle": "Percorso di Successo",
     "appointment": "Appuntamento per Esame e Analisi",
     "appointmentBtn": "Vai al Modulo di Prenotazione",
-    "appointmentText": "Puoi contattarci immediatamente per pianificare l'intervento chirurgico o medico più adatto alla tua struttura facciale con il Dr. Sefa Keşan, accompagnato da una simulazione digitale."
+    "appointmentText": "Contattaci subito per progettare il piano chirurgico o medico più adatto alla tua struttura facciale con il Dott. Sefa Keşan, supportato da simulazione digitale."
   },
   "footer": {
     "subtitle": "Chirurgia Plastica ed Estetica",
@@ -363,6 +358,11 @@
     "name_placeholder": "Nome e Cognome",
     "phone_placeholder": "Numero di Telefono",
     "treatment_placeholder": "Seleziona Trattamento",
+    "treatments": [
+      { "value": "Rinoplasti", "label": "Rinoplastica" },
+      { "value": "Otoplasti", "label": "Otoplastica" },
+      { "value": "Diger", "label": "Altro / Diverso" }
+    ],
     "btn_send": "Invia tramite WhatsApp",
     "error_name": "Per favore inserisci il tuo nome.",
     "error_phone": "Per favore inserisci il tuo numero.",

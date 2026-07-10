@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -7,7 +7,7 @@ import {
   useLocation,
   useNavigate,
 } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, MoveHorizontal } from "lucide-react";
 
 // Sayfa Bileşenleri
 import Home from "./pages/Home";
@@ -15,9 +15,45 @@ import DiseaseDetail from "./pages/DiseaseDetail";
 import Biyografi from "./pages/Biyografi";
 import ChatBot from "./components/ChatBot";
 
+// 1. URL'deki Hash'e göre otomatik kaydırma yapan bileşen
+function ScrollToHash() {
+  const { hash } = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Eğer sayfada bir hash varsa (#galeri, #iletisim gibi)
+    if (hash) {
+      const id = hash.replace("#", "");
+      const element = document.getElementById(id);
+
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // Eğer hash yoksa (ana sayfa), sayfayı en tepeye al
+      window.scrollTo(0, 0);
+    }
+
+    // YENİLEME DURUMUNDA URL'İ TEMİZLEME:
+    // Eğer tarayıcıda bir hash varsa ve bu bir sayfa yenilemeyse (load),
+    // bunu ana sayfa '/' olarak sıfırla:
+    if (
+      window.performance.navigation.type ===
+        window.performance.navigation.TYPE_RELOAD &&
+      hash
+    ) {
+      window.history.replaceState(null, "", "/");
+      window.scrollTo(0, 0);
+    }
+  }, [hash]);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
+      <ScrollToHash />
       <div className="bg-darkBg text-gray-200 min-h-screen font-sans antialiased selection:bg-gold selection:text-black">
         <Navbar />
         <Routes>
@@ -31,41 +67,33 @@ function App() {
   );
 }
 
-// DINAMIK NAVBAR BİLEŞENİ
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
 
-  // Şu an ana sayfada olup olmadığımızı kontrol ediyoruz
   const isHomePage = location.pathname === "/";
 
-  // Menü tıklamalarını yöneten akıllı fonksiyon
   const handleNavClick = (item) => {
     setIsOpen(false);
-
     if (item.type === "page") {
       navigate(item.path);
     } else {
+      // Eğer ana sayfada değilsek hash ile ana sayfaya yönlendir
       if (!isHomePage) {
-        navigate("/");
-        setTimeout(() => {
-          document
-            .getElementById(item.id)
-            ?.scrollIntoView({ behavior: "smooth" });
-        }, 150);
+        navigate(`/#${item.id}`);
       } else {
+        // Ana sayfadaysak doğrudan kaydır
         document
           .getElementById(item.id)
           ?.scrollIntoView({ behavior: "smooth" });
+        window.history.pushState(null, "", `/#${item.id}`);
       }
     }
   };
 
-  // 🌟 SAYFAYA GÖRE DEĞİŞEN DİNAMİK MENÜ ELEMANLARI 🌟
   const navItems = isHomePage
     ? [
-        // Sadece Ana Sayfada Gösterilecek Menü
         { name: "Giriş", id: "hero", type: "section" },
         { name: "Dr. Sefa Keşan", path: "/biyografi", type: "page" },
         { name: "Uzmanlık Alanları", id: "uzmanlik", type: "section" },
@@ -73,9 +101,8 @@ function Navbar() {
         { name: "İletişim", id: "iletisim", type: "section" },
       ]
     : [
-        // Detay Sayfalarında (Hastalık detayı, Biyografi vb.) Gösterilecek Sade Menü
-        // { name: 'Ana Sayfa', path: '/', type: 'page' },
-        // { name: 'Dr. Sefa Keşan', path: '/biyografi', type: 'page' },
+        { name: "Ana Sayfa", path: "/", type: "page" },
+        { name: "Dr. Sefa Keşan", path: "/biyografi", type: "page" },
       ];
 
   return (
@@ -101,7 +128,7 @@ function Navbar() {
           ))}
           <button
             onClick={() => handleNavClick({ id: "iletisim", type: "section" })}
-            className="px-5 py-2.5 bg-gold text-black text-xs uppercase tracking-wider font-medium hover:bg-yellow-600 cursor-pointer transition-colors"
+            className="px-5 py-2.5 bg-gold text-black text-xs uppercase tracking-wider font-medium hover:bg-yellow-600 transition-colors"
           >
             Randevu Al
           </button>
@@ -110,7 +137,7 @@ function Navbar() {
         {/* Mobil Menü Butonu */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-gray-400 hover:text-gray-900 cursor-pointer"
+          className="md:hidden text-gray-400 hover:text-gray-900"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -123,7 +150,7 @@ function Navbar() {
             <button
               key={index}
               onClick={() => handleNavClick(item)}
-              className="text-left py-2 text-gray-300 hover:text-gold cursor-pointer"
+              className="text-left py-2 text-gray-300 hover:text-gold"
             >
               {item.name}
             </button>

@@ -72,17 +72,23 @@ export default function ChatBot() {
   };
 
   const handleWhatsAppSubmit = () => {
+    // 1. Validasyon kontrolleri
     if (!formData.name.trim()) return setError(t("chatbot.error_name"));
     if (!formData.phone.trim()) return setError(t("chatbot.error_phone"));
     if (!formData.treatment) return setError(t("chatbot.error_treatment"));
 
     setError("");
-    const klinikTelefon = "905XXXXXXXXXX";
-    const mesaj = t("chatbot.wp_message", {
-      name: formData.name,
-      phone: formData.phone,
-      treatment: formData.treatment,
-    });
+    const klinikTelefon = "905369242558";
+
+    // 2. Mesajın dinamik olarak oluşturulması
+    // Burada formData'daki değerler mesajın içine yerleşir
+    const mesaj = `Merhaba Op. Dr. Sefa Keşan Kliniği, Web siteniz üzerinden yeni bir randevu talebi oluşturdum.
+  
+  👤 Ad Soyad: ${formData.name}
+  📞 Telefon: ${formData.phone}
+  👃 İlgilendiğim Tedavi: ${formData.treatment}`;
+
+    // 3. WhatsApp linkini oluşturma
     window.open(
       `https://api.whatsapp.com/send?phone=${klinikTelefon}&text=${encodeURIComponent(mesaj)}`,
       "_blank",
@@ -150,6 +156,7 @@ export default function ChatBot() {
                       </p>
                       <input
                         placeholder={t("chatbot.name_placeholder")}
+                        value={formData.name || ""} // value prop'unu ekledik
                         className="w-full text-xs p-3.5 bg-[#FAFAFA] border border-gray-200 rounded-xl outline-none focus:border-[#A68B6D] transition-all"
                         onChange={(e) =>
                           handleInputChange("name", e.target.value)
@@ -157,12 +164,14 @@ export default function ChatBot() {
                       />
                       <input
                         placeholder={t("chatbot.phone_placeholder")}
+                        value={formData.phone || ""} // value prop'unu ekledik
                         className="w-full text-xs p-3.5 bg-[#FAFAFA] border border-gray-200 rounded-xl outline-none focus:border-[#A68B6D] transition-all"
                         onChange={(e) =>
                           handleInputChange("phone", e.target.value)
                         }
                       />
                       <select
+                        value={formData.treatment || ""} // value prop'unu ekledik
                         className="w-full text-xs p-3.5 bg-[#FAFAFA] border border-gray-200 rounded-xl outline-none focus:border-[#A68B6D] transition-all"
                         onChange={(e) =>
                           handleInputChange("treatment", e.target.value)
@@ -171,9 +180,13 @@ export default function ChatBot() {
                         <option value="">
                           {t("chatbot.treatment_placeholder")}
                         </option>
-                        <option value="Rinoplasti">Rinoplasti</option>
-                        <option value="Otoplasti">Otoplasti</option>
-                        <option value="Diğer">Diğer / Farklı</option>
+                        {t("chatbot.treatments", { returnObjects: true }).map(
+                          (item) => (
+                            <option key={item.value} value={item.value}>
+                              {item.label}
+                            </option>
+                          ),
+                        )}
                       </select>
                       {error && (
                         <p className="text-[11px] text-[#A68B6D] font-bold text-center animate-pulse">

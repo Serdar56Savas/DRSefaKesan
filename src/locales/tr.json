@@ -29,11 +29,12 @@
   },
   "address": {
     "clinic": "Klinik Adres",
-    "clinicAddress": "Valikonağı Cad. No:142 Daire:4 Nişantaşı / İstanbul",
-    "contact": "Bize Ulaşın",
-    "number": "+90 (212) 000 00 00",
+    "clinicAddress": "Terazidere Mahallesi 60. Yıl Caddesi No:3 34035 Bayrampaşa / İSTANBUL",
+    "contact": "İletişim",
+    "number": "+90 (212) 539 05 39",
+    "mail": "info@drsefakesan.com.tr",
     "workClock": "Çalışma Saatleri",
-    "workText": "Pazartesi - Cumartesi: 09:00 - 19:00"
+    "workText": "Hafta İçi: 09:00 - 18:00 / Cumartesi: 09:00 - 15:00"
   },
   "contactForm": {
     "badge": "Hızlı İletişim",
@@ -152,58 +153,57 @@
   },
   "biographyPage": {
     "back": "Ana Sayfaya Dön",
-    "role": "Estetik ve Plastik Cerrahi",
-    "heroBadge": "Kurucu & Başhekim",
+    "role": "KBB ve Baş Boyun Cerrahisi",
+    "heroBadge": "Uzman Doktor",
     "heroTitle1": "Güzelliğin Arkasındaki",
-    "heroTitle2": "Bilim ve Sanat",
-    "heroText": "Estetik cerrahi, sadece anatomik bir değişim değil;\nbireyin kendi özgüvenini, ifadesini ve yüzündeki saklı zarafeti en doğal altın oran sınırları içerisinde yeniden keşfetme yolculuğudur.",
-    "education": "Cerrahpaşa Tıp Fakültesi",
-    "certification": "EBOPRAS Tescilli",
+    "heroTitle2": "Bilimsel Yaklaşım",
+    "heroText": "Burun ve yüz estetiğinde temel hedef; fonksiyonel bütünlüğü koruyarak, altın oran sınırları içerisinde kişiye özel, doğal ve estetik bir ifade yaratmaktır.",
+    "education": "Dokuz Eylül Tıp Fakültesi",
+    "certification": "KBB Uzmanı",
     "educationTitle": "Eğitim ve Mesleki Yolculuk",
     "lifeStory": "Yaşam Öyküsü",
-    "about1Part1": "Op. Dr. Sefa Keşan, tıp eğitimine olan tutkusunu Türkiye'nin en köklü kurumlarından biri olan ",
-    "about1Strong": "İstanbul Üniversitesi Cerrahpaşa Tıp Fakültesi",
-    "about1Part2": "'nde taçlandırdı. Dereceyle tamamladığı tıp eğitiminin ardından estetik ve rekonstrüktif cerrahiye olan ilgisi doğrultusunda uzmanlık sınavında yüksek başarı göstererek Plastik, Rekonstrüktif ve Estetik Cerrahi ihtisasına başladı.",
-    "about2": "İhtisası süresince burun estetiği (rinoplasti) ve bütünsel yüz anatomisi üzerine odaklandı. Uluslararası alanda gelişmeleri yakından takip etmek adına Avrupa ve Amerika'da saygın kliniklerde gözlemci cerrah olarak bulundu. Özellikle revizyon rinoplasti cerrahisinde kaburga kıkırdağı mikro-greftleme teknikleri üzerine yenilikçi çalışmalar yürüttü.",
-    "about3": "Bugün, İstanbul Nişantaşı'ndaki kendi adını taşıyan özel lüks kliniğinde, dünyanın dört bir yanından gelen hastalarına 'kişiye özel altın oran tasarımı' anlayışıyla premium sağlık hizmeti sunmaya devam etmektedir.",
-    "membershipsTitle": "Uluslararası Bilimsel Üyelikler",
+    "about1Part1": "Op. Dr. Sefa Keşan, tıp eğitimini ",
+    "about1Strong": "Dokuz Eylül Üniversitesi Tıp Fakültesi",
+    "about1Part2": "'nde tamamlamıştır. Tıp eğitiminin ardından uzmanlık eğitimini Ankara Üniversitesi ve Çukurova Üniversitesi Kulak Burun Boğaz & Baş Boyun Cerrahisi bölümlerinde başarıyla bitirerek uzman hekim unvanını almıştır.",
+    "about2": "Mesleki pratiğinde özellikle fonksiyonel rinoplasti, burun estetiği ve bütünsel yüz estetiği üzerine yoğunlaşmıştır. Güncel literatürü yakından takip ederek, hastalarının beklentileri ile anatomik gerçekliği en doğal sonuçlarla birleştiren bir tedavi yaklaşımı uygulamaktadır.",
+    "about3": "Bugün, İstanbul'daki kliniğinde, yurt içi ve yurt dışından gelen hastalarına estetik ve fonksiyonel cerrahi çözümleriyle modern, butik sağlık hizmeti sunmaya devam etmektedir.",
+    "membershipsTitle": "Mesleki Üyelikler",
     "memberships": [
-      "TPRECD (Türk Plastik, Rekonstrüktif ve Estetik Cerrahi Derneği)",
-      "EPCD (Estetik Plastik Cerrahi Derneği)",
-      "ISAPS (International Society of Aesthetic Plastic Surgery)",
-      "EAFPS (European Academy of Facial Plastic Surgery)"
+      "Türk Kulak Burun Boğaz ve Baş Boyun Cerrahisi Derneği",
+      "Facial Plastic Surgery Society (FPS)",
+      "European Academy of Facial Plastic Surgery (EAFPS)"
     ],
     "timelineCards": [
       {
-        "year": "2012",
-        "title": "Tıp Fakültesi Mezuniyeti",
-        "desc": "Cerrahpaşa Tıp Fakültesi'nden yüksek derece ile mezuniyet."
+        "year": "Tıp Eğitimi",
+        "title": "Dokuz Eylül Üniversitesi",
+        "desc": "Tıp Doktoru unvanının alınması."
       },
       {
-        "year": "2018",
-        "title": "Uzmanlık & Üstün Başarı",
-        "desc": "Plastik, Rekonstrüktif ve Estetik Cerrahi Uzmanlığı unvanı ve yılın genç cerrahı sunum ödülü."
+        "year": "Uzmanlık",
+        "title": "KBB & Baş Boyun Cerrahisi",
+        "desc": "Ankara ve Çukurova Üniversitelerinde uzmanlık eğitimi."
       },
       {
-        "year": "2021",
-        "title": "EBOPRAS Avrupa Yeterlilik",
-        "desc": "Avrupa Plastik Cerrahi Kurulu (EBOPRAS) tescili alarak uluslararası akreditasyon kazanılması."
+        "year": "Deneyim",
+        "title": "Estetik Odaklı Pratik",
+        "desc": "Burun ve yüz estetiği üzerine yoğunlaşan kapsamlı klinik çalışmalar."
       },
       {
-        "year": "2023",
-        "title": "Nişantaşı Premium Klinik",
-        "desc": "Uluslararası sağlık turizmi standartlarına uygun modern butik kliniğin kuruluşu."
+        "year": "Klinik",
+        "title": "Butik Sağlık Hizmeti",
+        "desc": "İstanbul'da hastalarına özel estetik cerrahi ve medikal uygulamalar."
       }
     ],
-    "achievementsTitle": "Öne Çıkan Başarılar",
+    "achievementsTitle": "Öne Çıkanlar",
     "achievements": [
       {
-        "value": "4000+",
-        "label": "Aktif Cerrahi Vaka"
+        "value": "10+ Yıl",
+        "label": "Mesleki Deneyim"
       },
       {
-        "value": "25+",
-        "label": "Uluslararası Makale"
+        "value": "Binlerce",
+        "label": "Başarılı Operasyon"
       }
     ],
     "timeline": "Kilometre Taşları",
@@ -363,6 +363,11 @@
     "name_placeholder": "Adınız Soyadınız",
     "phone_placeholder": "Telefon Numaranız",
     "treatment_placeholder": "Tedavi Seçiniz",
+    "treatments": [
+      { "value": "Rinoplasti", "label": "Rinoplasti" },
+      { "value": "Otoplasti", "label": "Otoplasti" },
+      { "value": "Diger", "label": "Diğer / Farklı" }
+    ],
     "btn_send": "WhatsApp ile Gönder",
     "error_name": "Lütfen adınızı girin.",
     "error_phone": "Lütfen telefonunuzu girin.",

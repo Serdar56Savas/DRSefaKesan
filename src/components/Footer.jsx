@@ -169,13 +169,13 @@ export default function Footer() {
           </div>
 
           <div className="flex gap-4">
-            <a href="#kvkk" className="hover:text-gray-600 transition-colors">
+            <a href="" className="hover:text-gray-600 transition-colors">
               {t("footer.kvkk")}
             </a>
 
             <span>|</span>
 
-            <a href="#cerez" className="hover:text-gray-600 transition-colors">
+            <a href="" className="hover:text-gray-600 transition-colors">
               {t("footer.cookies")}
             </a>
           </div>

@@ -185,11 +185,12 @@ export default function Home() {
   }, []);
 
   const handleMove = (clientX, rect) => {
-    let x = clientX - rect.left;
-    let percentage = (x / rect.width) * 100;
-    if (percentage < 0) percentage = 0;
-    if (percentage > 100) percentage = 100;
-    setSliderPos(percentage);
+    // requestAnimationFrame ile tarayıcının ekran yenileme hızına (60fps) senkronize olur
+    requestAnimationFrame(() => {
+      const x = Math.max(0, Math.min(clientX - rect.left, rect.width));
+      const percent = (x / rect.width) * 100;
+      setSliderPos(percent);
+    });
   };
   const isHomePage = location.pathname === "/";
   const handleNavClick = (item) => {
@@ -217,7 +218,7 @@ export default function Home() {
       alert("Lütfen adınızı ve telefon numaranızı doldurun.");
       return;
     }
-    const klinikTelefon = "905000000000";
+    const klinikTelefon = "905369242558";
     const mesaj = `Merhaba Op. Dr. Sefa Keşan Kliniği,\n\nWeb siteniz üzerinden yeni bir randevu talebi oluşturdum.\n\n👤 *Ad Soyad:* ${formData.name}\n📞 *Telefon:* ${formData.phone}\n🏥 *İlgilendiğim Tedavi:* ${formData.treatment}`;
     window.open(
       `https://api.whatsapp.com/send?phone=${klinikTelefon}&text=${encodeURIComponent(mesaj)}`,
@@ -577,6 +578,7 @@ export default function Home() {
             <img
               src={currentCase?.after}
               alt="after"
+              loading="eager"
               className="absolute inset-0 w-full h-full object-cover"
               draggable={false}
             />
@@ -589,6 +591,7 @@ export default function Home() {
               <img
                 src={currentCase?.before}
                 alt="before"
+                loading="eager"
                 className="absolute inset-0 w-full h-full object-cover"
                 draggable={false}
               />
@@ -732,8 +735,8 @@ export default function Home() {
                     <option value="Otoplasti (Kulak Estetiği)">
                       {t("contactForm.treatments.otoplasti")}
                     </option>
-                    <option value="Likit Yüz Estetiği">
-                      {t("contactForm.treatments.likit")}
+                    <option value="Yağ Enjeksiyonu (Dolgu)">
+                      {t("contactForm.treatments.yag-enjeksiyonu")}
                     </option>
                     <option value="bisektomi">
                       {t("contactForm.treatments.bisektomi")}
@@ -766,9 +769,20 @@ export default function Home() {
                 <span className="text-[10px] uppercase tracking-wider text-gray-400 font-medium">
                   {t("address.contact")}
                 </span>
-                <p className="text-xs text-gray-700 font-light">
-                  {t("address.number")}
-                </p>
+                <div className="flex flex-col gap-1">
+                  <a
+                    href="tel:+905426952089"
+                    className="text-xs text-gray-700 font-light hover:text-[#A68B6D] transition-colors"
+                  >
+                    {t("address.number")}
+                  </a>
+                  <a
+                    href="mailto:info@drsefakesan.com.tr"
+                    className="text-xs text-gray-700 font-light hover:text-[#A68B6D] transition-colors"
+                  >
+                    {t("address.mail")}
+                  </a>
+                </div>
               </div>
               <div className="bg-white p-5 border border-gray-100 shadow-sm rounded-sm flex flex-col gap-2">
                 <Clock size={18} className="text-[#A68B6D]" />
@@ -783,10 +797,13 @@ export default function Home() {
             <div className="w-full h-full min-h-[300px] bg-white border border-gray-100 rounded-sm overflow-hidden shadow-xl relative group">
               <iframe
                 title="Klinik Haritası"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.2619077716943!2d28.989718476569116!3d41.06316271570774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab6f6160da309%3A0xc3b8a1c97a5b399d!2zTmnFn2FudGHFn8EsIMWeacWfli_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1710000000000!5m2!1str!2str"
-                className="w-full h-full border-0 grayscale contrast-115 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.647295301221!2d28.9010918!3d41.0329718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabaf4a295f5c7%3A0x76355b3144e7785a!2sTerazidere%2C%2060.%20Y%C4%B1l%20Cd.%20No%3A3%2C%2034035%20Bayrampa%C5%9Fa%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1783589539406!5m2!1str!2str"
+                width="600"
+                height="450"
+                style={{ border: 0 }}
                 allowFullScreen={true}
                 loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
               ></iframe>
             </div>
           </div>

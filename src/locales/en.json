@@ -29,11 +29,12 @@
   },
   "address": {
     "clinic": "Clinic Address",
-    "clinicAddress": "Valikonağı Cad. No:142 Daire:4 Nişantaşı / Istanbul",
-    "contact": "Contact Us",
-    "number": "+90 (212) 000 00 00",
+    "clinicAddress": "Terazidere Mahallesi 60. Yıl Caddesi No:3 34035 Bayrampaşa / İSTANBUL",
+    "contact": "Contact",
+    "number": "+90 (212) 539 05 39",
+    "mail": "info@drsefakesan.com.tr",
     "workClock": "Working Hours",
-    "workText": "Monday - Saturday: 09:00 - 19:00"
+    "workText": "Weekdays: 09:00 - 18:00 / Saturday: 09:00 - 15:00"
   },
   "contactForm": {
     "badge": "Quick Contact",
@@ -152,65 +153,58 @@
   },
   "biographyPage": {
     "back": "Back to Home",
-    "role": "Aesthetic and Plastic Surgery",
-    "heroBadge": "Founder & Chief Physician",
-    "heroTitle1": "Science and Art",
+    "role": "ENT and Head & Neck Surgery",
+    "heroBadge": "Specialist Physician",
+    "heroTitle1": "The Scientific Approach",
     "heroTitle2": "Behind Beauty",
-    "heroText": "Aesthetic surgery is not just an anatomical change; it is a journey of re-discovering an individual's own self-confidence, expression, and the hidden elegance in their face within the most natural golden ratio boundaries.",
-    "education": "Cerrahpaşa Faculty of Medicine",
-    "certification": "EBOPRAS Certified",
+    "heroText": "The fundamental goal in rhinoplasty and facial aesthetics is to create a personalized, natural, and aesthetic expression within the boundaries of the golden ratio, while preserving functional integrity.",
+    "education": "Dokuz Eylül Medical Faculty",
+    "certification": "ENT Specialist",
     "educationTitle": "Education and Professional Journey",
     "lifeStory": "Life Story",
-    "about1Part1": "Op. Dr. Sefa Keşan crowned his passion for medical education at one of Turkey's most established institutions, ",
-    "about1Strong": "Istanbul University Cerrahpaşa Faculty of Medicine",
-    "about1Part2": ". After completing his medical education with high honors, he pursued his interest in aesthetic and reconstructive surgery and began his residency in Plastic, Reconstructive, and Aesthetic Surgery with high success in the specialty exam.",
-    "about2": "During his residency, he focused on rhinoplasty and holistic facial anatomy. To closely follow international developments, he served as a visiting surgeon in reputable clinics in Europe and America. He carried out innovative studies, especially on rib cartilage micro-grafting techniques in revision rhinoplasty.",
-    "about3": "Today, he continues to provide premium health services with a 'personalized golden ratio design' approach to patients from all over the world at his own private luxury clinic in Nişantaşı, Istanbul.",
-    "membershipsTitle": "International Scientific Memberships",
+    "about1Part1": "Op. Dr. Sefa Keşan completed his medical education at ",
+    "about1Strong": "Dokuz Eylül University Faculty of Medicine",
+    "about1Part2": ". Following his medical training, he successfully completed his specialization in Otorhinolaryngology & Head and Neck Surgery at Ankara University and Çukurova University, earning the title of specialist physician.",
+    "about2": "In his professional practice, he focuses particularly on functional rhinoplasty, aesthetic rhinoplasty, and holistic facial aesthetics. By closely following current literature, he applies a treatment approach that combines his patients' expectations with anatomical reality, delivering the most natural results.",
+    "about3": "Today, he continues to provide modern, boutique healthcare services to patients from both Turkey and abroad at his clinic in Istanbul, offering aesthetic and functional surgical solutions.",
+    "membershipsTitle": "Professional Memberships",
     "memberships": [
-      "TPRECD (Turkish Society of Plastic, Reconstructive and Aesthetic Surgery)",
-      "EPCD (Aesthetic Plastic Surgery Association)",
-      "ISAPS (International Society of Aesthetic Plastic Surgery)",
-      "EAFPS (European Academy of Facial Plastic Surgery)"
+      "Turkish Society of Otorhinolaryngology and Head and Neck Surgery",
+      "Facial Plastic Surgery Society (FPS)",
+      "European Academy of Facial Plastic Surgery (EAFPS)"
     ],
     "timelineCards": [
       {
-        "year": "2012",
-        "title": "Medical School Graduation",
-        "desc": "Graduation from Cerrahpaşa Faculty of Medicine with high honors."
+        "year": "Medical Education",
+        "title": "Dokuz Eylül University",
+        "desc": "Earning the title of Medical Doctor."
       },
       {
-        "year": "2018",
-        "title": "Residency & Excellence",
-        "desc": "Title of Plastic, Reconstructive and Aesthetic Surgery Specialist and Young Surgeon of the Year presentation award."
+        "year": "Specialization",
+        "title": "ENT & Head & Neck Surgery",
+        "desc": "Specialization training at Ankara and Çukurova Universities."
       },
       {
-        "year": "2021",
-        "title": "EBOPRAS European Qualification",
-        "desc": "Achieving international accreditation by receiving the European Board of Plastic, Reconstructive and Aesthetic Surgery (EBOPRAS) certification."
+        "year": "Experience",
+        "title": "Aesthetics-Focused Practice",
+        "desc": "Extensive clinical work focusing on rhinoplasty and facial aesthetics."
       },
       {
-        "year": "2023",
-        "title": "Nişantaşı Premium Clinic",
-        "desc": "Establishment of a modern boutique clinic in accordance with international health tourism standards."
+        "year": "Clinic",
+        "title": "Boutique Healthcare",
+        "desc": "Private aesthetic surgery and medical applications in Istanbul."
       }
     ],
-    "achievementsTitle": "Featured Achievements",
+    "achievementsTitle": "Highlights",
     "achievements": [
-      {
-        "value": "4000+",
-        "label": "Active Surgical Cases"
-      },
-      {
-        "value": "25+",
-        "label": "International Articles"
-      }
+      { "value": "10+ Years", "label": "Professional Experience" },
+      { "value": "Thousands", "label": "Successful Operations" }
     ],
     "timeline": "Milestones",
-    "timelineTitle": "Achievement Table",
+    "timelineTitle": "Success Chart",
     "appointment": "Examination and Analysis Appointment",
     "appointmentBtn": "Go to Appointment Form",
-    "appointmentText": "You can contact us immediately to design the most suitable surgical or medical planning for your facial structure with Op. Dr. Sefa Keşan, accompanied by digital simulation."
+    "appointmentText": "You can contact us immediately to design the most suitable surgical or medical plan for your facial structure with Op. Dr. Sefa Keşan, supported by digital simulation."
   },
   "footer": {
     "subtitle": "Aesthetic and Plastic Surgery",
@@ -363,6 +357,11 @@
     "name_placeholder": "Full Name",
     "phone_placeholder": "Phone Number",
     "treatment_placeholder": "Select Treatment",
+    "treatments": [
+      { "value": "Rinoplasti", "label": "Rhinoplasty" },
+      { "value": "Otoplasti", "label": "Otoplasty" },
+      { "value": "Diger", "label": "Other / Different" }
+    ],
     "btn_send": "Send via WhatsApp",
     "error_name": "Please enter your name.",
     "error_phone": "Please enter your phone number.",
