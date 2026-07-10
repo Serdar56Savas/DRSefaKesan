@@ -268,7 +268,33 @@
         "Kıkırdak Grefti Gerekebilir",
         "Tam İyileşme: 1 Yıl"
       ],
-      "symptoms": []
+      "symptoms": [
+        {
+          "id": "pollybeak",
+          "label": "Pollybeak (Papağan Gagası) Deformitesi",
+          "path": "Burun ucu üzerindeki fazla dokunun temizlenmesi ve kıkırdak desteği ile profilin düzeltilmesi."
+        },
+        {
+          "id": "valve-collapse",
+          "label": "Nazal Valv Çökmesi",
+          "path": "Burun yan duvarlarının güçlendirilerek nefes alma fonksiyonunun geri kazandırılması."
+        },
+        {
+          "id": "tip-asymmetry",
+          "label": "Burun Ucu Asimetrisi",
+          "path": "Kıkırdakların yeniden şekillendirilmesi ve dikiş teknikleri ile simetrinin sağlanması."
+        },
+        {
+          "id": "columella-retraction",
+          "label": "Kolumella Çekilmesi",
+          "path": "Burun orta bölmesinin greft yardımıyla aşağı indirilerek orantılı görünüm elde edilmesi."
+        },
+        {
+          "id": "inverted-v",
+          "label": "Ters V Deformitesi",
+          "path": "Burun çatısının rekonstrüksiyonu ve kemik yapının düzgün hizalanması."
+        }
+      ]
     },
     "otoplasti": {
       "title": "Otoplasti (Kulak Estetiği)",

@@ -241,7 +241,7 @@
           "path": "Using Ultrasonic Piezo surgery, bone tissue is filed millimetrically without breaking, preserving the natural profile line."
         },
         {
-          "id": "deviaiton",
+          "id": "deviaitonError",
           "label": "Nasal Deviation",
           "path": "Axis deviation is brought to the midline with functional septoplasty techniques; symmetry and breathing channels are optimized."
         },
@@ -255,14 +255,40 @@
     "revizyon-rinoplasti": {
       "title": "Revision Rhinoplasty",
       "subtitle": "More Challenging Cases, Flawless Experience",
-      "content": "A correction operation performed for patients who have had a previous operation but could not achieve the desired aesthetic or functional result.",
+      "content": "A corrective procedure performed for patients who have previously undergone surgery but have not achieved the desired aesthetic or functional results.",
       "steps": [
-        "Operation Time: 3 - 4 Hours",
+        "Surgery Duration: 3 - 4 Hours",
         "Anesthesia Type: General Anesthesia",
         "Cartilage Graft May Be Required",
         "Full Recovery: 1 Year"
       ],
-      "symptoms": []
+      "symptoms": [
+        {
+          "id": "pollybeak",
+          "label": "Pollybeak Deformity",
+          "path": "Removal of excess tissue over the nasal tip and correction of the profile with cartilage support."
+        },
+        {
+          "id": "valve-collapse",
+          "label": "Nasal Valve Collapse",
+          "path": "Restoring breathing function by strengthening the nasal sidewalls."
+        },
+        {
+          "id": "tip-asymmetry",
+          "label": "Nasal Tip Asymmetry",
+          "path": "Reshaping of cartilages and achieving symmetry with suturing techniques."
+        },
+        {
+          "id": "columella-retraction",
+          "label": "Columellar Retraction",
+          "path": "Lowering the columella with a graft to achieve a proportional appearance."
+        },
+        {
+          "id": "inverted-v",
+          "label": "Inverted-V Deformity",
+          "path": "Reconstruction of the nasal roof and proper alignment of the bone structure."
+        }
+      ]
     },
     "otoplasti": {
       "title": "Otoplasty (Ear Aesthetics)",
@@ -294,7 +320,7 @@
       ],
       "symptoms": [
         {
-          "id": "volume-loss",
+          "id": "volumeLoss",
           "label": "Volume Loss",
           "path": "Fat transfer is performed to needed areas to strengthen tissue support and reshape facial features."
         }

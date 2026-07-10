@@ -83,45 +83,78 @@ export default function DiseaseDetail() {
     const strokeColor = sliderPos > 80 ? "#D4AF37" : "#525252";
     const strokeWidth = 6;
 
-    // SEMPTOM EŞLEŞTİRME (Dilden bağımsız çalışması için)
+    // Semptom Eşleştirme (Tüm diller için)
     const symptomMap = {
-      // --- Rinoplasti ---
       kemer: "kemer",
       hump: "kemer",
       bosse: "kemer",
       gobba: "kemer",
       حدبة: "kemer",
+
       egrilik: "egrilik",
-      deviation: "egrilik",
-      deviation: "egrilik",
+      deviaitonError: "egrilik",
+      déviationFrontale: "egrilik",
       deviazione: "egrilik",
       انحراف: "egrilik",
+
       dusukluk: "dusukluk",
       droopy: "dusukluk",
       tombant: "dusukluk",
       cadente: "dusukluk",
       تدلي: "dusukluk",
 
-      // --- Otoplasti ---
       kepce: "kepce",
       prominent: "kepce",
+      oreilles: "kepce",
       decollees: "kepce",
       sporgenti: "kepce",
       "اذن-بارزة": "kepce",
-
-      // --- Yağ Enjeksiyonu ---
       hacim: "hacim",
-      volume: "hacim",
-      volume: "hacim",
-      volume: "hacim",
+      volumeLoss: "hacim",
+      perte: "hacim",
+      perdita: "hacim",
       "فقدان-حجم": "hacim",
-
-      // --- Bişektomi ---
       yanak: "yanak",
       fullness: "yanak",
       joues: "yanak",
       guance: "yanak",
       "امتلاء-الخد": "yanak",
+      // --- Revizyon Spesifik Semptomlar ---
+
+      // Pollybeak
+      pollybeak: "pollybeak",
+      "papağan-gagası": "pollybeak",
+      "bec-de-perroquet": "pollybeak",
+      "naso-a-pappagallo": "pollybeak",
+      "منقار-الببغاء": "pollybeak",
+
+      // Nazal Valv Çökmesi
+      "valve-collapse": "valve-collapse",
+      "nazal-valv": "valve-collapse",
+      "collapsus-valve": "valve-collapse",
+      "collasso-valvola": "valve-collapse",
+      "انهيار-الصمام": "valve-collapse",
+
+      // Burun Ucu Asimetrisi
+      "tip-asymmetry": "tip-asymmetry",
+      asimetri: "tip-asymmetry",
+      asymétrie: "tip-asymmetry",
+      asimmetria: "tip-asymmetry",
+      "عدم-تناسق": "tip-asymmetry",
+
+      // Kolumella Çekilmesi
+      "columella-retraction": "columella-retraction",
+      kolumella: "columella-retraction",
+      "retraction-columelle": "columella-retraction",
+      "retrazione-columella": "columella-retraction",
+      "انكماش-الكولوميلا": "columella-retraction",
+
+      // Ters V Deformitesi
+      "inverted-v": "inverted-v",
+      "ters-v": "inverted-v",
+      "v-inversé": "inverted-v",
+      "v-invertita": "inverted-v",
+      "حرف-v-مقلوب": "inverted-v",
     };
 
     const normalizedSymptom = symptomMap[selectedSymptom] || selectedSymptom;
@@ -207,12 +240,17 @@ export default function DiseaseDetail() {
       );
     }
 
-    // 4. RİNOPLASTİ
-    if (id === "rinoplasti") {
-      let bridgeX = 110,
-        bridgeY = 90,
-        tipX = 140,
-        tipY = 130;
+    // 4. RİNOPLASTİ ve REVİZYON RİNOPLASTİ
+    if (id.includes("rinoplasti")) {
+      const isRevizyon = id === "revizyon-rinoplasti";
+
+      // 1. Başlangıç Değerleri
+      let bridgeX = isRevizyon ? 115 : 110;
+      let bridgeY = isRevizyon ? 85 : 90;
+      let tipX = isRevizyon ? 135 : 140;
+      let tipY = isRevizyon ? 135 : 130;
+
+      // 2. Semptom hesaplaması (Ortak + Revizyon Özel)
       if (normalizedSymptom === "kemer") {
         const h = defect * 70;
         bridgeX += h;
@@ -226,6 +264,29 @@ export default function DiseaseDetail() {
         tipY += dr;
         tipX -= dr * 0.3;
       }
+      // --- Revizyon Özel Semptomlar ---
+      else if (normalizedSymptom === "pollybeak") {
+        // Burun ucunda şişkinlik simülasyonu
+        tipY -= defect * 20;
+        bridgeY += defect * 15;
+      } else if (normalizedSymptom === "valve-collapse") {
+        // Burun kanadı çökmesi etkisi
+        bridgeX += defect * 20;
+        tipX -= defect * 10;
+      } else if (normalizedSymptom === "tip-asymmetry") {
+        // Asimetri için yatay kaydırma
+        tipX += defect * 25;
+      } else if (normalizedSymptom === "columella-retraction") {
+        // Kolumella çekilmesi için ucu aşağı ve içeri çekme
+        tipY += defect * 40;
+        tipX += defect * 5;
+      } else if (normalizedSymptom === "inverted-v") {
+        // Ters V için köprü yapısını genişletme
+        bridgeX += defect * 30;
+        bridgeY += defect * 10;
+      }
+
+      // 3. Render
       return (
         <g transform="translate(-10, -10)">
           <line
@@ -237,6 +298,17 @@ export default function DiseaseDetail() {
             strokeWidth="2"
             strokeDasharray="4,4"
           />
+
+          {isRevizyon && (
+            <path
+              d="M 80 120 Q 110 110, 140 120"
+              fill="none"
+              stroke="#D4AF37"
+              strokeWidth="2"
+              strokeDasharray="3,3"
+            />
+          )}
+
           <path
             d={`M 60 40 Q ${bridgeX} ${bridgeY}, ${tipX} ${tipY} Q 110 150, 110 170`}
             fill="none"

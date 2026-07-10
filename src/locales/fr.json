@@ -242,12 +242,12 @@
           "path": "Utilisation de la chirurgie piézo-ultrasonique pour lisser l'os sans rupture."
         },
         {
-          "id": "deviaiton",
+          "id": "déviationFrontale",
           "label": "Déviation nasale",
           "path": "Optimisation de l'axe et des canaux respiratoires."
         },
         {
-          "id": "pointe",
+          "id": "tombant",
           "label": "Pointe nasale tombante",
           "path": "Renforcement du support cartilagineux pour un angle idéal de 95-105 degrés."
         }
@@ -263,8 +263,35 @@
         "Greffe de cartilage requise",
         "Récupération complète : 1 an"
       ],
-      "symptoms": []
+      "symptoms": [
+        {
+          "id": "pollybeak",
+          "label": "Déformation en Pollybeak",
+          "path": "Élimination de l'excès de tissu sur la pointe du nez et correction du profil avec un soutien cartilagineux."
+        },
+        {
+          "id": "valve-collapse",
+          "label": "Collapsus de la valve nasale",
+          "path": "Restauration de la fonction respiratoire en renforçant les parois latérales du nez."
+        },
+        {
+          "id": "tip-asymmetry",
+          "label": "Asymétrie de la pointe nasale",
+          "path": "Remodelage des cartilages et obtention de la symétrie par des techniques de suture."
+        },
+        {
+          "id": "columella-retraction",
+          "label": "Rétraction de la columelle",
+          "path": "Abaissement de la cloison nasale à l'aide d'une greffe pour un aspect proportionné."
+        },
+        {
+          "id": "inverted-v",
+          "label": "Déformation en V inversé",
+          "path": "Reconstruction de la voûte nasale et alignement correct de la structure osseuse."
+        }
+      ]
     },
+
     "otoplasti": {
       "title": "Otoplastie",
       "subtitle": "Symétrie et confiance",

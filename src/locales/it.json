@@ -237,17 +237,17 @@
       ],
       "symptoms": [
         {
-          "id": "hump",
+          "id": "gobba",
           "label": "Gobba Nasale",
           "path": "Utilizzando la chirurgia a ultrasuoni (Piezo), il tessuto osseo viene limato millimetricamente senza rotture, preservando la linea naturale del profilo."
         },
         {
-          "id": "deviation",
+          "id": "deviazione",
           "label": "Deviazione Nasale",
           "path": "La deviazione viene corretta riportando il setto sulla linea mediana con tecniche funzionali; simmetria e canali respiratori vengono ottimizzati."
         },
         {
-          "id": "droopy",
+          "id": "cadente",
           "label": "Punta Nasale Cadente",
           "path": "I meccanismi di supporto cartilagineo vengono rinforzati, elevando l'angolo labbro-naso alla scala ideale di 95-105 gradi."
         }
@@ -263,7 +263,33 @@
         "Potrebbe essere necessario innesto cartilagineo",
         "Recupero completo: 1 anno"
       ],
-      "symptoms": []
+      "symptoms": [
+        {
+          "id": "pollybeak",
+          "label": "Deformità a Pollybeak",
+          "path": "Rimozione del tessuto in eccesso sulla punta del naso e correzione del profilo con supporto cartilagineo."
+        },
+        {
+          "id": "valve-collapse",
+          "label": "Collasso della valvola nasale",
+          "path": "Ripristino della funzione respiratoria attraverso il rafforzamento delle pareti laterali del naso."
+        },
+        {
+          "id": "tip-asymmetry",
+          "label": "Asimmetria della punta nasale",
+          "path": "Rimodellamento delle cartilagini e ottenimento della simmetria tramite tecniche di sutura."
+        },
+        {
+          "id": "columella-retraction",
+          "label": "Retrazione della columella",
+          "path": "Abbassamento della columella mediante innesto per ottenere un aspetto proporzionato."
+        },
+        {
+          "id": "inverted-v",
+          "label": "Deformità a V invertita",
+          "path": "Ricostruzione del tetto nasale e corretto allineamento della struttura ossea."
+        }
+      ]
     },
     "otoplasti": {
       "title": "Otoplastica",
@@ -295,7 +321,7 @@
       ],
       "symptoms": [
         {
-          "id": "volume-loss",
+          "id": "perdita",
           "label": "Perdita di Volume",
           "path": "Viene eseguito un trasferimento di grasso per rafforzare il supporto tissutale e rimodellare i lineamenti del viso."
         }
