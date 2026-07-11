@@ -495,7 +495,7 @@ export default function DiseaseDetail() {
 
           <div className="mt-6 pt-4 border-t border-gray-100">
             <a
-              href={`https://wa.me/905000000000?text=Merhaba,%20${encodeURIComponent(data.title)}%20bölümündeki%20interaktif%20klinik%20simülasyonu%20inceledim.%20Detaylı%20muayene%20randevusu%20almak%20istiyorum.`}
+              href={`https://wa.me/905369242558?text=Merhaba,%20${encodeURIComponent(data.title)}%20bölümündeki%20interaktif%20klinik%20simülasyonu%20inceledim.%20Detaylı%20muayene%20randevusu%20almak%20istiyorum.`}
               target="_blank"
               rel="noreferrer"
               className="w-full py-3.5 bg-neutral-950 text-white font-medium text-xs uppercase tracking-widest hover:bg-neutral-900 transition-all rounded-sm flex items-center justify-center gap-2 shadow-sm"
