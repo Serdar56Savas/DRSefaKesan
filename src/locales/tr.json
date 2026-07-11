@@ -153,18 +153,18 @@
   },
   "biographyPage": {
     "back": "Ana Sayfaya Dön",
-    "role": "KBB ve Baş Boyun Cerrahisi",
+    "role": "KBB Uzmanı",
     "heroBadge": "Uzman Doktor",
     "heroTitle1": "Güzelliğin Arkasındaki",
     "heroTitle2": "Bilimsel Yaklaşım",
     "heroText": "Burun ve yüz estetiğinde temel hedef; fonksiyonel bütünlüğü koruyarak, altın oran sınırları içerisinde kişiye özel, doğal ve estetik bir ifade yaratmaktır.",
-    "education": "Dokuz Eylül Tıp Fakültesi",
+    "education": "Kocaeli Üniversitesi Tıp Fakültesi",
     "certification": "KBB Uzmanı",
     "educationTitle": "Eğitim ve Mesleki Yolculuk",
     "lifeStory": "Yaşam Öyküsü",
     "about1Part1": "Op. Dr. Sefa Keşan, tıp eğitimini ",
-    "about1Strong": "Dokuz Eylül Üniversitesi Tıp Fakültesi",
-    "about1Part2": "'nde tamamlamıştır. Tıp eğitiminin ardından uzmanlık eğitimini Ankara Üniversitesi ve Çukurova Üniversitesi Kulak Burun Boğaz & Baş Boyun Cerrahisi bölümlerinde başarıyla bitirerek uzman hekim unvanını almıştır.",
+    "about1Strong": "Kocaeli Üniversitesi Tıp Fakültesi",
+    "about1Part2": "'nde tamamlamıştır. Tıp eğitiminin ardından uzmanlık eğitimini Ankara Üniversitesi ve Çukurova Üniversitesi Kulak Burun Boğaz bölümlerinde başarıyla bitirerek uzman hekim unvanını almıştır.",
     "about2": "Mesleki pratiğinde özellikle fonksiyonel rinoplasti, burun estetiği ve bütünsel yüz estetiği üzerine yoğunlaşmıştır. Güncel literatürü yakından takip ederek, hastalarının beklentileri ile anatomik gerçekliği en doğal sonuçlarla birleştiren bir tedavi yaklaşımı uygulamaktadır.",
     "about3": "Bugün, İstanbul'daki kliniğinde, yurt içi ve yurt dışından gelen hastalarına estetik ve fonksiyonel cerrahi çözümleriyle modern, butik sağlık hizmeti sunmaya devam etmektedir.",
     "membershipsTitle": "Mesleki Üyelikler",
@@ -176,12 +176,12 @@
     "timelineCards": [
       {
         "year": "Tıp Eğitimi",
-        "title": "Dokuz Eylül Üniversitesi",
+        "title": "Kocaeli Üniversitesi",
         "desc": "Tıp Doktoru unvanının alınması."
       },
       {
         "year": "Uzmanlık",
-        "title": "KBB & Baş Boyun Cerrahisi",
+        "title": "KBB Uzmanlığı",
         "desc": "Ankara ve Çukurova Üniversitelerinde uzmanlık eğitimi."
       },
       {
