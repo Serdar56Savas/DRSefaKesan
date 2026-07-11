@@ -227,7 +227,9 @@ export default function ChatBot() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyPress={(e) => e.key === "Enter" && sendMessage()}
-              className="w-full text-sm border-2 border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-[#A68B6D] transition-all"
+              // "text-black" sınıfı metnin siyah görünmesini sağlar
+              // "placeholder:text-gray-400" ile placeholder'ı biraz daha belirgin yapabilirsiniz
+              className="w-full text-black text-sm border-2 border-gray-200 rounded-xl px-4 py-3 outline-none focus:border-[#A68B6D] transition-all placeholder:text-gray-400"
               placeholder={t("chatbot.placeholder")}
             />
             <button
