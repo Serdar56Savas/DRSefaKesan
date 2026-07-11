@@ -155,21 +155,21 @@
     "back": "Back to Home",
     "role": "ENT Specialist",
     "heroBadge": "Specialist Doctor",
-    "heroTitle1": "Scientific Approach",
-    "heroTitle2": "Behind the Beauty",
-    "heroText": "In nasal and facial aesthetics, the primary goal is to create a personalized, natural, and aesthetic expression within the boundaries of the golden ratio, while preserving functional integrity.",
+    "heroTitle1": "The Scientific Approach",
+    "heroTitle2": "Behind Beauty",
+    "heroText": "In nose and facial aesthetics, the primary goal is to create a personalized, natural, and aesthetic expression within the golden ratio limits, while preserving functional integrity.",
     "education": "Kocaeli University Faculty of Medicine",
     "certification": "ENT Specialist",
     "educationTitle": "Education and Professional Journey",
     "lifeStory": "Life Story",
     "about1Part1": "Op. Dr. Sefa Keşan completed his medical education at ",
     "about1Strong": "Kocaeli University Faculty of Medicine",
-    "about1Part2": ". Following his medical training, he completed his residency in Otorhinolaryngology at Ankara University and Çukurova University, successfully earning the title of Specialist Physician.",
-    "about2": "In his professional practice, he has focused particularly on functional rhinoplasty, nasal aesthetics, and holistic facial aesthetics. By closely following current literature, he applies a treatment approach that combines patient expectations with anatomical reality through the most natural results.",
-    "about3": "Today, he continues to provide modern, boutique healthcare services with aesthetic and functional surgical solutions to his patients from home and abroad at his clinic in Istanbul.",
+    "about1Part2": ". Following his medical education, he successfully completed his residency in the Ear, Nose, and Throat department at Erzincan Binali Yıldırım University Faculty of Medicine, earning his specialist title.",
+    "about2": "In his professional practice, he focuses particularly on functional rhinoplasty, nose aesthetics, and holistic facial aesthetics. By closely following current literature, he applies a treatment approach that combines his patients' expectations with anatomical reality, yielding the most natural results.",
+    "about3": "Today, he continues to provide modern, boutique health services in his clinic in Istanbul, offering aesthetic and functional surgical solutions to patients from Turkey and abroad.",
     "membershipsTitle": "Professional Memberships",
     "memberships": [
-      "Turkish Otorhinolaryngology & Head and Neck Surgery Association",
+      "Turkish Society of Otorhinolaryngology and Head and Neck Surgery",
       "Facial Plastic Surgery Society (FPS)",
       "European Academy of Facial Plastic Surgery (EAFPS)"
     ],
@@ -182,17 +182,17 @@
       {
         "year": "Residency",
         "title": "ENT Specialization",
-        "desc": "Residency training at Ankara and Çukurova Universities."
+        "desc": "Specialization training at Ankara and Çukurova Universities."
       },
       {
         "year": "Experience",
-        "title": "Aesthetics-Focused Practice",
-        "desc": "Comprehensive clinical studies focused on nasal and facial aesthetics."
+        "title": "Aesthetic-Focused Practice",
+        "desc": "Comprehensive clinical studies focused on nose and facial aesthetics."
       },
       {
         "year": "Clinic",
-        "title": "Boutique Healthcare",
-        "desc": "Special aesthetic surgery and medical applications in Istanbul."
+        "title": "Boutique Health Service",
+        "desc": "Private aesthetic surgery and medical procedures for patients in Istanbul."
       }
     ],
     "achievementsTitle": "Highlights",
@@ -204,7 +204,7 @@
     "timelineTitle": "Success Table",
     "appointment": "Examination and Analysis Appointment",
     "appointmentBtn": "Go to Appointment Form",
-    "appointmentText": "You can contact us immediately to design the most suitable surgical or medical plan for your facial structure with Op. Dr. Sefa Keşan, accompanied by digital simulation."
+    "appointmentText": "You can contact us immediately to plan the most suitable surgical or medical procedure for your facial structure with Op. Dr. Sefa Keşan, accompanied by digital simulation."
   },
   "footer": {
     "subtitle": "Aesthetic and Plastic Surgery",

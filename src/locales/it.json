@@ -153,59 +153,59 @@
   },
 
   "biographyPage": {
-    "back": "Torna alla Home",
+    "back": "Torna alla home",
     "role": "Specialista ORL",
-    "heroBadge": "Medico Specialista",
-    "heroTitle1": "Approccio Scientifico",
-    "heroTitle2": "Dietro la Bellezza",
+    "heroBadge": "Medico specialista",
+    "heroTitle1": "L'approccio scientifico",
+    "heroTitle2": "dietro la bellezza",
     "heroText": "Nell'estetica nasale e facciale, l'obiettivo principale è creare un'espressione personalizzata, naturale ed estetica entro i limiti della sezione aurea, preservando l'integrità funzionale.",
     "education": "Facoltà di Medicina dell'Università di Kocaeli",
     "certification": "Specialista ORL",
-    "educationTitle": "Percorso Educativo e Professionale",
-    "lifeStory": "Storia di Vita",
-    "about1Part1": "Il Dr. Sefa Keşan ha completato gli studi di medicina presso la ",
+    "educationTitle": "Istruzione e percorso professionale",
+    "lifeStory": "Storia di vita",
+    "about1Part1": "Op. Dr. Sefa Keşan ha completato i suoi studi medici presso la ",
     "about1Strong": "Facoltà di Medicina dell'Università di Kocaeli",
-    "about1Part2": ". Successivamente, ha completato la specializzazione in Otorinolaringoiatria presso le Università di Ankara e Çukurova, ottenendo il titolo di medico specialista.",
-    "about2": "Nella sua pratica professionale, si è concentrato sulla rinoplastica funzionale, l'estetica nasale e l'estetica facciale olistica.",
-    "about3": "Oggi, continua a offrire servizi sanitari moderni e di boutique nella sua clinica di Istanbul a pazienti nazionali e internazionali.",
-    "membershipsTitle": "Affiliazioni Professionali",
+    "about1Part2": ". Dopo gli studi medici, ha completato con successo la specializzazione nel dipartimento di Otorinolaringoiatria presso la Facoltà di Medicina dell'Università Erzincan Binali Yıldırım, ottenendo il titolo di specialista.",
+    "about2": "Nella sua pratica professionale, si concentra in particolare sulla rinoplastica funzionale, l'estetica nasale e l'estetica facciale olistica. Seguendo da vicino la letteratura attuale, applica un approccio terapeutico che unisce le aspettative dei suoi pazienti con la realtà anatomica, ottenendo i risultati più naturali.",
+    "about3": "Oggi continua a fornire servizi sanitari moderni e boutique nella sua clinica a Istanbul, offrendo soluzioni chirurgiche estetiche e funzionali a pazienti provenienti dalla Turchia e dall'estero.",
+    "membershipsTitle": "Affiliazioni professionali",
     "memberships": [
-      "Associazione Turca di ORL e Chirurgia Cervico-Facciale",
+      "Società Turca di Otorinolaringoiatria e Chirurgia Testa-Collo",
       "Facial Plastic Surgery Society (FPS)",
       "European Academy of Facial Plastic Surgery (EAFPS)"
     ],
     "timelineCards": [
       {
-        "year": "Formazione Medica",
+        "year": "Formazione medica",
         "title": "Università di Kocaeli",
-        "desc": "Conseguimento del titolo di Medico."
+        "desc": "Ottenimento del titolo di medico."
       },
       {
         "year": "Specializzazione",
-        "title": "Specializzazione ORL",
-        "desc": "Formazione presso le Università di Ankara e Çukurova."
+        "title": "Specialità ORL",
+        "desc": "Formazione specialistica presso le Università di Ankara e Çukurova."
       },
       {
         "year": "Esperienza",
-        "title": "Pratica Estetica",
-        "desc": "Studi clinici approfonditi sull'estetica nasale e facciale."
+        "title": "Pratica orientata all'estetica",
+        "desc": "Studi clinici approfonditi focalizzati sull'estetica nasale e facciale."
       },
       {
         "year": "Clinica",
-        "title": "Servizio Boutique",
-        "desc": "Chirurgia estetica e applicazioni mediche a Istanbul."
+        "title": "Servizio sanitario boutique",
+        "desc": "Chirurgia estetica privata e procedure mediche per i pazienti a Istanbul."
       }
     ],
-    "achievementsTitle": "Punti Salienti",
+    "achievementsTitle": "Punti salienti",
     "achievements": [
-      { "value": "10+ Anni", "label": "Esperienza Professionale" },
-      { "value": "Migliaia", "label": "Operazioni Riuscite" }
+      { "value": "10+ Anni", "label": "Esperienza professionale" },
+      { "value": "Migliaia", "label": "Operazioni riuscite" }
     ],
-    "timeline": "Pietre Miliari",
-    "timelineTitle": "Tabella dei Successi",
-    "appointment": "Appuntamento per Esame e Analisi",
-    "appointmentBtn": "Vai al Modulo di Prenotazione",
-    "appointmentText": "Contattaci per pianificare il tuo trattamento con il Dr. Sefa Keşan, assistito da simulazione digitale."
+    "timeline": "Pietre miliari",
+    "timelineTitle": "Tabella dei successi",
+    "appointment": "Appuntamento per visita e analisi",
+    "appointmentBtn": "Vai al modulo di appuntamento",
+    "appointmentText": "Puoi contattarci subito per pianificare l'intervento chirurgico o medico più adatto alla tua struttura facciale con il Dr. Sefa Keşan, accompagnato da una simulazione digitale."
   },
   "footer": {
     "subtitle": "Chirurgia Plastica ed Estetica",

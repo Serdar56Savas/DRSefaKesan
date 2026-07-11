@@ -157,55 +157,55 @@
     "role": "Spécialiste ORL",
     "heroBadge": "Médecin Spécialiste",
     "heroTitle1": "L'approche scientifique",
-    "heroTitle2": "Derrière la beauté",
+    "heroTitle2": "derrière la beauté",
     "heroText": "En esthétique nasale et faciale, l'objectif principal est de créer une expression personnalisée, naturelle et esthétique dans les limites du nombre d'or, tout en préservant l'intégrité fonctionnelle.",
     "education": "Faculté de Médecine de l'Université de Kocaeli",
     "certification": "Spécialiste ORL",
-    "educationTitle": "Parcours Éducatif et Professionnel",
-    "lifeStory": "Histoire de vie",
-    "about1Part1": "Op. Dr. Sefa Keşan a terminé ses études de médecine à la ",
+    "educationTitle": "Éducation et Parcours Professionnel",
+    "lifeStory": "Parcours de vie",
+    "about1Part1": "Op. Dr. Sefa Keşan a terminé ses études médicales à la ",
     "about1Strong": "Faculté de Médecine de l'Université de Kocaeli",
-    "about1Part2": ". Après sa formation médicale, il a complété sa spécialisation en Oto-rhino-laryngologie à l'Université d'Ankara et à l'Université de Çukurova, obtenant ainsi le titre de médecin spécialiste.",
-    "about2": "Dans sa pratique professionnelle, il s'est particulièrement concentré sur la rhinoplastie fonctionnelle, l'esthétique nasale et l'esthétique faciale holistique.",
-    "about3": "Aujourd'hui, il continue de fournir des services de santé modernes et personnalisés à ses patients locaux et internationaux dans sa clinique à Istanbul.",
+    "about1Part2": ". Après ses études médicales, il a terminé avec succès sa spécialisation dans le département d'Oto-Rhino-Laryngologie à la Faculté de Médecine de l'Université Erzincan Binali Yıldırım, obtenant son titre de spécialiste.",
+    "about2": "Dans sa pratique professionnelle, il se concentre particulièrement sur la rhinoplastie fonctionnelle, l'esthétique du nez et l'esthétique faciale holistique. En suivant de près la littérature actuelle, il applique une approche thérapeutique qui combine les attentes de ses patients avec la réalité anatomique, pour des résultats des plus naturels.",
+    "about3": "Aujourd'hui, il continue de fournir des services de santé modernes et personnalisés dans sa clinique à Istanbul, offrant des solutions chirurgicales esthétiques et fonctionnelles aux patients venant de Turquie et de l'étranger.",
     "membershipsTitle": "Adhésions Professionnelles",
     "memberships": [
-      "Association Turque d'ORL et de Chirurgie Cervico-Faciale",
+      "Société Turque d'Oto-Rhino-Laryngologie et de Chirurgie de la Tête et du Cou",
       "Facial Plastic Surgery Society (FPS)",
       "European Academy of Facial Plastic Surgery (EAFPS)"
     ],
     "timelineCards": [
       {
-        "year": "Études Médicales",
+        "year": "Études médicales",
         "title": "Université de Kocaeli",
-        "desc": "Obtention du titre de Docteur en Médecine."
+        "desc": "Obtention du diplôme de médecin."
       },
       {
         "year": "Spécialisation",
-        "title": "Spécialisation ORL",
+        "title": "Spécialité ORL",
         "desc": "Formation de spécialisation aux universités d'Ankara et de Çukurova."
       },
       {
         "year": "Expérience",
-        "title": "Pratique Axée sur l'Esthétique",
-        "desc": "Études cliniques approfondies en esthétique nasale et faciale."
+        "title": "Pratique orientée esthétique",
+        "desc": "Études cliniques approfondies axées sur l'esthétique du nez et du visage."
       },
       {
         "year": "Clinique",
-        "title": "Soins de Santé Personnalisés",
-        "desc": "Chirurgie esthétique et applications médicales à Istanbul."
+        "title": "Service de santé boutique",
+        "desc": "Chirurgie esthétique privée et procédures médicales pour les patients à Istanbul."
       }
     ],
-    "achievementsTitle": "Points Forts",
+    "achievementsTitle": "Points saillants",
     "achievements": [
-      { "value": "10+ Ans", "label": "Expérience Professionnelle" },
-      { "value": "Milliers", "label": "Opérations Réussies" }
+      { "value": "10+ Ans", "label": "Expérience professionnelle" },
+      { "value": "Des milliers", "label": "Opérations réussies" }
     ],
-    "timeline": "Étapes Clés",
-    "timelineTitle": "Tableau des Réussites",
-    "appointment": "Rendez-vous d'Examen et Analyse",
+    "timeline": "Jalons",
+    "timelineTitle": "Tableau de réussite",
+    "appointment": "Rendez-vous pour examen et analyse",
     "appointmentBtn": "Aller au formulaire de rendez-vous",
-    "appointmentText": "Contactez-nous pour planifier votre transformation avec le Dr Sefa Keşan, avec simulation numérique."
+    "appointmentText": "Vous pouvez nous contacter immédiatement pour planifier l'intervention chirurgicale ou médicale la plus adaptée à votre structure faciale avec le Dr Sefa Keşan, accompagnée d'une simulation numérique."
   },
   "footer": {
     "subtitle": "Chirurgie Esthétique et Plastique",
