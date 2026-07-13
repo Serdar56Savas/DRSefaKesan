@@ -23,7 +23,7 @@ export default async function handler(req, res) {
   const currentLang = langMap[lang] || "Türkçe";
 
   try {
-    // 1. WhatsApp Yönlendirme Kontrolü (Keyword bazlı)
+    // 1. WhatsApp Yönlendirme Kontrolü
     const whatsappKeywords = [
       "randevu",
       "appointment",
@@ -52,21 +52,31 @@ export default async function handler(req, res) {
       assistant_id: process.env.ASSISTANT_ID,
     });
 
+    // HATA ÖNLEME: Run oluşturulabildi mi kontrolü
+    if (!run || !run.id) {
+      throw new Error("Asistan başlatılamadı, geçerli bir Run ID alınamadı.");
+    }
+
     // 5. Cevabın oluşmasını bekle (Polling)
     let status = await openai.beta.threads.runs.retrieve(thread.id, run.id);
     let attempts = 0;
 
     while (status.status !== "completed" && attempts < 15) {
-      if (status.status === "failed" || status.status === "cancelled") {
-        throw new Error("Asistan işlemi başarısız oldu.");
+      if (
+        status.status === "failed" ||
+        status.status === "cancelled" ||
+        status.status === "expired"
+      ) {
+        throw new Error(`Asistan işlemi başarısız oldu: ${status.status}`);
       }
+
       await new Promise((r) => setTimeout(r, 1000));
       status = await openai.beta.threads.runs.retrieve(thread.id, run.id);
       attempts++;
     }
 
     if (status.status !== "completed") {
-      throw new Error("Zaman aşımı veya hata");
+      throw new Error("Asistan yanıt süresi doldu.");
     }
 
     // 6. Asistanın mesajını al
@@ -76,7 +86,7 @@ export default async function handler(req, res) {
     return res.status(200).json({ reply });
   } catch (error) {
     console.error("AI İşlem Hatası:", error);
-    // Herhangi bir hata durumunda frontend'in WhatsApp butonunu göstermesi için tetikleyici gönder
+    // Hata durumunda kullanıcıyı WhatsApp'a yönlendir
     return res.status(200).json({ reply: "WHATSAPP_REDIRECT" });
   }
 }
