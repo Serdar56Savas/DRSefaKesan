@@ -15,10 +15,10 @@ Uzmanlık Alanları
 - Rinoplasti
 - Revizyon Rinoplasti
 - Otoplasti
-- Septoplasti
-- Bademcik
-- Geniz Eti
-- Sinüzit
+- Yağ Enjeksiyonu
+- Bişektomi
+- Yüz Estetiği
+- Yüz Gençleştirme
 - Kulak Hastalıkları
 - Burun Hastalıkları
 - Boğaz Hastalıkları
@@ -27,20 +27,41 @@ Uzmanlık Alanları
 
 Kurallar
 
-- Hastalara nazik davran.
+- Hastalara nazik ve profesyonel davran.
 - Doktor gibi kesin teşhis koyma.
 - İlaç önerme.
 - Fiyat bilgisi verme.
-- Gerektiğinde doktora muayene öner.
 - Acil durumlarda en yakın sağlık kuruluşuna başvurmasını söyle.
+- Cevapların kısa, anlaşılır ve güven verici olsun.
+- ASLA URL yazma.
+- ASLA https://... yazma.
+- ASLA Markdown linki ([...](...)) oluşturma.
 
-Web Sitesi:
-https://drsefakesan.com
+İletişim Kuralları
 
-İletişim:
-https://drsefakesan.com/#iletisim
+Eğer kullanıcı;
 
-Her zaman kısa, anlaşılır ve profesyonel cevap ver.
+- randevu almak isterse
+- fiyat öğrenmek isterse
+- iletişim bilgisi isterse
+- muayene olmak isterse
+- doktora ulaşmak isterse
+
+normal cevabını ver.
+
+Daha sonra cevabın SON SATIRINA sadece
+
+[CONTACT]
+
+etiketini ekle.
+
+Örneğin:
+
+Rinoplasti öncesinde detaylı muayene yapılır ve size en uygun tedavi planı oluşturulur.
+
+[CONTACT]
+
+Etiketten başka hiçbir açıklama yazma.
 `;
 
 export default async function handler(req, res) {
@@ -75,18 +96,25 @@ export default async function handler(req, res) {
       max_output_tokens: 600,
     });
 
-    const reply =
-      response.output_text || "Üzgünüm, şu anda cevap oluşturamıyorum.";
+    let reply =
+      response.output_text || "Üzgünüm, şu anda cevap oluşturulamadı.";
+
+    // CONTACT etiketi kontrolü
+    const isContact = /\[CONTACT\]/i.test(reply);
+
+    // Etiketi temizle
+    reply = reply.replace(/\[CONTACT\]/gi, "").trim();
 
     return res.status(200).json({
       reply,
+      isContact,
     });
   } catch (error) {
-    console.error("OPENAI ERROR");
-    console.error(error);
+    console.error("OPENAI ERROR:", error);
 
     return res.status(500).json({
       reply: "WHATSAPP_REDIRECT",
+      isContact: false,
     });
   }
 }

@@ -68,7 +68,15 @@ export default function ChatBot() {
         content: data.reply,
       };
 
-      setMessages((prev) => [...prev, assistantMessage]);
+      setMessages((prev) => [
+        ...prev,
+        {
+          role: "assistant",
+          content: data.reply,
+          isWhatsApp: data.isWhatsApp,
+          isContact: data.isContact,
+        },
+      ]);
 
       setChatHistory((prev) => [...prev, userMessage, assistantMessage]);
     } catch (error) {
@@ -170,29 +178,49 @@ export default function ChatBot() {
                   className={`max-w-[85%] text-sm px-5 py-3.5 rounded-2xl ${m.role === "user" ? "bg-[#1A1A1A] text-white rounded-tr-none shadow-lg" : "bg-white text-gray-900 border border-gray-100 rounded-tl-none shadow-sm"}`}
                 >
                   {m.content}
+
+                  {/* İletişim Butonu */}
+                  {m.isContact && (
+                    <div className="mt-4">
+                      <button
+                        onClick={() => {
+                          setIsOpen(false);
+                          window.location.href = "/#iletisim";
+                        }}
+                        className="w-full bg-[#A68B6D] text-white py-3 rounded-xl font-bold text-xs uppercase tracking-widest hover:bg-[#8D7458] transition-all duration-300"
+                      >
+                        📍 İletişim Noktasına Git
+                      </button>
+                    </div>
+                  )}
+
+                  {/* WhatsApp Formu */}
                   {m.isWhatsApp && (
                     <div className="mt-5 p-5 bg-white rounded-2xl border border-[#A68B6D]/20 shadow-[0_10px_25px_rgba(166,139,109,0.1)] space-y-3">
                       <p className="text-[10px] font-bold text-center uppercase tracking-widest text-[#A68B6D]">
                         {t("chatbot.form_title")}
                       </p>
+
                       <input
                         placeholder={t("chatbot.name_placeholder")}
-                        value={formData.name || ""} // value prop'unu ekledik
+                        value={formData.name || ""}
                         className="w-full text-xs p-3.5 bg-[#FAFAFA] border border-gray-200 rounded-xl outline-none focus:border-[#A68B6D] transition-all"
                         onChange={(e) =>
                           handleInputChange("name", e.target.value)
                         }
                       />
+
                       <input
                         placeholder={t("chatbot.phone_placeholder")}
-                        value={formData.phone || ""} // value prop'unu ekledik
+                        value={formData.phone || ""}
                         className="w-full text-xs p-3.5 bg-[#FAFAFA] border border-gray-200 rounded-xl outline-none focus:border-[#A68B6D] transition-all"
                         onChange={(e) =>
                           handleInputChange("phone", e.target.value)
                         }
                       />
+
                       <select
-                        value={formData.treatment || ""} // value prop'unu ekledik
+                        value={formData.treatment || ""}
                         className="w-full text-xs p-3.5 bg-[#FAFAFA] border border-gray-200 rounded-xl outline-none focus:border-[#A68B6D] transition-all"
                         onChange={(e) =>
                           handleInputChange("treatment", e.target.value)
@@ -201,24 +229,28 @@ export default function ChatBot() {
                         <option value="">
                           {t("chatbot.treatment_placeholder")}
                         </option>
-                        {t("chatbot.treatments", { returnObjects: true }).map(
-                          (item) => (
-                            <option key={item.value} value={item.value}>
-                              {item.label}
-                            </option>
-                          ),
-                        )}
+
+                        {t("chatbot.treatments", {
+                          returnObjects: true,
+                        }).map((item) => (
+                          <option key={item.value} value={item.value}>
+                            {item.label}
+                          </option>
+                        ))}
                       </select>
+
                       {error && (
                         <p className="text-[11px] text-[#A68B6D] font-bold text-center animate-pulse">
                           ⚠️ {error}
                         </p>
                       )}
+
                       <button
                         onClick={handleWhatsAppSubmit}
                         className="relative overflow-hidden w-full bg-[#1A1A1A] text-[#A68B6D] py-3.5 rounded-xl font-bold text-xs uppercase tracking-widest hover:text-white transition-all group mt-2"
                       >
                         <span className="absolute inset-0 bg-[#A68B6D] translate-y-full group-hover:translate-y-0 transition-transform duration-500"></span>
+
                         <span className="relative z-10">
                           {t("chatbot.btn_send")}
                         </span>
