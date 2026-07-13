@@ -4,91 +4,62 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-const langMap = {
-  tr: "Türkçe",
-  en: "English",
-  fr: "Français",
-  ar: "العربية",
-  it: "Italiano",
-};
-
 export default async function handler(req, res) {
-  if (req.method !== "POST") {
+  if (req.method !== "POST")
     return res.status(405).json({ error: "Method not allowed" });
-  }
 
-  const { message, lang } = req.body;
-  const currentLang = langMap[lang] || "Türkçe";
+  const { message } = req.body;
 
   try {
-    // 1. WhatsApp Yönlendirme Kontrolü
-    const whatsappKeywords = [
-      "randevu",
-      "appointment",
-      "rezervasyon",
-      "muayene",
-      "contact",
-      "iletişim",
-    ];
-    if (whatsappKeywords.some((k) => message.toLowerCase().includes(k))) {
-      return res.status(200).json({ reply: "WHATSAPP_REDIRECT" });
-    }
-
-    // 2. OpenAI Thread Oluşturma
+    // 1. Thread oluştur
     const thread = await openai.beta.threads.create();
 
-    // Güvenlik: thread.id boş mu diye kontrol et
-    if (!thread || !thread.id) {
-      console.error("Thread oluşturulamadı, dönen nesne:", thread);
+    // Güvenlik: ID boşsa hata fırlat
+    if (!thread?.id) {
       throw new Error("Thread oluşturulamadı.");
     }
-    const threadId = thread.id;
-    console.log("Thread başarıyla oluşturuldu, ID:", threadId);
+    const tId = thread.id;
 
-    // 3. Kullanıcı mesajını ekle
-    await openai.beta.threads.messages.create(threadId, {
+    // 2. Mesaj ekle
+    await openai.beta.threads.messages.create(tId, {
       role: "user",
-      content: `[Dil: ${currentLang}] Mesaj: ${message}`,
+      content: message,
     });
 
-    // 4. Asistanı çalıştır
-    const run = await openai.beta.threads.runs.create(threadId, {
+    // 3. Run başlat (Assistant ID doğrudan kod içinde)
+    const run = await openai.beta.threads.runs.create(tId, {
       assistant_id: "asst_Jh6dxhPo0ALkV9gDIQdawRrw",
     });
 
-    // Güvenlik: run.id boş mu diye kontrol et
-    if (!run || !run.id) {
-      console.error("Run oluşturulamadı, dönen nesne:", run);
+    // Güvenlik: Run ID boşsa hata fırlat
+    if (!run?.id) {
       throw new Error("Run oluşturulamadı.");
     }
-    const runId = run.id;
-    console.log("Run başarıyla başlatıldı, ID:", runId);
+    const rId = run.id;
 
-    // 5. Cevabın oluşmasını bekle (Polling)
-    let status = await openai.beta.threads.runs.retrieve(threadId, runId);
+    // 4. Polling (Status kontrolü) - DÜZELTİLMİŞ KISIM
+    let status = await openai.beta.threads.runs.retrieve(tId, rId);
     let attempts = 0;
 
     while (status.status !== "completed" && attempts < 15) {
       if (["failed", "cancelled", "expired"].includes(status.status)) {
-        throw new Error(`Asistan işlemi başarısız oldu: ${status.status}`);
+        throw new Error("Asistan işlemi tamamlanamadı.");
       }
       await new Promise((r) => setTimeout(r, 1000));
-      status = await openai.beta.threads.runs.retrieve(threadId, runId);
+
+      // HATA GİDERİCİ: Retrieve metodunu nesne olarak çağıralım
+      status = await openai.beta.threads.runs.retrieve(tId, rId);
       attempts++;
     }
 
-    if (status.status !== "completed") {
-      throw new Error("Asistan yanıt süresi doldu.");
-    }
-
-    // 6. Asistanın mesajını al
-    const msgs = await openai.beta.threads.messages.list(threadId);
+    // 5. Yanıtı al
+    const msgs = await openai.beta.threads.messages.list(tId);
     const reply = msgs.data[0].content[0].text.value;
 
     return res.status(200).json({ reply });
   } catch (error) {
-    console.error("AI İşlem Hatası:", error);
-    // Hata durumunda WhatsApp butonuna yönlendir
+    console.error("KRİTİK HATA:", error);
+    // Hata durumunda frontend'i WhatsApp'a yönlendir
     return res.status(200).json({ reply: "WHATSAPP_REDIRECT" });
   }
 }
