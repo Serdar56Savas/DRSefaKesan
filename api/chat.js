@@ -13,53 +13,38 @@ export default async function handler(req, res) {
   try {
     // 1. Thread oluştur
     const thread = await openai.beta.threads.create();
-
-    // Güvenlik: ID boşsa hata fırlat
-    if (!thread?.id) {
-      throw new Error("Thread oluşturulamadı.");
-    }
-    const tId = thread.id;
+    const threadId = thread.id;
 
     // 2. Mesaj ekle
-    await openai.beta.threads.messages.create(tId, {
+    await openai.beta.threads.messages.create(threadId, {
       role: "user",
       content: message,
     });
 
-    // 3. Run başlat (Assistant ID doğrudan kod içinde)
-    const run = await openai.beta.threads.runs.create(tId, {
+    // 3. Run başlat
+    const run = await openai.beta.threads.runs.create(threadId, {
       assistant_id: "asst_Jh6dxhPo0ALkV9gDIQdawRrw",
     });
 
-    // Güvenlik: Run ID boşsa hata fırlat
-    if (!run?.id) {
-      throw new Error("Run oluşturulamadı.");
-    }
-    const rId = run.id;
-
-    // 4. Polling (Status kontrolü) - DÜZELTİLMİŞ KISIM
-    let status = await openai.beta.threads.runs.retrieve(tId, rId);
+    // 4. Sabit bir döngü ile status kontrolü
+    let runStatus = await openai.beta.threads.runs.retrieve(threadId, run.id);
     let attempts = 0;
 
-    while (status.status !== "completed" && attempts < 15) {
-      if (["failed", "cancelled", "expired"].includes(status.status)) {
-        throw new Error("Asistan işlemi tamamlanamadı.");
-      }
+    while (runStatus.status !== "completed" && attempts < 15) {
+      if (["failed", "cancelled", "expired"].includes(runStatus.status)) break;
       await new Promise((r) => setTimeout(r, 1000));
-
-      // HATA GİDERİCİ: Retrieve metodunu nesne olarak çağıralım
-      status = await openai.beta.threads.runs.retrieve(tId, rId);
+      // BURASI ÇOK ÖNEMLİ: Fonksiyonu her seferinde güncel değişkenlerle çağırıyoruz
+      runStatus = await openai.beta.threads.runs.retrieve(threadId, run.id);
       attempts++;
     }
 
     // 5. Yanıtı al
-    const msgs = await openai.beta.threads.messages.list(tId);
+    const msgs = await openai.beta.threads.messages.list(threadId);
     const reply = msgs.data[0].content[0].text.value;
 
     return res.status(200).json({ reply });
   } catch (error) {
     console.error("KRİTİK HATA:", error);
-    // Hata durumunda frontend'i WhatsApp'a yönlendir
     return res.status(200).json({ reply: "WHATSAPP_REDIRECT" });
   }
 }
