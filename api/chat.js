@@ -1,50 +1,92 @@
 import OpenAI from "openai";
 
-const openai = new OpenAI({
+const client = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-export default async function handler(req, res) {
-  if (req.method !== "POST")
-    return res.status(405).json({ error: "Method not allowed" });
+const SYSTEM_PROMPT = `
+Sen Op. Dr. Sefa Keşan'ın resmi yapay zeka danışmanısın.
 
-  const { message } = req.body;
+Kimdir?
+- Op. Dr. Sefa Keşan
+- Kulak Burun Boğaz Hastalıkları Uzmanı
+
+Uzmanlık Alanları
+- Rinoplasti
+- Revizyon Rinoplasti
+- Otoplasti
+- Septoplasti
+- Bademcik
+- Geniz Eti
+- Sinüzit
+- Kulak Hastalıkları
+- Burun Hastalıkları
+- Boğaz Hastalıkları
+- Horlama
+- Uyku Apnesi
+
+Kurallar
+
+- Hastalara nazik davran.
+- Doktor gibi kesin teşhis koyma.
+- İlaç önerme.
+- Fiyat bilgisi verme.
+- Gerektiğinde doktora muayene öner.
+- Acil durumlarda en yakın sağlık kuruluşuna başvurmasını söyle.
+
+Web Sitesi:
+https://drsefakesan.com
+
+İletişim:
+https://drsefakesan.com/#iletisim
+
+Her zaman kısa, anlaşılır ve profesyonel cevap ver.
+`;
+
+export default async function handler(req, res) {
+  if (req.method !== "POST") {
+    return res.status(405).json({
+      error: "Method not allowed",
+    });
+  }
 
   try {
-    // 1. Thread oluştur
-    const thread = await openai.beta.threads.create();
-    const threadId = thread.id;
+    const { message, history = [] } = req.body;
 
-    // 2. Mesaj ekle
-    await openai.beta.threads.messages.create(threadId, {
-      role: "user",
-      content: message,
-    });
-
-    // 3. Run başlat
-    const run = await openai.beta.threads.runs.create(threadId, {
-      assistant_id: "asst_Jh6dxhPo0ALkV9gDIQdawRrw",
-    });
-
-    // 4. Sabit bir döngü ile status kontrolü
-    let runStatus = await openai.beta.threads.runs.retrieve(threadId, run.id);
-    let attempts = 0;
-
-    while (runStatus.status !== "completed" && attempts < 15) {
-      if (["failed", "cancelled", "expired"].includes(runStatus.status)) break;
-      await new Promise((r) => setTimeout(r, 1000));
-      // BURASI ÇOK ÖNEMLİ: Fonksiyonu her seferinde güncel değişkenlerle çağırıyoruz
-      runStatus = await openai.beta.threads.runs.retrieve(threadId, run.id);
-      attempts++;
+    if (!message || !message.trim()) {
+      return res.status(400).json({
+        error: "Mesaj boş olamaz.",
+      });
     }
 
-    // 5. Yanıtı al
-    const msgs = await openai.beta.threads.messages.list(threadId);
-    const reply = msgs.data[0].content[0].text.value;
+    const input = [
+      ...history,
+      {
+        role: "user",
+        content: message,
+      },
+    ];
 
-    return res.status(200).json({ reply });
+    const response = await client.responses.create({
+      model: "gpt-4.1",
+      instructions: SYSTEM_PROMPT,
+      input,
+      temperature: 0.4,
+      max_output_tokens: 600,
+    });
+
+    const reply =
+      response.output_text || "Üzgünüm, şu anda cevap oluşturamıyorum.";
+
+    return res.status(200).json({
+      reply,
+    });
   } catch (error) {
-    console.error("KRİTİK HATA:", error);
-    return res.status(200).json({ reply: "WHATSAPP_REDIRECT" });
+    console.error("OPENAI ERROR");
+    console.error(error);
+
+    return res.status(500).json({
+      reply: "WHATSAPP_REDIRECT",
+    });
   }
 }

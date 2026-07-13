@@ -8,6 +8,7 @@ export default function ChatBot() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
+  const [chatHistory, setChatHistory] = useState([]);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -32,27 +33,47 @@ export default function ChatBot() {
 
   const sendMessage = async (text = input) => {
     if (!text.trim()) return;
-    setMessages((prev) => [...prev, { role: "user", content: text }]);
+
+    const userMessage = {
+      role: "user",
+      content: text,
+    };
+
+    setMessages((prev) => [...prev, userMessage]);
+
     setInput("");
     setLoading(true);
 
     try {
       const response = await fetch("/api/chat", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: text, lang: i18n.language }),
-      });
-      const data = await response.json();
-      const isRedirect = data.reply === "WHATSAPP_REDIRECT";
-      setMessages((prev) => [
-        ...prev,
-        {
-          role: "assistant",
-          content: isRedirect ? t("chatbot.whatsapp_message") : data.reply,
-          isWhatsApp: isRedirect,
+        headers: {
+          "Content-Type": "application/json",
         },
-      ]);
+        body: JSON.stringify({
+          message: text,
+          lang: i18n.language,
+          history: chatHistory,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("API Error");
+      }
+
+      const data = await response.json();
+
+      const assistantMessage = {
+        role: "assistant",
+        content: data.reply,
+      };
+
+      setMessages((prev) => [...prev, assistantMessage]);
+
+      setChatHistory((prev) => [...prev, userMessage, assistantMessage]);
     } catch (error) {
+      console.error(error);
+
       setMessages((prev) => [
         ...prev,
         {
