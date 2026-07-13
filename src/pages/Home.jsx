@@ -382,7 +382,7 @@ export default function Home() {
                 </div>
                 <div>
                   <span className="font-serif text-2xl font-light text-gray-900 block">
-                    15<span className="text-[#8FA9C4] font-normal">+</span>
+                    11<span className="text-[#8FA9C4] font-normal">+</span>
                   </span>
                   <span className="text-[10px] uppercase tracking-wider text-gray-500 font-medium block mt-0.5">
                     {t("stats.experience")}
