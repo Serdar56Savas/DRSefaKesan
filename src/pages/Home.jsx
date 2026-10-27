@@ -7,11 +7,17 @@ import {
   Award,
   ShieldCheck,
   Users,
+  Video,
   HeartHandshake,
+  Zap,
+  Play,
   MapPin,
   Phone,
   Clock,
   Search,
+  Maximize2,
+  Camera,
+  X,
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
@@ -19,6 +25,9 @@ import {
 import LanguageSelector from "../components/LanguageSelector";
 import { useTranslation } from "react-i18next";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import GoogleReviewsSlider from "../components/GoogleReviewsSlider";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -103,6 +112,58 @@ export default function Home() {
           before: "/images/gallery/rinoplasti/rino-7.png",
           after: "/images/gallery/rinoplasti/rino-7.1.png",
         },
+        {
+          before: "/images/gallery/rinoplasti/rino-8.png",
+          after: "/images/gallery/rinoplasti/rino-8.1.png",
+        },
+        {
+          before: "/images/gallery/rinoplasti/rino-9.png",
+          after: "/images/gallery/rinoplasti/rino-9.1.png",
+        },
+        {
+          before: "/images/gallery/rinoplasti/rino-10.png",
+          after: "/images/gallery/rinoplasti/rino-10.1.png",
+        },
+        {
+          before: "/images/gallery/rinoplasti/rino-11.png",
+          after: "/images/gallery/rinoplasti/rino-11.1.png",
+        },
+        {
+          before: "/images/gallery/rinoplasti/rino-12.png",
+          after: "/images/gallery/rinoplasti/rino-12.1.png",
+        },
+        {
+          before: "/images/gallery/rinoplasti/rino-13.png",
+          after: "/images/gallery/rinoplasti/rino-13.1.png",
+        },
+        {
+          before: "/images/gallery/rinoplasti/rino-14.png",
+          after: "/images/gallery/rinoplasti/rino-14.1.png",
+        },
+        {
+          before: "/images/gallery/rinoplasti/rino-15.png",
+          after: "/images/gallery/rinoplasti/rino-15.1.png",
+        },
+        {
+          before: "/images/gallery/rinoplasti/rino-16.png",
+          after: "/images/gallery/rinoplasti/rino-16.1.png",
+        },
+        {
+          before: "/images/gallery/rinoplasti/rino-17.png",
+          after: "/images/gallery/rinoplasti/rino-17.1.png",
+        },
+        {
+          before: "/images/gallery/rinoplasti/rino-18.png",
+          after: "/images/gallery/rinoplasti/rino-18.1.png",
+        },
+        {
+          before: "/images/gallery/rinoplasti/rino-19.png",
+          after: "/images/gallery/rinoplasti/rino-19.1.png",
+        },
+        {
+          before: "/images/gallery/rinoplasti/rino-20.png",
+          after: "/images/gallery/rinoplasti/rino-20.1.png",
+        },
       ],
     },
 
@@ -119,6 +180,10 @@ export default function Home() {
         {
           before: "/images/gallery/revizyon/revi-2.png",
           after: "/images/gallery/revizyon/revi-2.1.png",
+        },
+        {
+          before: "/images/gallery/revizyon/revi-3.png",
+          after: "/images/gallery/revizyon/revi-3.1.png",
         },
       ],
     },
@@ -174,6 +239,239 @@ export default function Home() {
       ],
     },
   };
+
+  // ----------------------------------------------------------------------
+  // 2. DAHİLİ BİLEŞEN: DİNAMİK VAKA & MERYA SLIDER (SİNEMATİK DİZAYN)
+  // ----------------------------------------------------------------------
+  function OperationCasesSlider() {
+    const { t } = useTranslation();
+    const [activeSlide, setActiveSlide] = useState(0);
+    const [selectedMedia, setSelectedMedia] = useState(null);
+
+    // i18next JSON dosyasından dinamik vaka listesini çekiyoruz
+    const caseItemsData = t("operationCases.items", { returnObjects: true });
+    const caseItems = Array.isArray(caseItemsData) ? caseItemsData : [];
+
+    // Instagram URL'sini gömülebilir (embed) formata dönüştüren yardımcı fonksiyon
+    const getInstagramEmbedUrl = (url) => {
+      if (!url) return "";
+      const cleanUrl = url.split("?")[0].replace(/\/$/, "");
+      return `${cleanUrl}/embed/captioned/`;
+    };
+
+    // 6 Saniyede bir otomatik slide döngüsü
+    useEffect(() => {
+      if (caseItems.length === 0) return;
+      const timer = setInterval(() => {
+        setActiveSlide((prev) =>
+          prev === caseItems.length - 1 ? 0 : prev + 1,
+        );
+      }, 6000);
+
+      return () => clearInterval(timer);
+    }, [caseItems.length]);
+
+    const handlePrev = () => {
+      setActiveSlide((prev) => (prev === 0 ? caseItems.length - 1 : prev - 1));
+    };
+
+    const handleNext = () => {
+      setActiveSlide((prev) => (prev === caseItems.length - 1 ? 0 : prev + 1));
+    };
+
+    if (caseItems.length === 0) return null;
+
+    return (
+      <div className="relative">
+        {/* Slayt İçerik Alanı */}
+        <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-[#161616] shadow-2xl">
+          <div
+            className="flex transition-transform duration-700 ease-out"
+            style={{ transform: `translateX(-${activeSlide * 100}%)` }}
+          >
+            {caseItems.map((item) => (
+              <div
+                key={item.id}
+                className="w-full shrink-0 grid grid-cols-1 lg:grid-cols-12 min-h-[420px]"
+              >
+                {/* Sol Taraf: Görsel / Medya Alanı */}
+                <div
+                  className="lg:col-span-7 relative group cursor-pointer overflow-hidden bg-black flex items-center justify-center"
+                  onClick={() => setSelectedMedia(item)}
+                >
+                  <img
+                    src={item.coverImage}
+                    alt={item.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-90"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+
+                  {/* Video Oynat / Büyüt Butonu */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-16 h-16 rounded-full bg-[#A68B6D] text-white flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform duration-300">
+                      {item.type === "video" ? (
+                        <Play size={28} className="ml-1 fill-white" />
+                      ) : (
+                        <Maximize2 size={24} />
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Tür Rozeti (Fotoğraf / Video) */}
+                  <div className="absolute top-4 left-4 flex items-center gap-2">
+                    <span
+                      className={`px-3 py-1 rounded-full text-[10px] font-bold border uppercase tracking-wider backdrop-blur-md ${item.badgeColor}`}
+                    >
+                      {item.badge}
+                    </span>
+                    <span className="px-3 py-1 rounded-full text-[10px] font-bold bg-black/60 border border-white/20 text-white backdrop-blur-md uppercase tracking-wider flex items-center gap-1.5">
+                      {item.type === "video" ? (
+                        <>
+                          <Video size={12} className="text-[#A68B6D]" />{" "}
+                          Instagram Reels
+                        </>
+                      ) : (
+                        <>
+                          <Camera size={12} className="text-[#A68B6D]" /> Görsel
+                        </>
+                      )}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Sağ Taraf: Metin Açıklama Alanı */}
+                <div className="lg:col-span-5 p-8 lg:p-10 flex flex-col justify-between bg-[#1A1817]">
+                  <div>
+                    <span className="text-[#A68B6D] text-[10px] tracking-[0.25em] font-bold uppercase block mb-3">
+                      {item.category}
+                    </span>
+                    <h3 className="text-xl md:text-2xl font-serif font-light text-white mb-4 leading-snug">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-400 text-xs md:text-sm font-light leading-relaxed mb-6">
+                      {item.desc}
+                    </p>
+                  </div>
+
+                  <div className="pt-6 border-t border-white/10 flex items-center justify-between">
+                    <button
+                      onClick={() => setSelectedMedia(item)}
+                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#A68B6D] hover:bg-[#8F7559] text-white text-xs uppercase tracking-widest font-semibold rounded-lg transition-colors cursor-pointer"
+                    >
+                      {item.type === "video" ? (
+                        <>
+                          <Play size={14} className="fill-white" />
+                          <span>{t("operationCases.watchBtn")}</span>
+                        </>
+                      ) : (
+                        <>
+                          <Maximize2 size={14} />
+                          <span>{t("operationCases.detailBtn")}</span>
+                        </>
+                      )}
+                    </button>
+
+                    <span className="text-xs font-mono text-gray-500">
+                      0{item.id} / 0{caseItems.length}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Navigasyon Okları */}
+        <button
+          onClick={handlePrev}
+          className="absolute -left-4 md:-left-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/80 border border-white/20 text-white flex items-center justify-center shadow-2xl hover:bg-[#A68B6D] hover:border-[#A68B6D] transition-all cursor-pointer z-10"
+          title="Önceki Vaka"
+        >
+          <ChevronLeft size={22} />
+        </button>
+
+        <button
+          onClick={handleNext}
+          className="absolute -right-4 md:-right-6 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-black/80 border border-white/20 text-white flex items-center justify-center shadow-2xl hover:bg-[#A68B6D] hover:border-[#A68B6D] transition-all cursor-pointer z-10"
+          title="Sonraki Vaka"
+        >
+          <ChevronRight size={22} />
+        </button>
+
+        {/* Kontrol Noktaları (Indicators) */}
+        <div className="flex justify-center items-center gap-2 mt-6">
+          {caseItems.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => setActiveSlide(idx)}
+              className={`h-2 rounded-full transition-all duration-500 cursor-pointer ${
+                idx === activeSlide
+                  ? "w-8 bg-[#A68B6D]"
+                  : "w-2 bg-gray-600 hover:bg-gray-400"
+              }`}
+              title={`Vaka ${idx + 1}`}
+            />
+          ))}
+        </div>
+
+        {/* MEDYA POP-UP MODAL (INSTAGRAM REELS VEYA FOTOĞRAF BÜYÜTÜCÜ) */}
+        {selectedMedia && (
+          <div
+            className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4"
+            onClick={() => setSelectedMedia(null)}
+          >
+            <div
+              className="relative w-full max-w-md bg-[#111] rounded-3xl overflow-hidden border border-white/20 shadow-2xl flex flex-col items-center"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setSelectedMedia(null)}
+                className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-black/70 text-white flex items-center justify-center hover:bg-[#A68B6D] transition-colors cursor-pointer"
+              >
+                <X size={20} />
+              </button>
+
+              {/* Medya Gösterim Alanı */}
+              <div className="w-full">
+                {selectedMedia.type === "video" ? (
+                  <div className="w-full h-[580px] pt-2">
+                    <iframe
+                      src={getInstagramEmbedUrl(selectedMedia.instagramUrl)}
+                      className="w-full h-full border-0 rounded-2xl"
+                      title={selectedMedia.title}
+                      allowTransparency="true"
+                      allow="encrypted-media"
+                    ></iframe>
+                  </div>
+                ) : (
+                  <div className="max-h-[70vh] overflow-hidden flex items-center justify-center bg-black p-2">
+                    <img
+                      src={selectedMedia.coverImage}
+                      alt={selectedMedia.title}
+                      className="max-h-[65vh] w-auto object-contain rounded-xl"
+                    />
+                  </div>
+                )}
+              </div>
+
+              {/* Alt Bilgi */}
+              <div className="w-full p-6 bg-[#1A1817] border-t border-white/10">
+                <span className="text-[#A68B6D] text-[10px] tracking-widest uppercase font-bold block mb-1">
+                  {selectedMedia.category}
+                </span>
+                <h4 className="text-lg font-serif text-white mb-2">
+                  {selectedMedia.title}
+                </h4>
+                <p className="text-xs text-gray-400 font-light">
+                  {selectedMedia.desc}
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  }
 
   useEffect(() => {
     // Tüm kategorilerdeki tüm vakaları döngüye al
@@ -241,203 +539,10 @@ export default function Home() {
 
   return (
     <div className="bg-[#FAF8F5] text-gray-800 overflow-hidden">
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#FAF8F5]/80 backdrop-blur-md border-b border-gray-200/60 px-6 py-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          {/* LOGO */}
-          <div
-            className="cursor-pointer"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          >
-            <span className="font-serif text-lg tracking-[0.15em] font-light text-gray-900 block uppercase">
-              Op. Dr. Sefa Keşan
-            </span>
-
-            <span className="text-[9px] uppercase tracking-[0.2em] text-[#A68B6D] font-semibold block">
-              {t("navbar.clinicSubtitle")}
-            </span>
-          </div>
-
-          {/* MENU */}
-          <div className="hidden md:flex items-center gap-8 text-xs uppercase tracking-widest font-medium text-gray-500">
-            <a
-              href="#uzmanlik"
-              className="hover:text-gray-900 transition-colors"
-            >
-              {t("navbar.services")}
-            </a>
-
-            <a href="#galeri" className="hover:text-gray-900 transition-colors">
-              {t("navbar.gallery")}
-            </a>
-
-            <button
-              onClick={() => navigate("/biyografi")}
-              className="hover:text-gray-900 transition-colors cursor-pointer uppercase tracking-widest"
-            >
-              {t("navbar.doctor")}
-            </button>
-
-            <a
-              href="#iletisim"
-              className="hover:text-gray-900 transition-colors"
-            >
-              {t("navbar.contact")}
-            </a>
-          </div>
-
-          {/* SAĞ TARAF */}
-          <div className="flex items-center gap-4">
-            {/* LANGUAGE */}
-            <LanguageSelector />
-
-            {/* RANDEVU */}
-            <button
-              onClick={() =>
-                handleNavClick({ id: "iletisim", type: "section" })
-              }
-              className="px-5 py-2.5 bg-gold text-black text-xs uppercase tracking-wider font-medium hover:bg-yellow-600 cursor-pointer transition-colors"
-            >
-              {t("navbar.appointment")}
-            </button>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* 1. BÖLÜM: HERO */}
-      <section
-        id="hero"
-        className="relative min-h-screen lg:h-screen flex flex-col justify-between pt-28 pb-20 lg:py-0 overflow-hidden bg-[#F4F0EA]"
-      >
-        <div className="absolute inset-0 z-0">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover scale-105 opacity-25 mix-blend-multiply filter brightness-105 contrast-95 sepia-[20%]"
-          >
-            <source
-              src="https://assets.mixkit.co/videos/preview/mixkit-dermatologist-examining-a-patient-41527-large.mp4"
-              type="video/mp4"
-            />
-          </video>
-          <div
-            className="absolute top-1/4 left-1/3 w-[600px] h-[600px] bg-[#E3ECF5] rounded-full blur-[130px] opacity-70 animate-pulse"
-            style={{ animationDuration: "9s" }}
-          ></div>
-          <div
-            className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-[#EFEBE4] rounded-full blur-[120px] opacity-80 animate-pulse"
-            style={{ animationDuration: "6s" }}
-          ></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-[#F4F0EA]/80 via-transparent to-[#FAF8F5]"></div>
-        </div>
-
-        <div
-          className={`relative z-10 max-w-5xl mx-auto px-6 text-center my-auto transition-all duration-1000 transform ${isLoaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
-        >
-          <div className="inline-flex items-center gap-2 bg-[#FAF8F5]/80 backdrop-blur-md px-5 py-2.5 border border-[#E3ECF5] rounded-full mb-8 shadow-sm">
-            <Sparkles
-              size={14}
-              className="text-[#8FA9C4] animate-spin"
-              style={{ animationDuration: "5s" }}
-            />
-            <span className="text-gray-700 tracking-[0.25em] text-[10px] uppercase font-semibold">
-              {t("hero.badge")}
-            </span>
-          </div>
-
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light tracking-wide text-gray-900 mb-8 leading-[1.15]">
-            {t("hero.title1")} <br />
-            <span className="font-normal italic text-[#A68B6D]">
-              {t("hero.title2")}
-            </span>
-          </h1>
-
-          <p className="text-gray-600 max-w-2xl mx-auto text-base md:text-lg font-light mb-10 leading-relaxed">
-            {t("hero.description")}
-          </p>
-
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <a
-              href="#iletisim"
-              className="w-full sm:w-auto px-8 py-4 bg-[#A68B6D] text-white text-xs uppercase tracking-widest font-semibold flex items-center justify-center gap-2 hover:bg-[#93795C] transition-all rounded-sm shadow-md transform hover:-translate-y-0.5 cursor-pointer"
-            >
-              <Calendar size={16} /> {t("hero.consultation")}
-            </a>
-            <a
-              href="#galeri"
-              className="w-full sm:w-auto px-8 py-4 bg-white/90 backdrop-blur-md text-gray-800 text-xs uppercase tracking-widest font-semibold flex items-center justify-center gap-2 border border-[#E3ECF5] hover:bg-white transition-all rounded-sm shadow-sm cursor-pointer"
-            >
-              {t("hero.galleryButton")}
-            </a>
-          </div>
-        </div>
-
-        <div className="relative z-10 max-w-7xl w-full mx-auto px-6 mb-12 mt-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div className="bg-white/60 backdrop-blur-xl border border-white/80 p-6 rounded-sm shadow-sm">
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-[#FAF8F5] rounded-sm text-[#A68B6D]">
-                  <Award size={20} />
-                </div>
-                <div>
-                  <span className="font-serif text-2xl font-light text-gray-900 block">
-                    11<span className="text-[#8FA9C4] font-normal">+</span>
-                  </span>
-                  <span className="text-[10px] uppercase tracking-wider text-gray-500 font-medium block mt-0.5">
-                    {t("stats.experience")}
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="bg-white/60 backdrop-blur-xl border border-white/80 p-6 rounded-sm shadow-sm">
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-[#FAF8F5] rounded-sm text-[#A68B6D]">
-                  <Users size={20} />
-                </div>
-                <div>
-                  <span className="font-serif text-2xl font-light text-gray-900 block">
-                    4000<span className="text-[#8FA9C4] font-normal">+</span>
-                  </span>
-                  <span className="text-[10px] uppercase tracking-wider text-gray-500 font-medium block mt-0.5">
-                    {t("stats.cases")}
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="bg-white/60 backdrop-blur-xl border border-white/80 p-6 rounded-sm shadow-sm">
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-[#FAF8F5] rounded-sm text-[#A68B6D]">
-                  <ShieldCheck size={20} />
-                </div>
-                <div>
-                  <span className="font-serif text-2xl font-light text-gray-900 block">
-                    A<span className="text-[#8FA9C4] font-serif">++</span>
-                  </span>
-                  <span className="text-[10px] uppercase tracking-wider text-gray-500 font-medium block mt-0.5">
-                    {t("stats.clinic")}
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="bg-white/60 backdrop-blur-xl border border-white/80 p-6 rounded-sm shadow-sm">
-              <div className="flex items-center gap-4">
-                <div className="p-3 bg-[#FAF8F5] rounded-sm text-[#A68B6D]">
-                  <HeartHandshake size={20} />
-                </div>
-                <div>
-                  <span className="font-serif text-2xl font-light text-gray-900 block">
-                    %99<span className="text-[#8FA9C4] text-lg">.8</span>
-                  </span>
-                  <span className="text-[10px] uppercase tracking-wider text-gray-500 font-medium block mt-0.5">
-                    {t("stats.satisfaction")}
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero />
 
       {/* 2. BÖLÜM: BİYOGRAFİ ÖZET */}
       <section
@@ -445,12 +550,23 @@ export default function Home() {
         className="py-24 max-w-6xl mx-auto px-6 border-b border-gray-200"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="aspect-[3/4] bg-white rounded overflow-hidden shadow-md border border-gray-100 relative group">
+          <div className="aspect-[3/4] bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 relative group cursor-pointer">
+            {/* 1. VARSAYILAN RESİM (Siyah & Beyaz Stilde) */}
             <img
               src="/images/sefa-kesan.jpg"
-              alt="Dr. Sefa Keşan"
-              className="w-full h-full object-cover filter grayscale contrast-105 group-hover:scale-105 transition-transform duration-700"
+              alt="Op. Dr. Sefa Keşan"
+              className="w-full h-full object-cover filter grayscale contrast-105 group-hover:scale-105 transition-all duration-700 absolute inset-0"
             />
+
+            {/* 2. HOVER ANINDA GÖRÜNECEK İKİNCİ RESİM (Renkli / Farklı Poz) */}
+            <img
+              src="/images/sefa-kesan-ameliyat.jpg" // Buraya gösterilmesini istediğiniz 2. resmin yolunu yazın
+              alt="Op. Dr. Sefa Keşan"
+              className="w-full h-full object-cover opacity-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 absolute inset-0 z-10"
+            />
+
+            {/* İsteğe Bağlı: Yumuşak Karanlık Alt Gradyan */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20 pointer-events-none"></div>
           </div>
           <div className="space-y-6">
             <span className="text-[#A68B6D] text-xs tracking-widest uppercase font-semibold block border-b border-gray-200 pb-2 w-max">
@@ -476,53 +592,98 @@ export default function Home() {
       </section>
 
       {/* 3. BÖLÜM: PREMIUM UZMANLIK ALANLARI */}
+      {/* 3. BÖLÜM: PREMIUM UZMANLIK ALANLARI (GÖRSEL DESTEKLİ LÜKS DİZAYN) */}
       <section
         id="uzmanlik"
-        className="py-24 bg-[#F4F0EA]/40 border-b border-gray-200 relative"
+        className="py-28 bg-[#FAF8F5] border-b border-gray-200/80 relative overflow-hidden"
       >
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <span className="text-[#A68B6D] text-xs tracking-widest uppercase font-semibold">
-              {t("treatmentsSection.badge")}
-            </span>
+        {/* Arka Plan Yumuşak Işık Efekti */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#A68B6D]/5 rounded-full blur-[140px] pointer-events-none"></div>
 
-            <h2 className="font-serif text-3xl md:text-5xl font-light text-gray-950 mt-2">
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          {/* Üst Başlık */}
+          <div className="text-center max-w-2xl mx-auto mb-20">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white border border-[#A68B6D]/30 rounded-full shadow-2xs mb-4">
+              <Sparkles size={14} className="text-[#A68B6D]" />
+              <span className="text-[#A68B6D] text-[10px] tracking-[0.25em] uppercase font-bold">
+                {t("treatmentsSection.badge")}
+              </span>
+            </div>
+
+            <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-light text-gray-950 leading-tight">
               {t("treatmentsSection.title")}
             </h2>
           </div>
 
+          {/* KARTLAR GRID ALANI */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {treatments.map((item) => (
-              <div
-                key={t(item.id)}
-                onClick={() => navigate(`/tedavi/${t(item.id)}`)}
-                className="bg-white p-8 border border-gray-200/70 transition-all duration-500 flex flex-col justify-between shadow-sm hover:shadow-xl rounded-sm group relative overflow-hidden cursor-pointer transform hover:-translate-y-2 hover:bg-gradient-to-br hover:from-white hover:to-[#F4F0EA]/30"
-              >
-                <div className="absolute top-0 left-0 w-full h-[3px] bg-[#A68B6D] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
-                <div>
-                  <span className="text-[10px] text-[#A68B6D] tracking-widest uppercase font-semibold block mb-2 opacity-80 group-hover:opacity-100">
-                    {t(item.subtitle)}
-                  </span>
-                  <h3 className="font-serif text-xl font-light mb-4 text-gray-900 group-hover:text-[#A68B6D] transition-colors duration-300">
-                    {t(item.title)}
-                  </h3>
-                  <p className="text-gray-500 text-xs font-light mb-6 leading-relaxed group-hover:text-gray-600 transition-colors">
-                    {t(item.desc)}
-                  </p>
-                </div>
-                <div className="text-[10px] text-gray-400 uppercase tracking-widest font-medium border-t border-gray-100 pt-4 flex justify-between items-center group-hover:text-gray-900 transition-colors">
-                  <span>{t("treatmentsClinic.process")}</span>
-                  <span className="transform group-hover:translate-x-1 transition-transform">
-                    &rarr;
-                  </span>
-                </div>
-                <div className="absolute inset-0 bg-gray-950/5 backdrop-blur-[1px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                  <div className="bg-white/95 text-gray-900 p-4 rounded-full shadow-2xl transform scale-50 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-500 ease-out flex items-center justify-center border border-gray-100">
-                    <Search size={22} className="text-[#A68B6D]" />
+            {treatments.map((item) => {
+              // Hastalıklara ve operasyon alanlarına doğrudan odaklanan özel görseller
+              const treatmentImages = {
+                rinoplasti: "/images/gallery/card/rino.jpg", // Doğal burun profili ve estetik açı
+                "revizyon-rinoplasti": "/images/gallery/card/reviz.jpg", // Anatomik yapı ve revizyon şeması
+                otoplasti: "/images/gallery/card/oto.jpg", // Kulak kepçesi ve estetik form
+                "yag-enjeksiyonu": "/images/gallery/card/yag.jpg", // Otolog yağ dokusu ve transfer hücreleri
+                bisektomi: "/images/gallery/card/bisek.jpg", // Yüz hatları, yanak ve çene kontürü
+              };
+
+              const bgImage =
+                treatmentImages[item.id] || treatmentImages["rinoplasti"];
+
+              return (
+                <div
+                  key={item.id}
+                  onClick={() => navigate(`/tedavi/${t(item.id)}`)}
+                  className="group relative h-[420px] rounded-2xl overflow-hidden shadow-xl border border-gray-200/60 cursor-pointer transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl"
+                >
+                  {/* 1. ARKA PLAN RESMİ (HASTALIĞA/İŞLEME ÖZEL BÖLGE GÖRSELİ) */}
+                  <img
+                    src={bgImage}
+                    alt={t(item.title)}
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-out filter brightness-90 contrast-105"
+                  />
+
+                  {/* 2. GRADYAN KARARTMA KATMANI (Metin Okunabilirliği İçin) */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/65 to-black/30 opacity-90 group-hover:opacity-85 transition-opacity duration-500"></div>
+
+                  {/* 3. HOVER ALTIN ÇİZGİSİ */}
+                  <div className="absolute top-0 left-0 w-full h-[4px] bg-[#A68B6D] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left z-20"></div>
+
+                  {/* 4. KART İÇERİĞİ */}
+                  <div className="relative z-10 h-full p-8 flex flex-col justify-between">
+                    {/* ÜST ETİKET VE ARAMA İKONU */}
+                    <div className="flex items-center justify-between">
+                      <span className="inline-block px-3.5 py-1 bg-[#A68B6D]/20 backdrop-blur-md border border-[#A68B6D]/40 text-[#D4AF37] text-[10px] uppercase tracking-[0.2em] font-semibold rounded-full shadow-sm">
+                        {t(item.subtitle)}
+                      </span>
+
+                      <div className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white group-hover:bg-[#A68B6D] group-hover:border-[#A68B6D] transition-all duration-500 shadow-md">
+                        <Search size={16} />
+                      </div>
+                    </div>
+
+                    {/* ALT BAŞLIK & AÇIKLAMA */}
+                    <div className="space-y-3">
+                      <h3 className="font-serif text-2xl font-light text-white group-hover:text-[#F3E5AB] transition-colors duration-300">
+                        {t(item.title)}
+                      </h3>
+
+                      <p className="text-gray-300 text-xs font-light leading-relaxed line-clamp-3 group-hover:text-white transition-colors duration-300">
+                        {t(item.desc)}
+                      </p>
+
+                      {/* SÜREÇ & DETAYLAR LINKI */}
+                      <div className="pt-4 border-t border-white/15 flex items-center justify-between text-[11px] uppercase tracking-widest text-[#A68B6D] font-semibold group-hover:text-white transition-colors">
+                        <span>{t("treatmentsClinic.process")}</span>
+                        <span className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white group-hover:bg-[#A68B6D] group-hover:translate-x-1 transition-all duration-300">
+                          &rarr;
+                        </span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -530,157 +691,235 @@ export default function Home() {
       {/* 4. BÖLÜM: 6 HASTALIK/TEDAVİ ENTEGRELİ GALERİ */}
       <section
         id="galeri"
-        className="py-24 max-w-7xl mx-auto px-6 border-b border-gray-200"
+        className="py-28 bg-gradient-to-b from-[#FAF8F5] via-white to-[#FAF8F5] border-b border-gray-200/60 relative overflow-hidden"
       >
-        <div className="text-center mb-12">
-          <span className="text-[#A68B6D] text-xs tracking-[0.35em] uppercase block mb-2">
-            {t("gallery.sectionBadge")}
-          </span>
+        {/* Dekoratif Arka Plan Işıltısı */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#A68B6D]/5 rounded-full blur-3xl pointer-events-none"></div>
 
-          <h2 className="font-serif text-4xl md:text-6xl font-light text-gray-950">
-            {t("gallery.sectionTitle")}
-          </h2>
-        </div>
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          {/* Başlık Alanı */}
+          <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 bg-[#A68B6D]/10 rounded-full">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#A68B6D] animate-pulse"></span>
+              <span className="text-[#A68B6D] text-[10px] font-bold uppercase tracking-[0.3em]">
+                {t("gallery.sectionBadge")}
+              </span>
+            </div>
+            <h2 className="font-serif text-4xl md:text-5xl font-light text-gray-950 tracking-wide">
+              {t("gallery.sectionTitle")}
+            </h2>
+            <p className="text-sm text-gray-500 font-light">
+              Gerçek vakaların öncesi ve sonrası dokusal değişim süreçleri
+            </p>
+          </div>
 
-        {/* Tabs */}
+          {/* Modern Sekmeler (Tabs) */}
+          <div className="flex justify-start md:justify-center gap-3 mb-16 border-b border-gray-200/80 pb-4 overflow-x-auto scrollbar-none">
+            {Object.keys(galleryData).map((tabId) => (
+              <button
+                key={tabId}
+                onClick={() => {
+                  setActiveTab(tabId);
+                  setCaseIndex(0);
+                  setSliderPos(50);
+                }}
+                className={`text-xs uppercase tracking-[0.2em] px-5 py-2.5 rounded-xl transition-all duration-300 whitespace-nowrap cursor-pointer ${
+                  activeTab === tabId
+                    ? "bg-[#A68B6D] text-white shadow-md shadow-[#A68B6D]/20 font-semibold"
+                    : "bg-white text-gray-500 hover:text-gray-950 border border-gray-200/60"
+                }`}
+              >
+                {t(`gallery.tabs.${tabId}`)}
+              </button>
+            ))}
+          </div>
 
-        <div className="flex justify-start md:justify-center gap-5 mb-14 border-b border-gray-200 pb-5 overflow-x-auto scrollbar-none">
-          {Object.keys(galleryData).map((tabId) => (
-            <button
-              key={tabId}
-              onClick={() => {
-                setActiveTab(tabId);
-                setCaseIndex(0);
-                setSliderPos(50);
-              }}
-              className={`text-xs uppercase tracking-[0.25em] pb-3 whitespace-nowrap transition-all ${
-                activeTab === tabId
-                  ? "text-[#A68B6D] border-b-2 border-[#A68B6D] font-semibold"
-                  : "text-gray-400 hover:text-gray-900"
-              }`}
-            >
-              {t(`gallery.tabs.${tabId}`)}
-            </button>
-          ))}
-        </div>
-
-        {/* BEFORE AFTER */}
-
-        <div className="max-w-4xl mx-auto">
-          {/* Sabit Boyutlu Slider Container */}
-          <div
-            className="relative w-full aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-2xl shadow-2xl border border-gray-100 cursor-col-resize select-none"
-            onMouseMove={(e) =>
-              isDragging.current &&
-              handleMove(e.clientX, e.currentTarget.getBoundingClientRect())
-            }
-            onTouchMove={(e) =>
-              isDragging.current &&
-              handleMove(
-                e.touches[0].clientX,
-                e.currentTarget.getBoundingClientRect(),
-              )
-            }
-            onMouseDown={() => (isDragging.current = true)}
-            onMouseUp={() => (isDragging.current = false)}
-            onMouseLeave={() => (isDragging.current = false)}
-            onTouchStart={() => (isDragging.current = true)}
-            onTouchEnd={() => (isDragging.current = false)}
-          >
-            {/* AFTER Görseli (Altta) */}
-            <img
-              src={currentCase?.after}
-              alt="after"
-              loading="eager"
-              className="absolute inset-0 w-full h-full object-cover"
-              draggable={false}
-            />
-
-            {/* BEFORE Görseli (Üstte - Maskeli) */}
+          {/* İNTERAKTİF BEFORE/AFTER SLIDER KARTI */}
+          <div className="max-w-5xl mx-auto bg-white p-6 md:p-10 rounded-3xl border border-gray-200/80 shadow-2xl space-y-8">
             <div
-              className="absolute inset-0 overflow-hidden"
-              style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
+              className="relative w-full aspect-[4/3] md:aspect-[16/11] overflow-hidden rounded-2xl shadow-inner cursor-col-resize select-none bg-neutral-950"
+              onMouseMove={(e) =>
+                isDragging.current &&
+                handleMove(e.clientX, e.currentTarget.getBoundingClientRect())
+              }
+              onTouchMove={(e) =>
+                isDragging.current &&
+                handleMove(
+                  e.touches[0].clientX,
+                  e.currentTarget.getBoundingClientRect(),
+                )
+              }
+              onMouseDown={() => (isDragging.current = true)}
+              onMouseUp={() => (isDragging.current = false)}
+              onMouseLeave={() => (isDragging.current = false)}
+              onTouchStart={() => (isDragging.current = true)}
+              onTouchEnd={() => (isDragging.current = false)}
             >
+              {/* AFTER Görseli (Altta) */}
               <img
-                src={currentCase?.before}
-                key={currentCase?.before} // Bu key, resim değişince animasyonu tetikler
-                alt="before"
+                src={currentCase?.after}
+                alt="after"
                 loading="eager"
-                className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500"
+                className="absolute inset-0 w-full h-full object-cover"
                 draggable={false}
               />
-            </div>
 
-            {/* Kaydırma Çubuğu */}
-            <div
-              className="absolute top-0 bottom-0 w-[2px] bg-[#A68B6D] flex items-center justify-center pointer-events-none"
-              style={{ left: `${sliderPos}%` }}
-            >
-              <div className="w-12 h-12 rounded-full bg-white border-2 border-[#A68B6D] text-[#A68B6D] flex items-center justify-center shadow-xl">
-                <MoveHorizontal size={24} />
+              {/* BEFORE Görseli (Üstte - Maskeli) */}
+              <div
+                className="absolute inset-0 overflow-hidden"
+                style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
+              >
+                <img
+                  src={currentCase?.before}
+                  key={currentCase?.before}
+                  alt="before"
+                  loading="eager"
+                  className="absolute inset-0 w-full h-full object-cover filter grayscale contrast-105"
+                  draggable={false}
+                />
+              </div>
+
+              {/* Şık Kaydırma Çubuğu */}
+              <div
+                className="absolute top-0 bottom-0 w-[2px] bg-white shadow-[0_0_15px_rgba(0,0,0,0.6)] flex items-center justify-center pointer-events-none"
+                style={{ left: `${sliderPos}%` }}
+              >
+                <div className="w-12 h-12 rounded-full bg-white/95 backdrop-blur-md border border-[#A68B6D] text-[#A68B6D] flex items-center justify-center shadow-2xl transform hover:scale-110 transition-transform">
+                  <MoveHorizontal size={22} />
+                </div>
+              </div>
+
+              {/* Etiketler (Modern Rozetler) */}
+              <div className="absolute top-6 left-6 bg-black/70 backdrop-blur-md text-white px-4 py-2 rounded-lg text-xs uppercase tracking-widest font-mono border border-white/10 shadow-lg">
+                {t("gallery.before")}
+              </div>
+              <div className="absolute top-6 right-6 bg-[#A68B6D] backdrop-blur-md text-white px-4 py-2 rounded-lg text-xs uppercase tracking-widest font-mono shadow-lg">
+                {t("gallery.after")}
               </div>
             </div>
 
-            {/* Etiketler */}
-            <div className="absolute bottom-6 left-6 bg-black/50 backdrop-blur-md text-white px-4 py-2 rounded-full text-xs uppercase tracking-widest">
-              {t("gallery.before")}
+            {/* Navigasyon Okları ve İlerleme Noktaları */}
+            <div className="flex justify-between items-center px-2 md:px-4 pt-2 gap-2">
+              <button
+                onClick={() => {
+                  setCaseIndex((prev) =>
+                    prev === 0
+                      ? galleryData[activeTab].cases.length - 1
+                      : prev - 1,
+                  );
+                  setSliderPos(50);
+                }}
+                className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-[#FAF8F5] border border-gray-200 hover:border-[#A68B6D] hover:text-[#A68B6D] transition-all flex items-center justify-center cursor-pointer shrink-0 shadow-2xs"
+              >
+                <ChevronLeft size={22} />
+              </button>
+
+              {/* Vaka İlerleme Noktaları (Dots) - Mobilde taşmayı önlemek için yatay kaydırma eklendi */}
+              <div className="flex gap-2 md:gap-3 items-center overflow-x-auto max-w-[200px] sm:max-w-md px-2 py-1 scrollbar-none">
+                {galleryData[activeTab].cases.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => {
+                      setCaseIndex(i);
+                      setSliderPos(50);
+                    }}
+                    className={`transition-all duration-300 rounded-full cursor-pointer shrink-0 ${
+                      caseIndex === i
+                        ? "w-8 md:w-10 h-2 bg-[#A68B6D]"
+                        : "w-2.5 h-2.5 bg-gray-300 hover:bg-gray-400"
+                    }`}
+                  />
+                ))}
+              </div>
+
+              <button
+                onClick={() => {
+                  setCaseIndex((prev) =>
+                    prev === galleryData[activeTab].cases.length - 1
+                      ? 0
+                      : prev + 1,
+                  );
+                  setSliderPos(50);
+                }}
+                className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-[#FAF8F5] border border-gray-200 hover:border-[#A68B6D] hover:text-[#A68B6D] transition-all flex items-center justify-center cursor-pointer shrink-0 shadow-2xs"
+              >
+                <ChevronRight size={22} />
+              </button>
             </div>
-            <div className="absolute bottom-6 right-6 bg-[#A68B6D]/90 backdrop-blur-md text-white px-4 py-2 rounded-full text-xs uppercase tracking-widest">
-              {t("gallery.after")}
+
+            {/* HASTALIĞA / İŞLEME ÖZEL TEKNİK DETAY KÜNYESİ */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+              {/* Uygulanan Teknik */}
+              <div className="bg-[#FAF8F5] p-4 rounded-xl border border-gray-200/60 text-center space-y-1">
+                <span className="text-[10px] uppercase font-mono text-gray-400 tracking-wider">
+                  {t("gallery.specLabels.technique")}
+                </span>
+                <span className="text-xs font-semibold text-gray-950 block">
+                  {t(`gallery.${activeTab}.technique`)}
+                </span>
+              </div>
+
+              {/* Anatomi / Deformite */}
+              <div className="bg-[#FAF8F5] p-4 rounded-xl border border-gray-200/60 text-center space-y-1">
+                <span className="text-[10px] uppercase font-mono text-gray-400 tracking-wider">
+                  {t("gallery.specLabels.anatomy")}
+                </span>
+                <span className="text-xs font-semibold text-gray-950 block">
+                  {t(`gallery.${activeTab}.anatomy`)}
+                </span>
+              </div>
+
+              {/* Fonksiyonel Kazanım */}
+              <div className="bg-[#FAF8F5] p-4 rounded-xl border border-gray-200/60 text-center space-y-1">
+                <span className="text-[10px] uppercase font-mono text-gray-400 tracking-wider">
+                  {t("gallery.specLabels.benefit")}
+                </span>
+                <span className="text-xs font-semibold text-[#A68B6D] block">
+                  {t(`gallery.${activeTab}.benefit`)}
+                </span>
+              </div>
             </div>
-          </div>
 
-          {/* Navigasyon Okları */}
-          <div className="flex justify-center items-center gap-8 mt-10">
-            <button
-              onClick={() => {
-                setCaseIndex((prev) =>
-                  prev === 0
-                    ? galleryData[activeTab].cases.length - 1
-                    : prev - 1,
-                );
-                setSliderPos(50);
-              }}
-              className="w-14 h-14 rounded-full border border-gray-200 hover:border-[#A68B6D] hover:text-[#A68B6D] transition flex items-center justify-center"
-            >
-              <ChevronLeft />
-            </button>
-
-            <div className="flex gap-3">
-              {galleryData[activeTab].cases.map((_, i) => (
-                <div
-                  key={i}
-                  className={`transition-all duration-300 ${caseIndex === i ? "w-12 h-2 rounded-full bg-[#A68B6D]" : "w-2 h-2 rounded-full bg-gray-300"}`}
-                />
-              ))}
+            {/* Vaka Detay ve Açıklama Alanı */}
+            <div className="bg-[#FAF8F5] p-8 md:p-10 rounded-2xl border border-gray-200/60 text-center space-y-3">
+              <span className="text-[10px] font-mono uppercase tracking-widest text-[#A68B6D] font-bold block">
+                {t("gallery.caseReportBadge")}
+              </span>
+              <h3 className="font-serif text-2xl md:text-3xl font-light text-gray-950">
+                {t(`gallery.${activeTab}.title`)}
+              </h3>
+              <p className="text-gray-600 font-light text-sm md:text-base leading-relaxed max-w-3xl mx-auto pt-2">
+                {t(`gallery.${activeTab}.details`)}
+              </p>
             </div>
-
-            <button
-              onClick={() => {
-                setCaseIndex((prev) =>
-                  prev === galleryData[activeTab].cases.length - 1
-                    ? 0
-                    : prev + 1,
-                );
-                setSliderPos(50);
-              }}
-              className="w-14 h-14 rounded-full border border-gray-200 hover:border-[#A68B6D] hover:text-[#A68B6D] transition flex items-center justify-center"
-            >
-              <ChevronRight />
-            </button>
-          </div>
-
-          {/* Detay Bilgisi */}
-          <div className="max-w-3xl mx-auto mt-16 text-center">
-            <h3 className="font-serif text-4xl font-light text-gray-950">
-              {t(`gallery.${activeTab}.title`)}
-            </h3>
-            <p className="mt-8 text-gray-600 leading-9 text-lg font-light">
-              {t(`gallery.${activeTab}.details`)}
-            </p>
           </div>
         </div>
       </section>
+
+      {/* 2. OPERASYON VAKALARI (DİNAMİK SLIDER & POP-UP VİDEO BÖLÜMÜ) */}
+      <section className="py-24 bg-gradient-to-b from-[#111111] to-[#1A1817] text-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 border-b border-white/10 pb-8">
+            <div>
+              <span className="text-[#A68B6D] text-xs tracking-[0.3em] uppercase font-bold block mb-3 flex items-center gap-2">
+                <Zap size={14} className="text-[#A68B6D]" />
+                {t("operationCases.sectionBadge")}
+              </span>
+              <h2 className="font-serif text-3xl md:text-5xl font-light text-white">
+                {t("operationCases.sectionTitle")}
+              </h2>
+            </div>
+            <p className="text-gray-400 text-xs font-light max-w-sm mt-4 md:mt-0 leading-relaxed">
+              {t("operationCases.sectionDesc")}
+            </p>
+          </div>
+
+          {/* DİNAMİK SLIDER BİLEŞENİ */}
+          <OperationCasesSlider />
+        </div>
+      </section>
+
+      <GoogleReviewsSlider />
 
       {/* 5. BÖLÜM: İLETİŞİM & HARİTA */}
       <section

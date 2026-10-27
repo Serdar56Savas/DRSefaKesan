@@ -5,7 +5,24 @@
     "doctor": "Our Doctor",
     "contact": "Contact",
     "appointment": "Book Appointment",
-    "clinicSubtitle": "ENT Specialist"
+    "clinicSubtitle": "ENT Specialist",
+    "servicesTitle": "SURGERIES & TREATMENTS",
+    "contactInfoText": "Contact Us for Information, Appointments & Inquiries:",
+    "whatsappButton": "Contact via WhatsApp",
+    "categories": {
+      "rhinoplasty": "NOSE AESTHETICS",
+      "revisionRhinoplasty": "REVISION SURGERY",
+      "otoplasty": "EAR AESTHETICS",
+      "fatGrafting": "AUTOLOGOUS TISSUE TRANSFER",
+      "bichectomy": "FACIAL SLIMMING"
+    },
+    "items": {
+      "primerRhinoplasty": "Primary Rhinoplasty",
+      "revisionRhinoplasty": "Revision Rhinoplasty",
+      "otoplasty": "Otoplasty",
+      "fatGrafting": "Fat Grafting",
+      "bichectomy": "Bichectomy"
+    }
   },
   "hero": {
     "badge": "Personalized Golden Ratio Analysis",
@@ -118,41 +135,63 @@
     "before": "Before",
     "after": "After",
     "case": "Case",
+    "caseReportBadge": "CASE ANALYSIS REPORT",
     "tabs": {
-      "rinoplasti": "Rhinoplasty",
-      "revizyon-rinoplasti": "Revision Rhinoplasty",
-      "otoplasti": "Otoplasty",
-      "yag-enjeksiyonu": "Fat Injection",
-      "bisektomi": "Bichectomy"
+      "rinoplasti": "rhinoplasty",
+      "revizyon-rinoplasti": "revision rhinoplasty",
+      "otoplasti": "otoplasty",
+      "yag-enjeksiyonu": "fat injection",
+      "bisektomi": "bichectomy"
+    },
+    "specLabels": {
+      "technique": "Technique Applied",
+      "anatomy": "Anatomy / Deformity",
+      "benefit": "Functional Gain"
     },
     "rinoplasti": {
       "title": "Primary Rhinoplasty Surgery",
       "vakaNo": "Case Study No: 214",
-      "details": "The nasal bridge structure has been adjusted in harmony with facial proportions, and the droopy nasal tip has been lifted according to the golden ratio."
+      "details": "The nasal hump was adjusted in harmony with facial proportions, and the drooping nasal tip was elevated according to the golden ratio.",
+      "technique": "Piezo Ultrasonic & Open Technique",
+      "anatomy": "Dorsal Hump & Drooping Tip",
+      "benefit": "100% Natural Breathing & Angle Harmony"
     },
     "revizyon-rinoplasti": {
       "title": "Revision Rhinoplasty",
       "vakaNo": "Case Study No: 087",
-      "details": "Reconstruction was performed using rib cartilage grafts in a patient who had previous surgery and suffered from cartilage collapse."
+      "details": "In the patient with prior surgery and cartilage collapse, reconstruction was performed using rib cartilage grafts.",
+      "technique": "Cartilage Graft & Structural Repair",
+      "anatomy": "Pollybeak & Valve Collapse",
+      "benefit": "Clear Airway & Strong Support"
     },
     "otoplasti": {
-      "title": "Otoplasty (Ear Aesthetics)",
+      "title": "Otoplasty (Ear Aesthetic)",
       "vakaNo": "Case Study No: 112",
-      "details": "The prominent ear angle was corrected with an incision made from behind the ear, ensuring natural curvature and symmetry."
+      "details": "The prominent ear angle was corrected via an incision behind the ear, ensuring natural contours and symmetry.",
+      "technique": "Permanent Cartilage Shaping",
+      "anatomy": "Prominent Ear",
+      "benefit": "Symmetrical & Scarless Form"
     },
     "yag-enjeksiyonu": {
       "title": "Fat Injection (Autologous Transfer)",
       "vakaNo": "Case Study No: 419",
-      "details": "Long-term volume, lifting, and rejuvenating effect provided by injecting the patient's own fat tissue into cheekbones and jawline."
+      "details": "The patient's own fat tissue was injected into cheekbones and jawline for long-term volume, lifting, and rejuvenation.",
+      "technique": "Micro Cannula Fat Transfer",
+      "anatomy": "Facial Volume Loss & Contour",
+      "benefit": "Living Tissue & Natural Volume"
     },
     "bisektomi": {
-      "title": "Bichectomy (Cheek Aesthetics)",
+      "title": "Bichectomy (Cheek Aesthetic)",
       "vakaNo": "Case Study No: 088",
-      "details": "By controlled removal of fat pads in the cheek area, cheekbones were highlighted and a sharper facial contour was achieved."
+      "details": "Controlled removal of buccal fat pads through micro intraoral incisions accentuated the cheekbones and created a sharper facial contour.",
+      "technique": "Intraoral Micro Incision",
+      "anatomy": "Full Cheeks & Round Facial Contour",
+      "benefit": "Sharp V-Line Jaw Contour"
     }
   },
   "biographyPage": {
     "back": "Back to Home",
+    "whatsappBtn": "WhatsApp Consultation",
     "role": "ENT Specialist",
     "heroBadge": "Specialist Doctor",
     "heroTitle1": "The Scientific Approach",
@@ -209,7 +248,7 @@
   "footer": {
     "subtitle": "ENT Specialist",
     "quote": "True beauty does not lie in a foreign touch to the face; it lies in the expression re-discovering its own hidden elegance and flawless balance.",
-    "description": "At our Nişantaşı clinic, we improve your quality of life with operation processes planned entirely for you and your bone anatomy, adhering to international health standards.",
+    "description": "In our clinic, we enhance your quality of life with surgical processes planned entirely tailored to you and your bone anatomy under international health standards.",
     "navigationTitle": "Corporate Navigation",
     "home": "Home",
     "story": "Surgeon's Story",
@@ -393,5 +432,581 @@
     "error_phone": "Please enter your phone number.",
     "error_treatment": "Please select a treatment.",
     "wp_message": "Hello Op. Dr. Sefa Keşan Clinic,\n\nI have created a new appointment request through your website.\n\n👤 Full Name: {name}\n📞 Phone: {phone}\n🏥 Treatment of Interest: {treatment}"
-  }
+  },
+  "googleReviews": {
+    "badge": "Google Maps Verified Reviews",
+    "title": "Real Patient Experiences",
+    "reviewCount": "150+ Verified Google Reviews",
+    "verifiedTag": "Verified Google Review",
+    "list": [
+      {
+        "name": "Meryem Bülbün",
+        "date": "2 months ago",
+        "treatment": "Rhinoplasty",
+        "comment": "Infinite thanks for everything, Doctor. Not only a successful operation, but also the trust and attention you provided throughout the process were very precious to me. It is obvious from everything you do that you practice your profession with great precision and dedication. I was amazed by your patience, talent, and effort. I am so glad our paths crossed. Bless your hands and your hard work.",
+        "initials": "MB",
+        "avatarBg": "bg-emerald-600"
+      },
+      {
+        "name": "Samet Çelebi",
+        "date": "2 months ago",
+        "treatment": "Piezo Rhinoplasty",
+        "comment": "I chose Dr. Sefa for my nose surgery and I am very pleased with my decision. From the initial consultation to post-operative check-ups, he was very attentive and explanatory at every stage. I achieved the result I wanted both health-wise and aesthetically. Thank him and his team very much for their efforts. I definitely recommend him.",
+        "initials": "SÇ",
+        "avatarBg": "bg-indigo-600"
+      },
+      {
+        "name": "Helin Özdemirli",
+        "date": "2 months ago",
+        "treatment": "Rhinoplasty",
+        "comment": "Thank you very much to Dr. Sefa for his attention, smiling face, and successful operation. I recommend him with peace of mind. He is a wonderful doctor who does his job with great care and values his patient. I am very satisfied with the result. Thank you for everything 🌸",
+        "initials": "HÖ",
+        "avatarBg": "bg-amber-600"
+      },
+      {
+        "name": "Zehra Sönmezsoy",
+        "date": "8 months ago",
+        "treatment": "Rhinoplasty",
+        "comment": "I had a nose surgery about 2 years ago and everyone who sees it likes it so much that they ask who my doctor is. Dr. Sefa is so closely involved before and after the surgery that I recommend him to everyone; he shaped my nose exactly the way I wanted. Even though time has passed, he still cares. Thank you very much to him :))",
+        "initials": "ZS",
+        "avatarBg": "bg-rose-600"
+      },
+      {
+        "name": "Ahmet Demirdağlı",
+        "date": "2 months ago",
+        "treatment": "Revision Rhinoplasty",
+        "comment": "I had surgery about five years ago due to breathing problems and nosebleeds. I am in very good health now. Bless your hands, Doctor. Also, thank you very much for your interest and attention.",
+        "initials": "AD",
+        "avatarBg": "bg-cyan-600"
+      },
+      {
+        "name": "Cemre Tardu",
+        "date": "2 months ago",
+        "treatment": "Rhinoplasty",
+        "comment": "I had nose surgery 2 years ago and did not encounter any problems within these 2 years. I still use my nose just like it was first made, and I think that's what matters most. Bless Dr. Sefa's hands, I am grateful for his care and interest. Even though 2 years have passed, he has never stopped paying attention. I gladly recommend him 🙏🏻",
+        "initials": "CT",
+        "avatarBg": "bg-purple-600"
+      },
+      {
+        "name": "Abdullah Çetin",
+        "date": "5 months ago",
+        "treatment": "Rhinoplasty",
+        "comment": "I am extremely satisfied with the rhinoplasty process I underwent with Dr. Sefa Keşan. Before the surgery, he patiently answered all my questions, provided detailed information about the process, and made me feel safe. Post-operative care and follow-up were just as successful as the operation itself. I achieved a result above my expectations both aesthetically and functionally. I thank him very much for his effort, care, and professionalism. I recommend him with peace of mind.",
+        "initials": "AC",
+        "avatarBg": "bg-teal-600"
+      },
+      {
+        "name": "Esra Yencilek",
+        "date": "8 months ago",
+        "treatment": "Rhinoplasty",
+        "comment": "I had my nose job 9 months ago, it was an operation I was very scared of and hesitant about, but Dr. Sefa enlightened me very well on this subject and gave me confidence. He is a perfect doctor both with his work and his attention to patients. I am very satisfied with my nose, I didn't experience any problems, anyone who wants to have it done can do so with peace of mind.",
+        "initials": "EY",
+        "avatarBg": "bg-violet-600"
+      },
+      {
+        "name": "Gülcan Gür",
+        "date": "7 months ago",
+        "treatment": "Rhinoplasty",
+        "comment": "I chose him after long research and now I understand better what a right decision I made. I was operated on 7 months ago. The pre-operative planning process was very detailed, he listened carefully to what I wanted. He was always accessible during my post-operative recovery process. My nose is completely in harmony with my facial features and looks natural. Everyone who sees it loves it. I recommend him with peace of mind.",
+        "initials": "GG",
+        "avatarBg": "bg-fuchsia-600"
+      },
+      {
+        "name": "Nazar Gürbüz",
+        "date": "7 months ago",
+        "treatment": "Rhinoplasty",
+        "comment": "I don't know where to start, actually I want to say a lot, but let me just say this. He is such a perfect rhinoplasty specialist that I completely entrusted myself to Dr. Sefa and didn't say in any way 'let the nose shape be like this or like that', nor did I feel the need to, to be honest. He gives so much confidence to a person, and indeed my nose turned out exactly as I wanted. Every time I look at it, I say 'I'm so glad I chose Dr. Sefa'. I say the only address of perfection is SEFA KEŞAN.",
+        "initials": "NG",
+        "avatarBg": "bg-sky-600"
+      }
+    ]
+  },
+  "clinicTech": {
+    "sectionBadge": "CLINICAL STANDARDS & TECHNOLOGY",
+    "sectionTitle": "High Comfort, Maximum Safety",
+    "cards": [
+      {
+        "icon": "sliders",
+        "title": "3D Facial Analysis & Simulation",
+        "description": "Before the operation, your facial features are digitized to create a personalized golden ratio plan."
+      },
+      {
+        "icon": "zap",
+        "title": "Ultrasonic Piezo Surgery",
+        "description": "The most modern surgical technology that cuts and shapes bones millimetrically using sound waves without breaking them."
+      },
+      {
+        "icon": "shield",
+        "title": "Sterile & Conditioned Areas",
+        "description": "International A++ standard sterilization protocols and comfortable postoperative care."
+      }
+    ]
+  },
+  "faq": {
+    "sectionBadge": "PROCESS & GUIDE",
+    "sectionTitle": "Frequently Asked Questions",
+    "sectionSubtitle": "Detailed answers to everything you might wonder about from preoperative consultation to recovery.",
+    "categories": {
+      "all": "All",
+      "rinoplasti": "Rhinoplasty & Surgery",
+      "iyilesme": "Recovery Process",
+      "revizyon": "Revision Surgery",
+      "kombine": "Combined Procedures"
+    },
+    "items": [
+      {
+        "cat": "rinoplasti",
+        "q": "How is 3D simulation and planning performed before surgery?",
+        "a": "During the initial consultation, your facial features are digitized using 3D facial analysis technology. A personalized nose design tailored to your natural anatomy is created based on golden ratio principles."
+      },
+      {
+        "cat": "rinoplasti",
+        "q": "What are the advantages of Ultrasonic (Piezo) Rhinoplasty?",
+        "a": "Unlike traditional breaking methods, Piezo technology precisely shapes bone tissue using sound waves. Soft tissues and blood vessels remain undamaged, resulting in minimal post-operative swelling and bruising."
+      },
+      {
+        "cat": "rinoplasti",
+        "q": "Are silicone splints or cloth packings used during surgery?",
+        "a": "To ensure maximum breathing comfort, we use grooved silicone splints that do not block airflow. Removing them takes just seconds and is virtually painless."
+      },
+      {
+        "cat": "iyilesme",
+        "q": "How does the recovery process progress after surgery?",
+        "a": "Mild swelling may occur in the first 2-3 days. On day 7, the protective splint and silicone tubes are removed. Patients can comfortably return to work and social life after week 1."
+      },
+      {
+        "cat": "iyilesme",
+        "q": "When does the nose take its final shape?",
+        "a": "Around 80% of swelling resolves within the first 1-2 months. Complete resolution of minor edema takes 6-12 months for thin skin and 1-1.5 years for thick-skinned patients."
+      },
+      {
+        "cat": "iyilesme",
+        "q": "When can I wear glasses and resume sports after surgery?",
+        "a": "Light walking can start from week 2. Heavy sports and swimming require waiting for 1 month. Wearing sunglasses is recommended after 2-3 months to allow proper bone healing."
+      },
+      {
+        "cat": "revizyon",
+        "q": "What is Revision Rhinoplasty and when should it be done?",
+        "a": "It is a corrective procedure for patients who underwent previous surgery elsewhere but experience aesthetic or breathing issues. At least 1 year must pass from the first operation for tissue healing."
+      },
+      {
+        "cat": "revizyon",
+        "q": "Is rib cartilage always required in revision surgery?",
+        "a": "If insufficient cartilage remains inside the nose, micro grafts are harvested from the patient's rib or ear cartilage to rebuild structure and support."
+      },
+      {
+        "cat": "kombine",
+        "q": "Can Otoplasty or Bichectomy be combined with Rhinoplasty?",
+        "a": "Yes, combined procedures such as Otoplasty (Ear Aesthetic) or Bichectomy (Cheek Reduction) are frequently performed under a single anesthesia session to enhance overall facial symmetry."
+      },
+      {
+        "cat": "kombine",
+        "q": "Can deviated septum and enlarged turbinates be treated simultaneously with aesthetics?",
+        "a": "Aesthetic rhinoplasty and functional treatments for deviated septum or enlarged turbinates (nasal flesh) are routinely performed together in our clinic."
+      }
+    ]
+  },
+  "recovery": {
+    "sectionBadge": "RECOVERY PERFORMANCE CHART",
+    "sectionTitle": "Stage-by-Stage Tissue Healing Rate",
+    "sectionSubtitle": "*Medical standard average tissue regeneration process",
+    "rateLabel": "Recovery Rate (% Tissue Settling)",
+    "activationLabel": "Activation",
+    "criticalTipTitle": "Critical Advice"
+  },
+  "recoveryData": {
+    "otoplasti": [
+      {
+        "day": "Day 1",
+        "rate": 30,
+        "title": "Bandage & First Check",
+        "desc": "Special protective bandage is applied; no pain hindering social life is felt.",
+        "tip": "Pressure should not be applied to the ear."
+      },
+      {
+        "day": "Day 7",
+        "rate": 70,
+        "title": "Bandage Removal",
+        "desc": "Behind-the-ear stitches are checked, transitioning to a light headband.",
+        "tip": "A protective headband should be worn at night."
+      },
+      {
+        "day": "1 Month",
+        "rate": 90,
+        "title": "Settling of Angles",
+        "desc": "Ear folds and head angle reach 90% of their final form.",
+        "tip": "Contact sports can be resumed."
+      },
+      {
+        "day": "3 Months",
+        "rate": 100,
+        "title": "Full Recovery",
+        "desc": "Cartilage memory stabilizes, scars fade.",
+        "tip": "Routine life continues without restrictions."
+      }
+    ],
+    "bisektomi": [
+      {
+        "day": "Day 1",
+        "rate": 40,
+        "title": "Edema & Liquid Diet",
+        "desc": "Liquid/soft foods are preferred on the first day due to intraoral micro-incisions.",
+        "tip": "Antiseptic mouthwashes should not be neglected."
+      },
+      {
+        "day": "7 Days",
+        "rate": 65,
+        "title": "Edema Resolution",
+        "desc": "Most of the swelling in the cheeks disperses, stitches begin to dissolve.",
+        "tip": "Extremely hot foods should be avoided."
+      },
+      {
+        "day": "1 Month",
+        "rate": 85,
+        "title": "V-Line Definition",
+        "desc": "Cheek hollows become clear, cheekbones come to the forefront.",
+        "tip": "Gentle facial massages can be started."
+      },
+      {
+        "day": "3 Months",
+        "rate": 100,
+        "title": "Sharp Jawlines",
+        "desc": "Facial contour and Hollywood cheek form settle 100%.",
+        "tip": "The final aesthetic line is achieved."
+      }
+    ],
+    "default": [
+      {
+        "day": "Day 1",
+        "rate": 20,
+        "title": "Discharge & Cold Application",
+        "desc": "A comfortable resting period with silicone splints allowing breathing.",
+        "tip": "The head should be elevated at 45 degrees."
+      },
+      {
+        "day": "Day 7",
+        "rate": 50,
+        "title": "Splint Removal",
+        "desc": "Splints and silicones are removed painlessly. The first new nose shape is seen.",
+        "tip": "Warm showers can be taken, nose is taped."
+      },
+      {
+        "day": "1 Month",
+        "rate": 80,
+        "title": "Edema Distribution & Easy Breathing",
+        "desc": "80% of gross edema dissolves. Facial expression becomes natural.",
+        "tip": "Light walks and sports can be started."
+      },
+      {
+        "day": "1 Year",
+        "rate": 100,
+        "title": "Anatomic Settling & Golden Ratio",
+        "desc": "Fine tissue edemas resolve, nose tip takes its final shape.",
+        "tip": "Annual routine check-up time."
+      }
+    ]
+  },
+  "surgerySpecsLabels": {
+    "anesthesia": "ANESTHESIA TYPE",
+    "duration": "SURGERY DURATION",
+    "stay": "HOSPITAL STAY",
+    "returnWork": "RETURN TO WORK"
+  },
+  "surgerySpecs": {
+    "otoplasti": {
+      "anesthesia": "Local / Sedation",
+      "duration": "1.5 - 2 Hours",
+      "stay": "Outpatient",
+      "returnWork": "3 - 5 Days"
+    },
+    "bisektomi": {
+      "anesthesia": "Local Anesthesia",
+      "duration": "30 - 45 Minutes",
+      "stay": "Outpatient",
+      "returnWork": "2 - 3 Days"
+    },
+    "yag-enjeksiyonu": {
+      "anesthesia": "Local / Sedation",
+      "duration": "1 - 1.5 Hours",
+      "stay": "Outpatient",
+      "returnWork": "3 - 5 Days"
+    },
+    "default": {
+      "anesthesia": "General Anesthesia",
+      "duration": "2 - 2.5 Hours",
+      "stay": "Outpatient / 1 Night",
+      "returnWork": "Day 7"
+    }
+  },
+  "anatomy": {
+    "sectionBadge": "360° HUMAN HEAD ANATOMY SIMULATION",
+    "sectionTitle": "Rotate & Inspect Anatomical Profile",
+    "dragInstruction": "Click and Drag to Rotate",
+    "modelBadge": "PATIENT ANATOMICAL PROFILE MODEL"
+  },
+  "banner": {
+    "badge": "FREE DIGITAL ANALYSIS",
+    "title": "Send Your Photo, Get a Pre-Analysis",
+    "desc": "You can get preliminary information from the doctor about the most suitable surgical plan for your facial proportions by sending your profile photo to our WhatsApp line.",
+    "buttonText": "Send Photo & Get Analysis",
+    "whatsappMsg": "Hello, I would like to send my profile photo for the {{title}} procedure and get preliminary information."
+  },
+  "relatedTreatments": {
+    "sectionTitle": "Other Procedures You May Be Interested In",
+    "viewAll": "View All",
+    "cardBadge": "SPECIALTY"
+  },
+  "treatmentsList": {
+    "rinoplasti": "Rhinoplasty (Nose Job)",
+    "revizyon-rinoplasti": "Revision Rhinoplasty",
+    "otoplasti": "Otoplasty (Ear Reshaping)",
+    "yag-enjeksiyonu": "Facial Fat Grafting",
+    "bisektomi": "Bichectomy (Buccal Fat Removal)"
+  },
+  "treatmentDetail": {
+    "clinicalBadge": "CLINICAL SPECIALTY AREA"
+  },
+  "operationCases": {
+    "sectionBadge": "OPERATION ARCHIVE & CINEMATIC SHOTS",
+    "sectionTitle": "Operating Room & Clinical Cases",
+    "sectionDesc": "Real operation moments and clinical follow-ups performed under the leadership of Op. Dr. Sefa Keşan using Piezo ultrasonic bone surgery technology.",
+    "watchBtn": "Watch Video",
+    "detailBtn": "Inspect Details",
+    "items": [
+      {
+        "id": 1,
+        "type": "video",
+        "title": "Piezo Rhinoplasty Precise Tissue Shaping",
+        "category": "RHINOPLASTY",
+        "badge": "NOSE",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "10th day after rhinoplasty.\n\nAlthough it is still a very early period after the operation, thanks to the Piezo ultrasonic bone shaping technology, swelling and bruising on our patient's face have been kept to a minimum.\n\nThe smooth line of the nasal dorsum and the graceful harmony of the nasal tip with facial proportions clearly show how comfortably the recovery process is progressing. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-1.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/Dd0_ndlNY96/?utm_source=ig_web_copy_link&cplk=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "title": "Piezo Rhinoplasty Precise Tissue Shaping",
+        "category": "RHINOPLASTY",
+        "badge": "NOSE",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "1 Week After Rhinoplasty.\n\nFollowing the removal of the splint and tapes in the first week, this brand-new profile met by our patient reveals the power of open rhinoplasty and personalized surgical planning.\n\nWith our combined procedures, breathing functions are secured, and a refined nose form that perfectly complements our patient's natural facial features has been achieved. 🌟",
+        "coverImage": "/images/gallery/cover/cover-2.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/Ddqm5a-NO3y/?utm_source=ig_web_copy_link&xtok=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 3,
+        "type": "video",
+        "title": "Piezo Rhinoplasty Precise Tissue Shaping",
+        "category": "RHINOPLASTY",
+        "badge": "NOSE",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "First week check-up of our dear patient ☺️🙏\n\nNatural, balanced aesthetic approaches that do not disrupt the face's characteristic expression are our top priority.\n\nDuring this control session, we are delighted to see the fruits of our delicate tissue dissection and careful healing protocol. Our patient's comfortable process and new appearance blending with their face are worth everything.",
+        "coverImage": "/images/gallery/cover/cover-3.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DRjXfbVjbL1/?utm_source=ig_web_copy_link&obrf=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 4,
+        "type": "video",
+        "title": "Piezo Rhinoplasty Precise Tissue Shaping",
+        "category": "RHINOPLASTY",
+        "badge": "NOSE",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Our 32-year-old patient had a long nose and wanted a more elegant, subtle shape to complement her facial features.\n\nWe performed an open rhinoplasty using the Piezo technique, creating a natural and stylish nose in harmony with her face and matching her expectations.\n\nThanks to the Piezo technique, bruising, swelling, and post-operative discomfort were at a minimum.\n\nThe result is an elegant, balanced nose that suits her face wonderfully. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-4.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DdbZ7TWDent/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 5,
+        "type": "video",
+        "title": "Piezo Rhinoplasty Precise Tissue Shaping",
+        "category": "RHINOPLASTY",
+        "badge": "NOSE",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Our 35-year-old patient underwent a rhinoplasty to achieve an elegant and refined nose in perfect harmony with her facial features. ✨\n\nWe performed the surgery using Piezo technology with an open approach, achieving a natural and balanced result.\n\nWe are very pleased with this beautiful transformation. 🌿",
+        "coverImage": "/images/gallery/cover/cover-5.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DdZMamODUUR/?utm_source=ig_web_copy_link&xtok=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 6,
+        "type": "video",
+        "title": "Piezo Rhinoplasty Precise Tissue Shaping",
+        "category": "RHINOPLASTY",
+        "badge": "NOSE",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Natural, elegant, and in perfect harmony with facial features.\n\nFor our 27-year-old patient, we designed a personalized rhinoplasty that complements her facial proportions while preserving her natural expression.\n\nThe procedure was performed using an open rhinoplasty approach combined with Piezo technology, ensuring precise and controlled reshaping of the nasal bones with minimal swelling and bruising during recovery.\n\nOur goal is never just to create a pretty nose, but to create the right nose for every face. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-6.jpg",
+        "instagramUrl": "https://www.instagram.com/p/Dck86e4DU6m/?utm_source=ig_web_copy_link&exln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 7,
+        "type": "video",
+        "title": "Piezo Rhinoplasty Precise Tissue Shaping",
+        "category": "RHINOPLASTY",
+        "badge": "NOSE",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Big transformation 🫶 ✨ A natural and harmonious rhinoplasty result for our 22-year-old patient.\n\nWe corrected the hump on the nasal bridge and carefully reshaped the nose to achieve a softer, more balanced profile that beautifully complements facial features.\n\nThe procedure was performed using the open rhinoplasty approach with Piezo technology, allowing precise bone shaping with minimal swelling and bruising.\n\nThe result is an elegant, natural-looking nose in harmony with her face. 👃",
+        "coverImage": "/images/gallery/cover/cover-7.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DbGdGxXgq_o/?utm_source=ig_web_copy_link&rpxt=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 8,
+        "type": "video",
+        "title": "Piezo Rhinoplasty Precise Tissue Shaping",
+        "category": "RHINOPLASTY",
+        "badge": "NOSE",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "A natural and elegant rhinoplasty result for our 20-year-old patient.\n\nOur patient's request was clear: a natural-looking nose that beautifully complements her face.\n\nUsing the open rhinoplasty approach with Piezo technology, we carefully reshaped the nose while preserving harmony with facial features.\n\nThe result is a soft, natural, and balanced nose, exactly as she wanted.",
+        "coverImage": "/images/gallery/cover/cover-8.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DaNKO9gDSnf/?utm_source=ig_web_copy_link&obrf=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 9,
+        "type": "video",
+        "title": "Piezo Rhinoplasty Precise Tissue Shaping",
+        "category": "RHINOPLASTY",
+        "badge": "NOSE",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "An elegant and balanced rhinoplasty result for our 47-year-old patient.\n\nOur patient had a large nose with thick skin. Our goal was to slim and reduce the nose as safely as possible while maintaining a natural appearance and harmony with facial features.\n\nWe performed the surgery using the open rhinoplasty approach combined with Piezo technology, which provides precise and controlled shaping.\n\nThe result is a more elegant, chic, and balanced nose that wonderfully complements her face. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-9.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DZ9p8FcjTQS/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 10,
+        "type": "video",
+        "title": "Piezo Rhinoplasty Precise Tissue Shaping",
+        "category": "RHINOPLASTY",
+        "badge": "NOSE",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "A beautiful and elegant rhinoplasty result for our 23-year-old patient.\n\nOur goal was to create a natural and elegant nose that perfectly fits facial features and proportions.\n\nThe procedure was performed using the open rhinoplasty approach with Piezo technology, allowing precise and controlled shaping.\n\nThe final result is elegant, balanced, and in lovely harmony with her face. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-10.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DXwd3mYjUq3/?utm_source=ig_web_copy_link&exln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 11,
+        "type": "video",
+        "title": "Piezo Rhinoplasty Precise Tissue Shaping",
+        "category": "RHINOPLASTY",
+        "badge": "NOSE",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Our patient had a prominent dorsal hump, which we carefully corrected and reshaped to ensure better harmony with facial features.\n\nIn male rhinoplasty, our goal is not just to reduce the nose, but to create a refined and balanced result while preserving a strong, natural, and masculine appearance.\n\nThe result is a cleaner profile, improved proportions, and a natural-looking nose that complements the face without losing its masculine character.",
+        "coverImage": "/images/gallery/cover/cover-11.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DWT2K7IDdeC/?utm_source=ig_web_copy_link&mdxt=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 12,
+        "type": "video",
+        "title": "Piezo Rhinoplasty Precise Tissue Shaping",
+        "category": "RHINOPLASTY",
+        "badge": "NOSE",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Based on the nose shape shown by our patient as inspiration, we created an elegant and chic nose designed specifically for her facial features and personal preferences.\n\nThe transformation is remarkable, and a natural and harmonious result beautifully complementing her face has been achieved. ✨\n\n🔹 Open rhinoplasty approach\n🔹 Piezo technique\n🔹 Personalized surgical planning\n🔹 Natural and stylish result\n\nEvery nose is unique, and every rhinoplasty must be individually designed to ensure facial harmony. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-12.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DOs0d08jdF9/?utm_source=ig_web_copy_link&vrfl=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 13,
+        "type": "video",
+        "title": "Rhinoplasty for Loose and Thin Skin",
+        "category": "THIN SKIN RHINOPLASTY",
+        "badge": "SPECIAL CASE",
+        "badgeColor": "text-yellow-400 bg-yellow-400/10 border-yellow-400/30",
+        "desc": "In our patients with a thin and loose skin structure, preserving tissue support and achieving flawless harmony is the most critical stage.\n\nBy meticulously evaluating our patient's anatomical features, we built a strong and durable skeletal support beneath the fragile skin structure. ✨\n\n🔹 Open rhinoplasty approach\n🔹 Special support techniques for thin skin\n🔹 Precise tissue management with Piezo\n🔹 Smooth and natural lines\n\nIn thin-skin rhinoplasty, experience and precision are the keys to achieving the dreamed elegant result. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-13.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DN0RP_LWuYM/?utm_source=ig_web_copy_link&vrfl=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 14,
+        "type": "video",
+        "title": "Piezo Rhinoplasty Precise Tissue Shaping",
+        "category": "RHINOPLASTY",
+        "badge": "NOSE",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "A beautiful transformation for our 20-year-old patient with a thick-skinned face. We performed an open rhinoplasty using the Piezo technique to create a more refined and harmonious nose that complements the face's natural features.\n\nThe result already looks very promising and is expected to become even more refined as the recovery process progresses. 👃✨ 🌸👌",
+        "coverImage": "/images/gallery/cover/cover-14.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DNF0Rb1tZ7x/?utm_source=ig_web_copy_link&mdxt=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 15,
+        "type": "video",
+        "title": "Non-Surgical Aesthetics & Botulinum Application",
+        "category": "NON-SURGICAL AESTHETICS",
+        "badge": "BOTOX & FILLER",
+        "badgeColor": "text-pink-400 bg-pink-400/10 border-pink-400/30",
+        "desc": "Non-surgical aesthetic touches applied to achieve a more rested, fresh, and youthful appearance while preserving the natural dynamism of facial expression.\n\nWith precise injection techniques, we plan elegant and natural results in harmony with facial features. ✨\n\n🔹 Natural look without freezing expressions\n🔹 Personalized application plan\n🔹 Comfortable and fast procedure process\n\nAesthetic solutions highlighting your natural beauty. 💉✨",
+        "coverImage": "/images/gallery/cover/cover-15.jpg",
+        "videoUrl": "/videos/vaka-15.mp4",
+        "instagramUrl": "https://www.instagram.com/reel/DK9ml6_Nnew/?utm_source=ig_web_copy_link&psln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 16,
+        "type": "video",
+        "title": "Piezo Rhinoplasty Precise Tissue Shaping",
+        "category": "RHINOPLASTY",
+        "badge": "NOSE",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "1st-week rhinoplasty check-up. Thanks to precise bone shaping via the Piezo technique, swelling and bruising on our patient's face have been kept to a minimum.\n\nThe smooth line of the nasal dorsum and the graceful harmony of the nasal tip with facial proportions clearly show how comfortably the recovery process is progressing. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-16.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DKXsKS2NhJ5/?utm_source=ig_web_copy_link&xtok=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 17,
+        "type": "video",
+        "title": "Operating Room Moment & Piezo Precision Surgery",
+        "category": "OPERATING ROOM OPERATIONS",
+        "badge": "LIVE SURGERY",
+        "badgeColor": "text-blue-400 bg-blue-400/10 border-blue-400/30",
+        "desc": "Moments of precise tissue shaping performed in the operating room using Piezo ultrasonic surgery technology.\n\nDuring surgery, ensuring millimetric control, we reshape bone structures in the safest and smoothest way possible, meticulously taking steps to make our patients' recovery process comfortable. 🩺✨\n\n🔹 Ultrasonic bone shaping\n🔹 Minimal trauma and precise dissection\n🔹 Personalized surgical planning\n\nEvery operation is performed with auditorium rigor for a flawless aesthetic and functional harmony. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-17.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DIltoRpCxiB/?utm_source=ig_web_copy_link&exln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 18,
+        "type": "video",
+        "title": "Thick-Skinned and Crooked Nose Rhinoplasty",
+        "category": "RHINOPLASTY",
+        "badge": "NOSE",
+        "badgeColor": "text-cyan-400 bg-cyan-400/10 border-cyan-400/30",
+        "desc": "The result of our successful operation for our male patient with a thick skin structure and deviation.\n\nIn male rhinoplasty, thick skin and deviation (septal deviation) management require great precision. Using Piezo technology and an open approach, we both eliminated breathing problems and constructed a strong, natural, and masculine profile fully compatible with our patient's facial features. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-18.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DHGuOkPCRyQ/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 19,
+        "type": "video",
+        "title": "Piezo Rhinoplasty Precise Tissue Shaping",
+        "category": "RHINOPLASTY",
+        "badge": "NOSE",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "In this stylish transformation we carried out for our young patient, we aimed to preserve the natural expression of her face and achieve flawless harmony with her features.\n\nBone tissues were shaped with the utmost precision using Piezo ultrasonic bone surgery technology, ensuring that the recovery process proceeded comfortably and with minimal edema.\n\nThe result was an extremely natural and aesthetic profile that delicately complements young facial features. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-19.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DExNN1qih-X/?utm_source=ig_web_copy_link&cplk=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 20,
+        "type": "video",
+        "title": "Piezo Rhinoplasty Precise Tissue Shaping",
+        "category": "RHINOPLASTY",
+        "badge": "NOSE",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Rhinoplasty 1st-week check-up after splint removal, massage, and taping: a natural and elegant nasal profile in harmony with our patient's facial features has emerged.\n\nThanks to the precise shaping of bone tissues with Piezo ultrasonic surgery technology, the recovery process progressed with minimal edema and bruising, ensuring the highest level of comfort for our patient. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-20.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DKJ74aBtMG4/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 21,
+        "type": "video",
+        "title": "Operating Room Operation Moment & Piezo Surgery",
+        "category": "OPERATING ROOM OPERATIONS",
+        "badge": "LIVE SURGERY",
+        "badgeColor": "text-blue-400 bg-blue-400/10 border-blue-400/30",
+        "desc": "An excerpt from the operation moments meticulously maintained in the operating room. 🩺✨\n\nWith the millimetric precision provided by Piezo ultrasonic surgery technology, we shape bone tissues in the safest and most controlled way; we both fully meet our patients' aesthetic expectations and permanently solve their breathing problems.\n\nWe continue to work with our excellence- and comfort-oriented approach in every detail. 👃💪",
+        "coverImage": "/images/gallery/cover/cover-21.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DMdRBQMtvbw/?utm_source=ig_web_copy_link&vrfl=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      }
+    ]
+  },
+  "whatsappDefaultMessage": "Hello, I would like to get information about treatments and appointments.",
+  "whatsappExamMessage": "Hello Op. Dr. Sefa Keşan, I would like to get information about appointments and examinations."
 }

@@ -2,10 +2,27 @@
   "navbar": {
     "services": "Servizi",
     "gallery": "Galleria",
-    "doctor": "Il Nostro Chirurgo",
+    "doctor": "Il Nostro Medico",
     "contact": "Contatti",
     "appointment": "Prenota un Appuntamento",
-    "clinicSubtitle": "Specialista ORL"
+    "clinicSubtitle": "Specialista ORL",
+    "servicesTitle": "INTERVENTI E TRATTAMENTI",
+    "contactInfoText": "Contattaci per Informazioni, Appuntamenti e Contatti:",
+    "whatsappButton": "Contatta via WhatsApp",
+    "categories": {
+      "rhinoplasty": "ESTETICA DEL NASO",
+      "revisionRhinoplasty": "CHIRURGIA DI REVISIONE",
+      "otoplasty": "ESTETICA DELL'ORECCHIO",
+      "fatGrafting": "TRASFERIMENTO DI TESSUTO AUTOLOGO",
+      "bichectomy": "SNELLIMENTO FACCIALE"
+    },
+    "items": {
+      "primerRhinoplasty": "Rinoplastica Primaria",
+      "revisionRhinoplasty": "Rinoplastica di Revisione",
+      "otoplasty": "Otoplastica",
+      "fatGrafting": "Iniezione di Grasso",
+      "bichectomy": "Bichectomia"
+    }
   },
   "hero": {
     "badge": "Analisi Personalizzata della Sezione Aurea",
@@ -114,46 +131,68 @@
   },
   "gallery": {
     "sectionBadge": "Trasformazioni Impeccabili",
-    "sectionTitle": "Galleria di Trasformazioni Naturali",
+    "sectionTitle": "Galleria delle Trasformazioni Naturali",
     "before": "Prima",
     "after": "Dopo",
     "case": "Caso",
+    "caseReportBadge": "RAPPORTO DI ANALISI DEL CASO",
     "tabs": {
       "rinoplasti": "Rinoplastica",
       "revizyon-rinoplasti": "Rinoplastica di Revisione",
       "otoplasti": "Otoplastica",
-      "yag-enjeksiyonu": "Lipofilling",
+      "yag-enjeksiyonu": "Iniezione di Grasso",
       "bisektomi": "Bichectomia"
+    },
+    "specLabels": {
+      "technique": "Tecnica Applicata",
+      "anatomy": "Anatomia / Deformità",
+      "benefit": "Beneficio Funzionale"
     },
     "rinoplasti": {
       "title": "Chirurgia di Rinoplastica Primaria",
-      "vakaNo": "Caso Studio N. 214",
-      "details": "Il ponte nasale è stato regolato in armonia con le proporzioni facciali e la punta nasale cadente è stata sollevata secondo la sezione aurea."
+      "vakaNo": "Studio del Caso N.: 214",
+      "details": "Il gibbo nasale è stato regolato in armonia con le proporzioni del viso e la punta nasale cadente è stata sollevata secondo la sezione aurea.",
+      "technique": "Piezo ad Ultrasuoni & Tecnica Aperta",
+      "anatomy": "Gibbo Nasale & Punta Cadente",
+      "benefit": "Respirazione 100% Naturale & Armonia degli Angoli"
     },
     "revizyon-rinoplasti": {
       "title": "Rinoplastica di Revisione",
-      "vakaNo": "Caso Studio N. 087",
-      "details": "Ricostruzione eseguita con innesti di cartilagine costale in un paziente sottoposto a chirurgia precedente con collasso cartilagineo."
+      "vakaNo": "Studio del Caso N.: 087",
+      "details": "Nel paziente con precedente intervento e cedimento della cartilagine, la ricostruzione è stata eseguita utilizzando innesti di cartilagine costale.",
+      "technique": "Innesto di Cartilagine & Riparazione Strutturale",
+      "anatomy": "Deformità a Becco di Pappagallo & Collasso Valvolare",
+      "benefit": "Vie Aeree Libere & Supporto Solido"
     },
     "otoplasti": {
-      "title": "Otoplastica (Estetica delle Orecchie)",
-      "vakaNo": "Caso Studio N. 112",
-      "details": "L'angolo dell'orecchio prominente è stato corretto con un'incisione posteriore, garantendo curvatura e simmetria naturali."
+      "title": "Otoplastica (Estetica dell'Orecchio)",
+      "vakaNo": "Studio del Caso N.: 112",
+      "details": "L'angolo dell'orecchio a sventola è stato corretto tramite un'incisione dietro l'orecchio, garantendo contorni naturali e simmetria.",
+      "technique": "Modellamento Permanente della Cartilagine",
+      "anatomy": "Orecchie a Sventola",
+      "benefit": "Forma Simmetrica & Senza Cicatrici Evidenti"
     },
     "yag-enjeksiyonu": {
-      "title": "Lipofilling (Trasferimento Autologo)",
-      "vakaNo": "Caso Studio N. 419",
-      "details": "Volume a lungo termine, effetto lifting e ringiovanimento ottenuti iniettando il grasso del paziente negli zigomi e nella linea mandibolare."
+      "title": "Iniezione di Grasso (Trasferimento Autologo)",
+      "vakaNo": "Studio del Caso N.: 419",
+      "details": "Il tessuto adiposo del paziente è stato iniettato negli zigomi e nella linea mandibolare per volume a lungo termine, effetto lifting e ringiovanimento.",
+      "technique": "Trasferimento di Grasso con Micro Cannula",
+      "anatomy": "Perdita di Volume Facciale & Contorno",
+      "benefit": "Tessuto Vivo & Volume Naturale"
     },
     "bisektomi": {
       "title": "Bichectomia (Estetica delle Guance)",
-      "vakaNo": "Caso Studio N. 088",
-      "details": "Tramite la rimozione controllata dei cuscinetti adiposi, gli zigomi sono stati esaltati ottenendo contorni del viso più affilati."
+      "vakaNo": "Studio del Caso N.: 088",
+      "details": "La rimozione controllata delle bolle di Bichat tramite micro-incisioni intraorali ha accentuato gli zigomi e creato un contorno facciale più definito.",
+      "technique": "Micro Incisione Intraorale",
+      "anatomy": "Guance Pieni & Contorno Facciale Rotondo",
+      "benefit": "Contorno Mandibolare V-Line Definito"
     }
   },
 
   "biographyPage": {
     "back": "Torna alla home",
+    "whatsappBtn": "Consulenza WhatsApp",
     "role": "Specialista ORL",
     "heroBadge": "Medico specialista",
     "heroTitle1": "L'approccio scientifico",
@@ -210,7 +249,7 @@
   "footer": {
     "subtitle": "Specialista ORL",
     "quote": "La vera bellezza non risiede in un tocco estraneo al viso; risiede nella riscoperta dell'eleganza nascosta e dell'equilibrio perfetto della propria espressione.",
-    "description": "Nella nostra clinica a Nişantaşı, miglioriamo la tua qualità di vita con processi operatori pianificati interamente per te e per la tua anatomia ossea, seguendo gli standard internazionali.",
+    "description": "Nella nostra clinic, miglioriamo la tua qualità della vita con processi chirurgici pianificati interamente su misura per te e per la tua anatomia ossea secondo gli standard sanitari internazionali.",
     "navigationTitle": "Navigazione Aziendale",
     "home": "Home",
     "story": "La Storia del Chirurgo",
@@ -394,5 +433,581 @@
     "error_phone": "Per favore inserisci il tuo numero.",
     "error_treatment": "Per favore seleziona un trattamento.",
     "wp_message": "Ciao Clinica Dr. Sefa Keşan,\n\nHo effettuato una richiesta di appuntamento tramite il vostro sito web.\n\n👤 Nome: {name}\n📞 Telefono: {phone}\n🏥 Trattamento d'interesse: {treatment}"
-  }
+  },
+  "recovery": {
+    "sectionBadge": "GRAFICO DELLE PRESTAZIONI DI RECUPERO",
+    "sectionTitle": "Tasso di Guarigione del Tessuto per Fasi",
+    "sectionSubtitle": "*Processo medio standard medico di rigenerazione tissutale",
+    "rateLabel": "Tasso di Recupero (% Assestamento Tessutale)",
+    "activationLabel": "Attivazione",
+    "criticalTipTitle": "Consiglio Critico"
+  },
+  "recoveryData": {
+    "otoplasti": [
+      {
+        "day": "1° Giorno",
+        "rate": 30,
+        "title": "Benda e Primo Controllo",
+        "desc": "Viene applicata una speciale benda protettiva; nessun dolore che ostacoli la vita sociale.",
+        "tip": "Non bisogna applicare pressione sull'orecchio."
+      },
+      {
+        "day": "7° Giorno",
+        "rate": 70,
+        "title": "Rimozione della Benda",
+        "desc": "I punti dietro l'orecchio vengono controllati e si passa a una leggera fascia.",
+        "tip": "La fascia protettiva deve essere indossata di notte."
+      },
+      {
+        "day": "1° Mese",
+        "rate": 90,
+        "title": "Assestamento degli Angoli",
+        "desc": "Le pieghe dell'orecchio e l'angolazione raggiungono il 90% della forma finale.",
+        "tip": "È possibile riprendere gli sport di contatto."
+      },
+      {
+        "day": "3° Mese",
+        "rate": 100,
+        "title": "Guarigione Completa",
+        "desc": "La memoria della cartilagine si stabilizza e le cicatrici svaniscono.",
+        "tip": "La vita di routine riprende senza restrizioni."
+      }
+    ],
+    "bisektomi": [
+      {
+        "day": "1° Giorno",
+        "rate": 40,
+        "title": "Edema e Dieta Liquida",
+        "desc": "Si preferiscono cibi liquidi/morbidi il primo giorno a causa delle micro-incisioni intraorali.",
+        "tip": "I collutori antisettici non devono essere trascurati."
+      },
+      {
+        "day": "7° Giorno",
+        "rate": 65,
+        "title": "Risoluzione dell'Edema",
+        "desc": "La maggior parte del gonfiore delle guance si riassorbe e i punti iniziano a sciogliersi.",
+        "tip": "Evitare cibi estremamente caldi."
+      },
+      {
+        "day": "1° Mese",
+        "rate": 85,
+        "title": "Definizione V-Line",
+        "desc": "Le cavità delle guance diventano evidenti e gli zigomi risaltano.",
+        "tip": "Si possono iniziare leggeri massaggi facciali."
+      },
+      {
+        "day": "3° Mese",
+        "rate": 100,
+        "title": "Linee Mandibolari Definite",
+        "desc": "Il contorno del viso e la forma delle guance Hollywood si stabilizzano al 100%.",
+        "tip": "Si ottiene la linea estetica finale."
+      }
+    ],
+    "default": [
+      {
+        "day": "1° Giorno",
+        "rate": 20,
+        "title": "Dimissione e Applicazione del Freddo",
+        "desc": "Un comodo periodo di riposo con i rinopack in silicone che permettono di respirare.",
+        "tip": "La testa dovrebbe essere sollevata a 45 gradi."
+      },
+      {
+        "day": "7° Giorno",
+        "rate": 50,
+        "title": "Rimozione del Tutore",
+        "desc": "Il tutore e i siliconi vengono rimossi senza dolore. Si vede la prima forma del nuovo naso.",
+        "tip": "Si può fare una doccia tiepida e il naso viene nastro-fasciato."
+      },
+      {
+        "day": "1° Mese",
+        "rate": 80,
+        "title": "Distribuzione dell'Edema e Sollievo",
+        "desc": "L'80% dell'edema grossolano si dissolve. L'espressione facciale diventa naturale.",
+        "tip": "Si possono iniziare leggere camminate e sport."
+      },
+      {
+        "day": "1° Anno",
+        "rate": 100,
+        "title": "Assestamento Anatomico e Sezione Aurea",
+        "desc": "Gli edemi dei tessuti sottili si risolvono, la punta del naso prende la sua forma definitiva.",
+        "tip": "Tempo di controllo di routine annuale."
+      }
+    ]
+  },
+  "surgerySpecsLabels": {
+    "anesthesia": "TIPO DI ANESTESIA",
+    "duration": "DURATA DELL'INTERVENTO",
+    "stay": "PERMANENZA IN OSPEDALE",
+    "returnWork": "RITORNO AL LAVORO"
+  },
+  "surgerySpecs": {
+    "otoplasti": {
+      "anesthesia": "Locale / Sedazione",
+      "duration": "1,5 - 2 Ore",
+      "stay": "Day Hospital",
+      "returnWork": "3 - 5 Giorni"
+    },
+    "bisektomi": {
+      "anesthesia": "Anestesia Locale",
+      "duration": "30 - 45 Minuti",
+      "stay": "Day Hospital",
+      "returnWork": "2 - 3 Giorni"
+    },
+    "yag-enjeksiyonu": {
+      "anesthesia": "Locale / Sedazione",
+      "duration": "1 - 1,5 Ore",
+      "stay": "Day Hospital",
+      "returnWork": "3 - 5 Giorni"
+    },
+    "default": {
+      "anesthesia": "Anestesia Generale",
+      "duration": "2 - 2,5 Ore",
+      "stay": "Day Hospital / 1 Notte",
+      "returnWork": "7° Giorno"
+    }
+  },
+  "anatomy": {
+    "sectionBadge": "SIMULAZIONE ANATOMIA TESTA UMANA 360°",
+    "sectionTitle": "Ruota e Ispeziona il Profilo Anatomico",
+    "dragInstruction": "Clicca e Trascina per Ruotare",
+    "modelBadge": "MODELLO DI PROFILO ANATOMICO DEL PAZIENTE"
+  },
+  "banner": {
+    "badge": "ANALISI DIGITALE GRATUITA",
+    "title": "Invia la Tua Foto, Ricevi un'Pre-Analisi",
+    "desc": "Puoi ricevere informazioni preliminari dal medico sul piano chirurgico più adatto alle proporzioni del tuo viso inviando la tua foto profilo alla nostra linea WhatsApp.",
+    "buttonText": "Invia Foto & Analisi",
+    "whatsappMsg": "Salve, vorrei inviare la mia foto profilo per l'operazione di {{title}} e ricevere informazioni preliminari."
+  },
+  "relatedTreatments": {
+    "sectionTitle": "Altri Trattamenti che potrebbero Interessarti",
+    "viewAll": "Vedi Tutti",
+    "cardBadge": "SPECIALIZZAZIONE"
+  },
+  "treatmentsList": {
+    "rinoplasti": "Rinoplastica",
+    "revizyon-rinoplasti": "Rinoplastica di Revisione",
+    "otoplasti": "Otoplastica",
+    "yag-enjeksiyonu": "Lipofilling Facciale",
+    "bisektomi": "Bichectomia"
+  },
+  "treatmentDetail": {
+    "clinicalBadge": "AREA DI SPECIALIZZAZIONE CLINICA"
+  },
+  "clinicTech": {
+    "sectionBadge": "STANDARD CLINICI & TECNOLOGIA",
+    "sectionTitle": "Elevato Comfort, Massima Sicurezza",
+    "cards": [
+      {
+        "icon": "sliders",
+        "title": "Analisi e Simulazione Facciale 3D",
+        "description": "Prima dell'intervento, i tuoi tratti del viso vengono digitalizzati per creare un piano personalizzato basato sulla sezione aurea."
+      },
+      {
+        "icon": "zap",
+        "title": "Chirurgia Piezoelettrica ad Ultrasuoni",
+        "description": "La moderna tecnologia chirurgica che taglia e modella le ossa in modo millimetrico utilizzando onde sonore senza romperle."
+      },
+      {
+        "icon": "shield",
+        "title": "Aree Sterili e Condizionate",
+        "description": "Protocolli di sterilizzazione standard internazionale A++ e cure post-operatorie confortevoli."
+      }
+    ]
+  },
+  "faq": {
+    "sectionBadge": "PROCESSO & GUIDA",
+    "sectionTitle": "Domande Frequenti",
+    "sectionSubtitle": "Risposte dettagliate a tutto ciò che potresti chiederti dalla consulenza preoperatoria al recupero.",
+    "categories": {
+      "all": "Tutti",
+      "rinoplasti": "Rinoplastica & Chirurgia",
+      "iyilesme": "Processo di Guarigione",
+      "revizyon": "Chirurgia di Revisione",
+      "kombine": "Procedure Combinate"
+    },
+    "items": [
+      {
+        "cat": "rinoplasti",
+        "q": "Come vengono eseguite la simulazione 3D e la pianificazione prima dell'intervento?",
+        "a": "Durante la consulenza iniziale, i lineamenti del tuo viso vengono digitalizzati utilizzando la tecnologia di analisi facciale 3D. Un design nasale personalizzato su misura per la tua anatomia naturale viene creato in base ai principi della sezione aurea."
+      },
+      {
+        "cat": "rinoplasti",
+        "q": "Quali sono i vantaggi della Rinoplastica ad Ultrasuoni (Piezo)?",
+        "a": "A differenza dei tradizionali metodi di frattura, la tecnologia Piezo modella con precisione il tessuto osseo utilizzando le onde sonore. I tessuti molli e i vasi sanguigni rimangono intatti, riducendo al minimo il gonfiore e i lividi post-operatori."
+      },
+      {
+        "cat": "rinoplasti",
+        "q": "Vengono utilizzati splint in silicone o tamponi in tessuto durante l'intervento?",
+        "a": "Per garantire il massimo comfort respiratorio, utilizziamo splint in silicone scanalati che non bloccano il flusso d'aria. La loro rimozione richiede solo pochi secondi ed è praticamente indolore."
+      },
+      {
+        "cat": "iyilesme",
+        "q": "Come procede il processo di recupero dopo l'intervento?",
+        "a": "Nei primi 2-3 giorni potrebbe verificarsi un lieve gonfiore. Il 7° giorno vengono rimossi lo splint protettivo e i tubicini in silicone. I pazienti possono tornare comodamente al lavoro e alla vita sociale dopo la 1ª settimana."
+      },
+      {
+        "cat": "iyilesme",
+        "q": "Quando il naso assume la sua forma definitiva?",
+        "a": "Circa l'80% del gonfiore si risolve entro i primi 1-2 mesi. La risoluzione completa del piccolo edema richiede 6-12 mesi per la pelle sottile e 1-1,5 anni per i pazienti con pelle spessa."
+      },
+      {
+        "cat": "iyilesme",
+        "q": "Quando posso indossare gli occhiali e riprendere l'attività sportiva dopo l'intervento?",
+        "a": "Le passeggiate leggere possono iniziare dalla 2ª settimana. Gli sport intensi e il nuoto richiedono di attendere 1 mese. L'uso di occhiali da sole è consigliato dopo 2-3 mesi per consentire una corretta guarigione ossea."
+      },
+      {
+        "cat": "revizyon",
+        "q": "Cos'è la Rinoplastica di Revisione e quando dovrebbe essere eseguita?",
+        "a": "È una procedura correttiva per i pazienti che hanno subito un precedente intervento chirurgico altrove ma riscontrano problemi estetici o respiratori. Deve trascorrere almeno 1 anno dalla prima operazione per la guarigione dei tessuti."
+      },
+      {
+        "cat": "revizyon",
+        "q": "La cartilagine costale è sempre necessaria nella chirurgia di revisione?",
+        "a": "Se all'interno del naso non rimane abbastanza cartilagine, vengono prelevati micro-innesti dalla cartilagine costale o auricolare del paziente per ricostruire la struttura e il supporto."
+      },
+      {
+        "cat": "kombine",
+        "q": "L'otoplastica o la bichectomia possono essere combinate con la rinoplastica?",
+        "a": "Sì, procedure combinate come l'otoplastica (estetica dell'orecchio) o la bichectomia (riduzione delle guance) vengono frequentemente eseguite in un'unica sessione di anestesia per migliorare la simmetria generale del viso."
+      },
+      {
+        "cat": "kombine",
+        "q": "Il setto deviato e i turbinati ingrossati possono essere trattati contemporaneamente all'estetica?",
+        "a": "La rinoplastica estetica e i trattamenti funzionali per il setto deviato o i turbinati ingrossati (carne nasale) vengono eseguiti routinariamente insieme nella nostra clinica."
+      }
+    ]
+  },
+  "googleReviews": {
+    "badge": "Recensioni Verificate di Google Maps",
+    "title": "Esperienze Reali dei Pazienti",
+    "reviewCount": "150+ Recensioni Google Verificate",
+    "verifiedTag": "Recensione Google Verificata",
+    "list": [
+      {
+        "name": "Meryem Bülbün",
+        "date": "2 mesi fa",
+        "treatment": "Rinoplastica",
+        "comment": "Un infinito grazie per tutto, Professore. Non solo un'operazione di successo, ma anche la fiducia e l'attenzione che mi ha dato durante tutto il processo sono state molto preziose per me. Si vede chiaramente che fate la vostra professione con grande cura e dedizione. Sono rimasto/a affascinato/a dal vostro lavoro, dalla vostra pazienza e dal vostro talento. Meno male che le nostre strade si sono incrociate. Grazie per le sue mani d'oro e il suo impegno.",
+        "initials": "MB",
+        "avatarBg": "bg-emerald-600"
+      },
+      {
+        "name": "Samet Çelebi",
+        "date": "2 mesi fa",
+        "treatment": "Rinoplastica Piezo",
+        "comment": "Ho scelto il Dott. Sefa per il mio intervento al naso e sono molto soddisfatto/a della mia decisione. Dalla prima visita ai controlli post-operatori, è stato molto disponibile ed esauriente in ogni fase. Ho raggiunto il risultato desiderato sia dal punto di vista della salute che dell'estetica. Lo ringrazio molto, così come il suo team, per i loro sforzi. Lo consiglio vivamente.",
+        "initials": "SÇ",
+        "avatarBg": "bg-indigo-600"
+      },
+      {
+        "name": "Helin Özdemirli",
+        "date": "2 mesi fa",
+        "treatment": "Rinoplastica",
+        "comment": "Molte grazie al Dott. Sefa per la sua attenzione, il suo sorriso e la riuscita dell'operazione. Lo consiglio in tutta tranquillità. È un medico meraviglioso che fa il suo lavoro con grande cura e dà valore al suo paziente. Sono molto soddisfatto/a del risultato. Grazie di tutto 🌸",
+        "initials": "HÖ",
+        "avatarBg": "bg-amber-600"
+      },
+      {
+        "name": "Zehra Sönmezsoy",
+        "date": "8 mesi fa",
+        "treatment": "Rinoplastica",
+        "comment": "Ho fatto l'intervento al naso circa 2 anni fa e tutti quelli che lo vedono lo amano così tanto che mi chiedono chi sia il mio medico. Il Dott. Sefa si è interessato così da vicino prima e dopo l'operazione che lo consiglio a tutti, ha fatto esattamente la forma di naso che volevo. Anche se è passato del tempo, si interessa ancora. Lo ringrazio molto :))",
+        "initials": "ZS",
+        "avatarBg": "bg-rose-600"
+      },
+      {
+        "name": "Ahmet Demirdağlı",
+        "date": "2 mesi fa",
+        "treatment": "Rinoplastica di Revisione",
+        "comment": "Circa cinque anni fa ho subito un'operazione a causa di problemi di respirazione e sanguinamento nasale. Ora sto benissimo. Buon lavoro, Professore. Inoltre, la ringrazio molto per la sua cortesia e attenzione.",
+        "initials": "AD",
+        "avatarBg": "bg-cyan-600"
+      },
+      {
+        "name": "Cemre Tardu",
+        "date": "2 mesi fa",
+        "treatment": "Rinoplastica",
+        "comment": "Ho fatto l'intervento al naso 2 anni fa e non ho riscontrato alcun problema in questi 2 anni, uso ancora il mio naso come il primo giorno, e penso che questo sia ciò che conta di più. Dio benedica le mani del Dott. Sefa, gli sono grato/a per la sua attenzione e premura. Nonostante siano passati 2 anni, non ha mai smesso di interessarsi a me. Lo consiglio con piacere 🙏🏻",
+        "initials": "CT",
+        "avatarBg": "bg-purple-600"
+      },
+      {
+        "name": "Abdullah Çetin",
+        "date": "5 mesi fa",
+        "treatment": "Rinoplastica",
+        "comment": "Sono estremamente soddisfatto del percorso di rinoplastica vissuto con il Dott. Sefa Keşan. Prima dell'operazione ha risposto pazientemente a tutte le mie domande, ha fornito informazioni dettagliate sul processo e mi ha fatto sentire al sicuro. L'attenzione e il follow-up post-operatorio sono stati altrettanto eccellenti quanto l'intervento. Ho ottenuto un risultato superiore alle mie aspettative, sia esteticamente che funzionalmente. Lo ringrazio di cuore per il suo impegno, la sua attenzione e la sua professionalità. Lo consiglio a occhi chiusi.",
+        "initials": "AC",
+        "avatarBg": "bg-teal-600"
+      },
+      {
+        "name": "Esra Yencilek",
+        "date": "8 mesi fa",
+        "treatment": "Rinoplastica",
+        "comment": "Ho fatto la mia rinoplastica 9 mesi fa, era un'operazione di cui avevo molta paura e per cui esitavo, ma il Dott. Sefa mi ha illuminato magnificamente su questo argomento e mi ha dato fiducia, è un medico perfetto sia per il suo lavoro che per la sua attenzione verso i pazienti. Sono molto soddisfatta del mio naso, non ho avuto alcun problema, chiunque voglia farlo può farlo in tutta tranquillità.",
+        "initials": "EY",
+        "avatarBg": "bg-violet-600"
+      },
+      {
+        "name": "Gülcan Gür",
+        "date": "7 mesi fa",
+        "treatment": "Rinoplastica",
+        "comment": "L'ho scelto dopo lunghe ricerche e ora capisco meglio quanto sia stata giusta questa decisione. Sono stato/a operato/a 7 mesi fa. Il processo di pianificazione pre-operatoria è stato molto dettagliato, ha ascoltato attentamente ciò che volevo. È sempre stato reperibile durante il mio recupero post-operatorio. Il mio naso è completamente in armonia con i lineamenti del mio viso e ha un aspetto naturale. Piace a tutti. Lo consiglio con assoluta tranquillità.",
+        "initials": "GG",
+        "avatarBg": "bg-fuchsia-600"
+      },
+      {
+        "name": "Nazar Gürbüz",
+        "date": "7 mesi fa",
+        "treatment": "Rinoplastica",
+        "comment": "Non so da dove cominciare, in realtà vorrei dire molte cose, ma diciamo solo questo: è un esperto di rinoplastica così straordinario che mi sono affidato/a completamente al Dott. Sefa e non ho detto in alcun modo 'la forma del naso dovrebbe essere così o cosà', e in realtà non ne ho nemmeno sentito il bisogno perché trasmette così tanta fiducia. E davvero, il mio naso è venuto esattamente come volevo, ogni volta che lo guardo penso 'per fortuna ho scelto il Dott. Sefa'. Dico che l'unico indirizzo della perfezione è SEFA KEŞAN.",
+        "initials": "NG",
+        "avatarBg": "bg-sky-600"
+      }
+    ]
+  },
+  "operationCases": {
+    "sectionBadge": "ARCHIVIO OPERAZIONI & RIPRESE CINEMATOGRAFICHE",
+    "sectionTitle": "Sala Operatoria & Casi Clinici",
+    "sectionDesc": "Momenti reali di intervento e follow-up clinico eseguiti sotto la guida dell'Op. Dr. Sefa Keşan con la tecnologia di chirurgia ultrasonica Piezo.",
+    "watchBtn": "Guarda il Video",
+    "detailBtn": "Esamina i Dettagli",
+    "items": [
+      {
+        "id": 1,
+        "type": "video",
+        "title": "Rinoplastica Piezo - Modellamento Tissutale Preciso",
+        "category": "RINOPLASTICA",
+        "badge": "NASO",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "10° giorno post-rinoplastica.\n\nSebbene sia un periodo molto precoce dopo l'intervento, grazie alla tecnologia di modellamento osseo a ultrasuoni Piezo, gonfiore e lividi sul viso della nostra paziente sono stati mantenuti al minimo.\n\nLa linea regolare del dorso del naso e l'elegante armonia della punta nasale con le proporzioni del viso mostrano chiaramente quanto il processo di guarigione stia procedendo in modo confortevole. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-1.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/Dd0_ndlNY96/?utm_source=ig_web_copy_link&cplk=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "title": "Rinoplastica Piezo - Modellamento Tissutale Preciso",
+        "category": "RINOPLASTICA",
+        "badge": "NASO",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "1 settimana dopo la rinoplastica.\n\nDopo la rimozione del tutore e dei cerotti nella prima settimana, questo nuovissimo profilo incontrato dalla nostra paziente rivela la potenza della rinoplastica aperta e della pianificazione chirurgica personalizzata.\n\nCon le nostre procedure combinate, le funzioni respiratorie sono state garantite ed è stata ottenuta una forma nasale raffinata che completa perfettamente i tratti naturali del viso della nostra paziente. 🌟",
+        "coverImage": "/images/gallery/cover/cover-2.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/Ddqm5a-NO3y/?utm_source=ig_web_copy_link&xtok=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 3,
+        "type": "video",
+        "title": "Rinoplastica Piezo - Modellamento Tissutale Preciso",
+        "category": "RINOPLASTICA",
+        "badge": "NASO",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Il primo controllo della nostra cara paziente ☺️🙏\n\nApprocci estetici naturali, equilibrati e che non alterano l'espressione caratteristica del viso sono la nostra massima priorità.\n\nIn questa sessione di controllo, siamo felici di vedere i frutti della nostra dissezione tissutale delicata e del protocollo di guarigione meticoloso. Il decorso confortevole della nostra paziente e il suo nuovo aspetto che si fonde con il viso valgono ogni cosa.",
+        "coverImage": "/images/gallery/cover/cover-3.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DRjXfbVjbL1/?utm_source=ig_web_copy_link&obrf=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 4,
+        "type": "video",
+        "title": "Rinoplastica Piezo - Modellamento Tissutale Preciso",
+        "category": "RINOPLASTICA",
+        "badge": "NASO",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "La nostra paziente di 32 anni aveva un naso lungo e desiderava una forma più elegante e raffinata per completare i suoi lineamenti.\n\nAbbiamo eseguito una rinoplastica aperta utilizzando la tecnica Piezo e abbiamo creato un naso naturale ed elegante, in armonia con il suo viso e in linea con le sue aspettative.\n\nGrazie alla tecnica Piezo, lividi, gonfiore e fastidio post-operatorio sono stati minimi.\n\nIl risultato è un naso elegante, equilibrato e che le dona moltissimo. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-4.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DdbZ7TWDent/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 5,
+        "type": "video",
+        "title": "Rinoplastica Piezo - Modellamento Tissutale Preciso",
+        "category": "RINOPLASTICA",
+        "badge": "NASO",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "La nostra paziente di 35 anni si è sottoposta a un intervento di rinoplastica per ottenere un naso elegante e raffinato, in perfetta armonia con i lineamenti del viso. ✨\n\nAbbiamo eseguito l'intervento con la tecnologia Piezo e un approccio aperto per ottenere un risultato naturale ed equilibrato.\n\nSiamo felicissimi di questa splendida trasformazione. 🌿",
+        "coverImage": "/images/gallery/cover/cover-5.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DdZMamODUUR/?utm_source=ig_web_copy_link&xtok=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 6,
+        "type": "video",
+        "title": "Rinoplastica Piezo - Modellamento Tissutale Preciso",
+        "category": "RINOPLASTICA",
+        "badge": "NASO",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Naturale, elegante e in perfetta armonia con i lineamenti del viso.\n\nPer la nostra paziente di 27 anni, abbiamo progettato una rinoplastica personalizzata che completa le proporzioni del viso preservandone l'espressione naturale.\n\nL'intervento è stato eseguito utilizzando un approccio di rinoplastica aperta combinato con la tecnologia Piezo; ciò ha consentito un modellamento preciso e controllato delle ossa nasali, riducendo al minimo gonfiore e lividi durante la guarigione.\n\nIl nostro obiettivo non è mai semplicemente creare un bel naso, ma creare il naso giusto per ogni viso. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-6.jpg",
+        "instagramUrl": "https://www.instagram.com/p/Dck86e4DU6m/?utm_source=ig_web_copy_link&exln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 7,
+        "type": "video",
+        "title": "Rinoplastica Piezo - Modellamento Tissutale Preciso",
+        "category": "RINOPLASTICA",
+        "badge": "NASO",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Grande trasformazione 🫶 ✨ Un risultato di rinoplastica naturale e armonioso per la nostra paziente di 22 anni.\n\nAbbiamo corretto il gibbo sul dorso del naso e rimodellato accuratamente il naso per ottenere un profilo più morbido e bilanciato che completi magnificamente i lineamenti.\n\nL'intervento è stato eseguito mediante l'approccio di rinoplastica aperta con tecnologia Piezo, che consente un modellamento osseo preciso con minimi gonfiori e lividi.\n\nIl risultato è un naso elegante, dall'aspetto naturale e in armonia con il viso. 👃",
+        "coverImage": "/images/gallery/cover/cover-7.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DbGdGxXgq_o/?utm_source=ig_web_copy_link&rpxt=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 8,
+        "type": "video",
+        "title": "Rinoplastica Piezo - Modellamento Tissutale Preciso",
+        "category": "RINOPLASTICA",
+        "badge": "NASO",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Un risultato di rinoplastica naturale ed elegante per la nostra paziente di 20 anni.\n\nLa richiesta della nostra paziente era chiara: un naso dall'aspetto naturale che valorizzasse splendidamente il viso.\n\nUtilizzando l'approccio di rinoplastica aperta con tecnologia Piezo, abbiamo rimodellato accuratamente il naso preservando l'armonia con i lineamenti del viso.\n\nIl risultato è un naso morbido, naturale e bilanciato, esattamente come lo desiderava.",
+        "coverImage": "/images/gallery/cover/cover-8.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DaNKO9gDSnf/?utm_source=ig_web_copy_link&obrf=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 9,
+        "type": "video",
+        "title": "Rinoplastica Piezo - Modellamento Tissutale Preciso",
+        "category": "RINOPLASTICA",
+        "badge": "NASO",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Un risultato di rinoplastica elegante e bilanciato per la nostra paziente di 47 anni.\n\nLa nostra paziente aveva un naso grande con pelle spessa. Il nostro obiettivo era snellire e rimpicciolire il naso in modo sicuro, mantenendo un aspetto naturale e l'armonia con i lineamenti.\n\nAbbiamo eseguito l'intervento utilizzando l'approccio di rinoplastica aperta combinato con la tecnologia Piezo, che garantisce un modellamento preciso e controllato.\n\nIl risultato è un naso più elegante, chic e bilanciato che valorizza magnificamente il suo viso. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-9.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DZ9p8FcjTQS/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 10,
+        "type": "video",
+        "title": "Rinoplastica Piezo - Modellamento Tissutale Preciso",
+        "category": "RINOPLASTICA",
+        "badge": "NASO",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Un risultato di rinoplastica bello ed elegante per la nostra paziente di 23 anni.\n\nIl nostro obiettivo era creare un naso naturale ed elegante che si adattasse perfettamente ai lineamenti e alle proporzioni del viso.\n\nL'intervento è stato eseguito utilizzando l'approccio di rinoplastica aperta con tecnologia Piezo, che consente un modellamento preciso e controllato.\n\nIl risultato finale è elegante, bilanciato e in magnifica armonia con il viso. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-10.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DXwd3mYjUq3/?utm_source=ig_web_copy_link&exln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 11,
+        "type": "video",
+        "title": "Rinoplastica Piezo - Modellamento Tissutale Preciso",
+        "category": "RINOPLASTICA",
+        "badge": "NASO",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Il nostro paziente presentava una prominente gobba dorsale, che abbiamo accuratamente corretto e rimodellato per garantire una migliore armonia con i lineamenti del viso.\n\nNella rinoplastica maschile, il nostro obiettivo non è semplicemente rimpicciolire il naso, ma creare un risultato raffinato e bilanciato preservando un aspetto forte, naturale e maschile.\n\nIl risultato è un profilo più pulito, proporzioni migliorate e un naso dall'aspetto naturale che completa il viso senza perdere il suo carattere maschile.",
+        "coverImage": "/images/gallery/cover/cover-11.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DWT2K7IDdeC/?utm_source=ig_web_copy_link&mdxt=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 12,
+        "type": "video",
+        "title": "Rinoplastica Piezo - Modellamento Tissutale Preciso",
+        "category": "RINOPLASTICA",
+        "badge": "NASO",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Partendo dalla forma di naso mostrata dalla nostra paziente come fonte d'ispirazione, abbiamo creato un naso elegante e chic, progettato specificamente per i suoi lineamenti e le sue preferenze personali.\n\nLa trasformazione è notevole ed è stato ottenuto un risultato naturale e armonioso che valorizza splendidamente il viso. ✨\n\n🔹 Approccio di rinoplastica aperta\n🔹 Tecnica Piezo\n🔹 Pianificazione chirurgica personalizzata\n🔹 Risultato naturale ed elegante\n\nOgni naso è unico e ogni rinoplastica deve essere progettata individualmente per garantire l'armonia facciale. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-12.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DOs0d08jdF9/?utm_source=ig_web_copy_link&vrfl=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 13,
+        "type": "video",
+        "title": "Rinoplastica per Cute Sottile e Lassità",
+        "category": "RINOPLASTICA A CUTE SOTTILE",
+        "badge": "CASO SPECIALE",
+        "badgeColor": "text-yellow-400 bg-yellow-400/10 border-yellow-400/30",
+        "desc": "Nei nostri pazienti con struttura cutanea sottile e lassa, preservare il supporto tissutale e ottenere un'armonia perfetta è la fase più critica.\n\nValutando meticolosamente le caratteristiche anatomiche della nostra paziente, abbiamo costruito un supporto scheletrico solido e duraturo al di sotto della fragile struttura cutanea. ✨\n\n🔹 Approccio di rinoplastica aperta\n🔹 Speciali tecniche di supporto per pelli sottili\n🔹 Gestione tissutale precisa con Piezo\n🔹 Linee lisce e naturali\n\nNella rinoplastica a cute sottile, esperienza e precisione sono le chiavi per raggiungere il risultato elegante sognato. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-13.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DN0RP_LWuYM/?utm_source=ig_web_copy_link&vrfl=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 14,
+        "type": "video",
+        "title": "Rinoplastica Piezo - Modellamento Tissutale Preciso",
+        "category": "RINOPLASTICA",
+        "badge": "NASO",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Una bellissima trasformazione per la nostra paziente di 20 anni dal viso con pelle spessa. Abbiamo eseguito una rinoplastica aperta utilizzando la tecnica Piezo, creando un naso più raffinato e armonioso che completa i tratti naturali del viso.\n\nIl risultato appare già molto promettente e si prevede che si affinerà ulteriormente con il progredire del processo di guarigione. 👃✨ 🌸👌",
+        "coverImage": "/images/gallery/cover/cover-14.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DNF0Rb1tZ7x/?utm_source=ig_web_copy_link&mdxt=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 15,
+        "type": "video",
+        "title": "Estetica Non Chirurgica & Applicazione di Botulino",
+        "category": "ESTETICA NON CHIRURGICA",
+        "badge": "BOTOX & FILLER",
+        "badgeColor": "text-pink-400 bg-pink-400/10 border-pink-400/30",
+        "desc": "Tocchi estetici non chirurgici applicati per ottenere un aspetto più riposato, fresco e giovane, preservando il dinamismo naturale dell'espressione facciale.\n\nGrazie a tecniche di iniezione precise, pianifichiamo risultati eleganti e naturali in armonia con i lineamenti del viso. ✨\n\n🔹 Aspetto naturale senza bloccare la mimica\n🔹 Piano di trattamento personalizzato\n🔹 Processo confortevole e rapido\n\nSoluzioni estetiche che esaltano la vostra bellezza naturale. 💉✨",
+        "coverImage": "/images/gallery/cover/cover-15.jpg",
+        "videoUrl": "/videos/vaka-15.mp4",
+        "instagramUrl": "https://www.instagram.com/reel/DK9ml6_Nnew/?utm_source=ig_web_copy_link&psln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 16,
+        "type": "video",
+        "title": "Rinoplastica Piezo - Modellamento Tissutale Preciso",
+        "category": "RINOPLASTICA",
+        "badge": "NASO",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Controllo a 1 settimana dalla rinoplastica. Grazie al modellamento osseo preciso ottenuto con la tecnica Piezo, il gonfiore e i lividi sul viso della nostra paziente sono stati mantenuti al minimo.\n\nLa linea regolare del dorso del naso e l'elegante armonia della punta nasale con le proporzioni del viso mostrano chiaramente la fluidità e il comfort del processo di guarigione. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-16.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DKXsKS2NhJ5/?utm_source=ig_web_copy_link&xtok=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 17,
+        "type": "video",
+        "title": "Momento in Sala Operatoria & Chirurgia di Precisione Piezo",
+        "category": "OPERAZIONI IN SALA OPERATORIA",
+        "badge": "CHIRURGIA DAL VIVO",
+        "badgeColor": "text-blue-400 bg-blue-400/10 border-blue-400/30",
+        "desc": "Momenti di modellamento tissutale preciso eseguiti in sala operatoria mediante la tecnologia di chirurgia ultrasonica Piezo.\n\nDurante l'intervento, garantendo un controllo millimetrico, rimodelliamo le strutture ossee nel modo più sicuro e liscio possibile, adottando meticolosamente i passaggi per rendere confortevole il recupero dei nostri pazienti. 🩺✨\n\n🔹 Modellamento osseo a ultrasuoni\n🔹 Traumo minimo e dissezione precisa\n🔹 Pianificazione chirurgica personalizzata\n\nOgni operazione viene eseguita con il rigore di un auditorium per una perfetta armonia estetica e funzionale. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-17.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DIltoRpCxiB/?utm_source=ig_web_copy_link&exln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 18,
+        "type": "video",
+        "title": "Rinoplastica per Naso Spesso e Deviato",
+        "category": "RINOPLASTICA",
+        "badge": "NASO",
+        "badgeColor": "text-cyan-400 bg-cyan-400/10 border-cyan-400/30",
+        "desc": "Il risultato di un intervento di successo eseguito per il nostro paziente di sesso maschile con pelle spessa e deviazione.\n\nNella rinoplastica maschile, la gestione della pelle spessa e della deviazione richiede grande cura. Utilizzando la tecnologia Piezo e l'approccio aperto, abbiamo eliminato i problemi respiratori e costruito un profilo maschile forte, naturale e perfettamente in armonia con i lineamenti del nostro paziente. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-18.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DHGuOkPCRyQ/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 19,
+        "type": "video",
+        "title": "Rinoplastica Piezo - Modellamento Tissutale Preciso",
+        "category": "RINOPLASTICA",
+        "badge": "NASO",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "In questa elegante trasformazione realizzata per la nostra giovane paziente, abbiamo mirato a preservare l'espressione naturale del suo viso e a trovare una perfetta sintonia con i suoi lineamenti.\n\nI tessuti ossei sono stati modellati con la massima precisione grazie alla tecnologia chirurgica ultrasonica Piezo, assicurando che il processo di guarigione procedesse in modo confortevole e con un edema minimo.\n\nIl risultato è un profilo estremamente naturale ed estetico che completa delicatamente i tratti del suo giovane viso. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-19.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DExNN1qih-X/?utm_source=ig_web_copy_link&cplk=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 20,
+        "type": "video",
+        "title": "Rinoplastica Piezo - Modellamento Tissutale Preciso",
+        "category": "RINOPLASTICA",
+        "badge": "NASO",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Rinoplastica al 1° controllo settimanale dopo la rimozione del tampone, il massaggio e l'applicazione dei cerotti: è emerso un profilo nasale naturale ed elegante, in armonia con i lineamenti della nostra paziente.\n\nGrazie al modellamento preciso dei tessuti ossei tramite la tecnologia di chirurgia ultrasonica Piezo, il processo di guarigione è avanzato con gonfiore e lividi minimi, garantendo il massimo comfort alla paziente. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-20.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DKJ74aBtMG4/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 21,
+        "type": "video",
+        "title": "Momento Operatorio in Sala & Chirurgia Piezo",
+        "category": "OPERAZIONI IN SALA OPERATORIA",
+        "badge": "CHIRURGIA DAL VIVO",
+        "badgeColor": "text-blue-400 bg-blue-400/10 border-blue-400/30",
+        "desc": "Uno scorcio dei momenti operatori condotti con meticolosità in sala operatoria. 🩺✨\n\nCon la precisione millimetrica offerta dalla tecnologia di chirurgia ultrasonica Piezo, rimodelliamo i tessuti ossei nel modo più sicuro e controllato; soddisfiamo appieno le aspettative estetiche dei nostri pazienti e risolviamo definitivamente i loro problemi respiratori.\n\nContinuiamo a lavorare con il nostro approccio orientato all'eccellenza e al comfort in ogni dettaglio. 👃💪",
+        "coverImage": "/images/gallery/cover/cover-21.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DMdRBQMtvbw/?utm_source=ig_web_copy_link&vrfl=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      }
+    ]
+  },
+  "whatsappDefaultMessage": "Salve, vorrei avere informazioni sui trattamenti e sugli appuntamenti.",
+  "whatsappExamMessage": "Salve Op. Dott. Sefa Keşan, vorrei ricevere informazioni su appuntamenti e visite."
 }

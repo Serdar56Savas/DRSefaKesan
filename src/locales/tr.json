@@ -1,11 +1,28 @@
 {
   "navbar": {
-    "services": "Hizmetler",
+    "services": "Hizmetlerimiz",
     "gallery": "Galeri",
     "doctor": "Doktorumuz",
     "contact": "İletişim",
     "appointment": "Randevu Al",
-    "clinicSubtitle": "KBB Uzmanı"
+    "clinicSubtitle": "KBB Uzmanı",
+    "servicesTitle": "AMELİYATLAR VE TEDAVİLER",
+    "contactInfoText": "Bilgi, Randevu ve İletişim İçin Bize Ulaşın:",
+    "whatsappButton": "WhatsApp ile İletişim",
+    "categories": {
+      "rhinoplasty": "BURUN ESTETİĞİ",
+      "revisionRhinoplasty": "DÜZELTME CERRAHİSİ",
+      "otoplasty": "KULAK ESTETİĞİ",
+      "fatGrafting": "OTOLOG DOKU TRANSFERİ",
+      "bichectomy": "YÜZ İNCELENDİRME"
+    },
+    "items": {
+      "primerRhinoplasty": "Primer Rinoplasti",
+      "revisionRhinoplasty": "Revizyon Rinoplasti",
+      "otoplasty": "Otoplasti",
+      "fatGrafting": "Yağ Enjeksiyonu",
+      "bichectomy": "Bişektomi"
+    }
   },
   "hero": {
     "badge": "Kişiye Özel Altın Oran Analizi",
@@ -110,6 +127,7 @@
   },
   "treatmentsSection": {
     "badge": "Ayrıcalıklı Hizmetler",
+    "badgeSecond": "SÜREÇ & DETAYLAR",
     "title": "Klinik Uzmanlık Alanları"
   },
   "gallery": {
@@ -118,6 +136,7 @@
     "before": "Öncesi",
     "after": "Sonrası",
     "case": "Vaka",
+    "caseReportBadge": "VAKA ANALİZ RAPORU",
     "tabs": {
       "rinoplasti": "rinoplasti",
       "revizyon-rinoplasti": "revizyon rinoplasti",
@@ -125,34 +144,55 @@
       "yag-enjeksiyonu": "yağ enjeksiyonu",
       "bisektomi": "bisektomi"
     },
+    "specLabels": {
+      "technique": "Uygulanan Teknik",
+      "anatomy": "Anatomi / Deformite",
+      "benefit": "Fonksiyonel Kazanım"
+    },
     "rinoplasti": {
       "title": "Primer Rinoplasti Ameliyatı",
       "vakaNo": "Vaka İncelemesi No: 214",
-      "details": "Burun kemer yapısı yüz oranlarıyla uyumlu şekilde düzenlenmiş, düşüklüğü olan burun ucu altın oran doğrultusunda yukarı kaldırılmıştır."
+      "details": "Burun kemer yapısı yüz oranlarıyla uyumlu şekilde düzenlenmiş, düşüklüğü olan burun ucu altın oran doğrultusunda yukarı kaldırılmıştır.",
+      "technique": "Piezo Ultrasonik & Açık Teknik",
+      "anatomy": "Kemerli Sırt & Düşük Burun Ucu",
+      "benefit": "%100 Doğal Solunum & Açı Uyumlu"
     },
     "revizyon-rinoplasti": {
       "title": "Revizyon Rinoplasti",
       "vakaNo": "Vaka İncelemesi No: 087",
-      "details": "Daha önce ameliyat olmuş ve kıkırdak çökmesi bulunan hastada, kaburga kıkırdağı grefti kullanılarak yeniden yapılandırma yapılmıştır."
+      "details": "Daha önce ameliyat olmuş ve kıkırdak çökmesi bulunan hastada, kaburga kıkırdağı grefti kullanılarak yeniden yapılandırma yapılmıştır.",
+      "technique": "Kıkırdak Greft & Yapısal Onarım",
+      "anatomy": "Pollybeak & Valv Çökmesi",
+      "benefit": "Açık Hava Yolu & Güçlü Destek"
     },
     "otoplasti": {
       "title": "Otoplasti (Kulak Estetiği)",
       "vakaNo": "Vaka İncelemesi No: 112",
-      "details": "Belirgin kulak açısı kulak arkasından yapılan kesi ile düzeltilmiş, doğal kıvrım ve simetri sağlanmıştır."
+      "details": "Belirgin kulak açısı kulak arkasından yapılan kesi ile düzeltilmiş, doğal kıvrım ve simetri sağlanmıştır.",
+      "technique": "Kalıcı Kıkırdak Şekillendirme",
+      "anatomy": "Belirgin Kulak (Kepçe Kulak)",
+      "benefit": "Simetrik & İz Bırakmayan Form"
     },
     "yag-enjeksiyonu": {
       "title": "Yağ Enjeksiyonu (Otolog Transfer)",
       "vakaNo": "Vaka İncelemesi No: 419",
-      "details": "Elmacık kemikleri ve çene hattına hastanın kendi yağ dokusu enjekte edilerek uzun vadeli hacim, lifting ve gençleştirme etkisi sağlanmıştır."
+      "details": "Elmacık kemikleri ve çene hattına hastanın kendi yağ dokusu enjekte edilerek uzun vadeli hacim, lifting ve gençleştirme etkisi sağlanmıştır.",
+      "technique": "Mikro Kanül Yağ Transferi",
+      "anatomy": "Yüz Hacim Kaybı & Kontür",
+      "benefit": "Canlı Doku & Doğal Hacim"
     },
     "bisektomi": {
       "title": "Bişektomi (Yanak Estetiği)",
       "vakaNo": "Vaka İncelemesi No: 088",
-      "details": "Yanak bölgesindeki yağ yastıklarının kontrollü bir şekilde alınmasıyla, elmacık kemikleri belirginleştirilmiş ve daha keskin bir yüz hattı elde edilmiştir."
+      "details": "Yanak bölgesindeki yağ yastıklarının kontrollü bir şekilde alınmasıyla, elmacık kemikleri belirginleştirilmiş ve daha keskin bir yüz hattı elde edilmiştir.",
+      "technique": "Ağız İçi Mikro Kesi",
+      "anatomy": "Dolgun Yanak & Yuvarlak Yüz Hattı",
+      "benefit": "Keskin V-Line Çene Kontürü"
     }
   },
   "biographyPage": {
     "back": "Ana Sayfaya Dön",
+    "whatsappBtn": "WhatsApp Danışma",
     "role": "KBB Uzmanı",
     "heroBadge": "Uzman Doktor",
     "heroTitle1": "Güzelliğin Arkasındaki",
@@ -215,7 +255,7 @@
   "footer": {
     "subtitle": "KBB Uzmanı",
     "quote": "Gerçek güzellik, yüzdeki yabancı bir dokunuşta değil; ifadenin kendi saklı zarafetini ve kusursuz dengesini yeniden keşfetmesinde saklıdır.",
-    "description": "Nişantaşı kliniğimizde, uluslararası sağlık standartlarında, tamamen size ve kemik anatominize özel planlanan operasyon süreçleriyle yaşam kalitenizi artırıyoruz.",
+    "description": "Kliniğimizde, uluslararası sağlık standartlarında, tamamen size ve kemik anatominize özel planlanan operasyon süreçleriyle yaşam kalitenizi artırıyoruz",
     "navigationTitle": "Kurumsal Navigasyon",
     "home": "Ana Sayfa",
     "story": "Cerrahın Hikayesi",
@@ -399,5 +439,581 @@
     "error_phone": "Lütfen telefonunuzu girin.",
     "error_treatment": "Lütfen bir tedavi seçin.",
     "wp_message": "Merhaba Op. Dr. Sefa Keşan Kliniği,\n\nWeb siteniz üzerinden yeni bir randevu talebi oluşturdum.\n\n👤 Ad Soyad: {name}\n📞 Telefon: {phone}\n🏥 İlgilendiğim Tedavi: {treatment}"
-  }
+  },
+  "googleReviews": {
+    "badge": "Google Haritalar Doğrulanmış Değerlendirmeler",
+    "title": "Gerçek Hasta Deneyimleri",
+    "reviewCount": "150+ Doğrulanmış Google Yorumu",
+    "verifiedTag": "Doğrulanmış Google Yorumu",
+    "list": [
+      {
+        "name": "Meryem Bülbün",
+        "date": "2 ay önce",
+        "treatment": "Rinoplasti",
+        "comment": "Her şey için sonsuz teşekkür ederim hocam. Sadece başarılı bir operasyon değil aynı zamanda süreç boyunca verdiğiniz güven ve ilgi benim için çok kıymetliydi. Mesleğinizi büyük bir titizlik ve özveriyle yaptığınız her halinizden belli oluyor. Emeğinize sabrınıza ve yeteneğinize hayran kaldım. İyi ki yollarımız kesişmiş. Ellerinize, emeğinize sağlık.",
+        "initials": "MB",
+        "avatarBg": "bg-emerald-600"
+      },
+      {
+        "name": "Samet Çelebi",
+        "date": "2 ay önce",
+        "treatment": "Piezo Rinoplasti",
+        "comment": "Burun ameliyatım için Sefa Hocamı tercih ettim ve verdiğim karardan çok memnunum. İlk muayeneden ameliyat sonrası kontrollere kadar her aşamada çok ilgili ve açıklayıcıydı. Hem sağlık hem de estetik açıdan istediğim sonuca ulaştım. Kendisine ve ekibine emekleri için çok teşekkür ediyorum. Kesinlikle tavsiye ederim.",
+        "initials": "SÇ",
+        "avatarBg": "bg-indigo-600"
+      },
+      {
+        "name": "Helin Özdemirli",
+        "date": "2 ay önce",
+        "treatment": "Rinoplasti",
+        "comment": "Sefa beyin İlgisi, güler yüzü ve başarılı operasyonu için çok teşekkür ederim. Gönül rahatlığıyla tavsiye ederim. İşini büyük bir özenle yapan, hastasına değer veren harika bir doktor. Sonuçtan çok memnunum. Her şey için teşekkür ederim🌸",
+        "initials": "HÖ",
+        "avatarBg": "bg-amber-600"
+      },
+      {
+        "name": "Zehra Sönmezsoy",
+        "date": "8 ay önce",
+        "treatment": "Rinoplasti",
+        "comment": "Yaklaşık 2 yıldır burun ameliyatı oldum ve gören herkes o kadar beğendi ki doktorumun kim olduğunu soruyorlar Sefa hoca' ameliyattan önce ve sonrası o kadar yakından ilgileniyor ki herkese tavsiye ederim tam istediğim gibi bir burun şekli yaptı. Üstünden geçen geçmesine rağmen hala ilgileniyor . Kendisine çok teşekkür ederim :))",
+        "initials": "ZS",
+        "avatarBg": "bg-rose-600"
+      },
+      {
+        "name": "Ahmet Demirdağlı",
+        "date": "2 ay önce",
+        "treatment": "Revizyon Rinoplasti",
+        "comment": "Yaklaşık beş yıl önce nefes problemi Ve burun kanamasından dolayı ameliyat oldum. Gayet sağlıklıyım şuan. Ellerinize sağlık hocam. Ayrıca ilgi alakanız için çok teşekkür ederim.",
+        "initials": "AD",
+        "avatarBg": "bg-cyan-600"
+      },
+      {
+        "name": "Cemre Tardu",
+        "date": "2 ay önce",
+        "treatment": "Rinoplasti",
+        "comment": "2 yıl önce burun ameliyatı oldum 2 yıl içerisinde herhangi bir problem ile karşılaşmadım burnumu hala ilk yapıldığı gibi kullanıyorum önemli olanın da bu olduğunu düşünüyorum Sefa hocamın ellerine sağlık ilgi ve alakası için de minnettarım 2 yıl geçmesine rağmen ilgi ve alakasını asla üzerimden çekmedi memnuniyetle tavsiye ediyorum 🙏🏻",
+        "initials": "CT",
+        "avatarBg": "bg-purple-600"
+      },
+      {
+        "name": "Abdullah Çetin",
+        "date": "5 ay önce",
+        "treatment": "Rinoplasti",
+        "comment": "KBB doktorum Sefa Keşan’da geçirdiğim rinoplasti ameliyatı sürecinden son derece memnun kaldım. Ameliyat öncesinde tüm sorularımı sabırla yanıtladı, süreçle ilgili detaylı bilgilendirme yaptı ve kendimi güvende hissetmemi sağladı. Ameliyat sonrası ilgi ve takibi de en az operasyon kadar başarılıydı. Hem estetik hem de fonksiyonel olarak beklentilerimin üzerinde bir sonuç elde ettim. Emeği, ilgisi ve profesyonelliği için kendisine çok teşekkür ederim. Gönül rahatlığıyla tavsiye ederim.",
+        "initials": "AC",
+        "avatarBg": "bg-teal-600"
+      },
+      {
+        "name": "Esra Yencilek",
+        "date": "8 ay önce",
+        "treatment": "Rinoplasti",
+        "comment": "9 ay önce burun estetiğimi oldum çok korktuğum ve tereddüt ettigim bir ameliyatti ama sefa hocam beni bu konuda çok güzel aydınlattı bana güven verdi hem işi ile hemde hastalara olan ilgisi ile mükemmel bir doktor burnumdan gayet memnunum hiç bi problem yaşamadım olmak isteyen varsa gönül rahatlığıyla olabilir",
+        "initials": "EY",
+        "avatarBg": "bg-violet-600"
+      },
+      {
+        "name": "Gülcan Gür",
+        "date": "7 ay önce",
+        "treatment": "Rinoplasti",
+        "comment": "Uzun araştırmalar sonucunda kendisini tercih ettim ve ne kadar doğru bir karar verdiğimi şimdi daha iyi anlıyorum. 7 ay önce ameliyat oldum . Ameliyat öncesi planlama süreci çok detaylıydı, ne istediğimi dikkatle dinledi. Ameliyat sonrası iyileşme sürecimde de her zaman ulaşılabilir oldu. Burnum yüz hatlarımla tamamen uyumlu ve doğal görünüyor. Gören herkes çok beğeniyor. Gönül rahatlığıyla tavsiye ederim",
+        "initials": "GG",
+        "avatarBg": "bg-fuchsia-600"
+      },
+      {
+        "name": "Nazar Gürbüz",
+        "date": "7 ay önce",
+        "treatment": "Rinoplasti",
+        "comment": "Nereden başlıyacağımı bilmiyorum aslında çok şey söylemek istiyorum ama şukadarını diyim. O kadar mükemmel bir rinopilasti uzmanı ki kendimi tamamen sefa hocaya bıraktım ve hiç bir şekilde burun şekli böyle olsun bu böyle olsun demedim gerekte duymadım açıkçası o kadar güven veriyor insana ve gerçektende burnum tam istediğim gibi olmuş her baktığımda iyiki Sefa hocayı seçtim diyorum yani Mükemmelliğin tek adresi SEFA KEŞAN diyorum.",
+        "initials": "NG",
+        "avatarBg": "bg-sky-600"
+      }
+    ]
+  },
+  "clinicTech": {
+    "sectionBadge": "KLİNİK STANDARTLARI & TEKNOLOJİ",
+    "sectionTitle": "Yüksek Konfor, Maksimum Güven",
+    "cards": [
+      {
+        "icon": "sliders",
+        "title": "3D Yüz Analizi & Simülasyon",
+        "description": "Operasyon öncesinde yüz hatlarınız dijitalize edilerek kişiselleştirilmiş altın oran planlaması oluşturulur."
+      },
+      {
+        "icon": "zap",
+        "title": "Ultrasonik Piezo Cerrahi",
+        "description": "Kemikleri kırmadan ses dalgalarıyla milimetrik olarak kesip biçimlendiren en modern cerrahi teknoloji."
+      },
+      {
+        "icon": "shield",
+        "title": "Steril & İklimlendirilmiş Alanlar",
+        "description": "Uluslararası A++ standartlarında sterilizasyon protokolleri ve konforlu ameliyat sonrası bakım."
+      }
+    ]
+  },
+  "faq": {
+    "sectionBadge": "SÜREÇ & REHBER",
+    "sectionTitle": "Sıkça Sorulan Sorular",
+    "sectionSubtitle": "Operasyon öncesinden iyileşme dönemine kadar aklınıza takılabilecek tüm detaylı yanıtlar.",
+    "categories": {
+      "all": "Tümü",
+      "rinoplasti": "Rinoplasti & Cerrahi",
+      "iyilesme": "İyileşme Süreci",
+      "revizyon": "Revizyon Ameliyatı",
+      "kombine": "Kombine İşlemler"
+    },
+    "items": [
+      {
+        "cat": "rinoplasti",
+        "q": "Ameliyat öncesi 3D simülasyon ve planlama nasıl yapılıyor?",
+        "a": "İlk muayenede 3D yüz analiz teknolojisi ile yüz hatlarınız dijital ortama aktarılır. Altın oran prensiplerine uygun olarak, yüzünüzün doğal anatomisini bozmayacak kişiye özel burun tasarımı birlikte planlanır."
+      },
+      {
+        "cat": "rinoplasti",
+        "q": "Ultrasonik (Piezo) Rinoplasti tekniğinin avantajları nelerdir?",
+        "a": "Piezo teknolojisi, geleneksel kırma yöntemlerinin aksine ses dalgaları ile kemik dokuyu hassasça şekillendirir. Yumuşak doku ve damarlar zarar görmediği için ameliyat sonrası morluk ve şişlik minimum düzeydedir."
+      },
+      {
+        "cat": "rinoplasti",
+        "q": "Ameliyatta silikon tampon mu yoksa bez tampon mu kullanılıyor?",
+        "a": "Kliniğimizde hastalarımızın nefes konforunu sağlamak amacıyla ortası oluklu, nefes almayı engellemeyen silikon oluklu splintler kullanılır. Çıkarılması son derece ağrısız ve saniyeler süren bir işlemdir."
+      },
+      {
+        "cat": "iyilesme",
+        "q": "Ameliyat sonrası iyileşme süreci nasıl ilerler?",
+        "a": "İlk 2-3 gün hafif ödem görülebilir. 7. günde burun üzerindeki koruyucu atel ve silikonlar çıkarılır. Hastalarımız 1. haftanın sonunda rahatlıkla sosyal ve iş hayatlarına dönebilirler."
+      },
+      {
+        "cat": "iyilesme",
+        "q": "Burun tam şeklini ne zaman alır?",
+        "a": "Ödemlerin %80'i ilk 1-2 ay içinde dağılır. İnce ödemlerin tamamen çözülmesi ve burnun nihai şeklini alması kalın derili hastalarda 1-1.5 yıl, ince derili hastalarda ise yaklaşık 6-12 ay sürer."
+      },
+      {
+        "cat": "iyilesme",
+        "q": "Ameliyat sonrası gözlük kullanımı ve spor ne zaman mümkündür?",
+        "a": "Hafif yürüyüşlere 2. haftadan itibaren başlanabilir. Ağır sporlar ve yüzme için 1. ayın dolması beklenmelidir. Güneş gözlüğü kullanımı için ise kemik dokunun tam kaynaması adına 2-3 ay beklenmesi önerilir."
+      },
+      {
+        "cat": "revizyon",
+        "q": "Revizyon (ikincil) rinoplasti nedir ve ne zaman yapılmalıdır?",
+        "a": "Daha önce başka bir merkezde ameliyat olmuş ancak estetik veya nefes problemi yaşayan hastalara uygulanan düzeltme cerrahisidir. Dokuların iyileşmesi ve esneklik kazanması için ilk ameliyatın üzerinden en az 1 yıl geçmelidir."
+      },
+      {
+        "cat": "revizyon",
+        "q": "Revizyon ameliyatında kaburga kıkırdağı kullanılması şart mıdır?",
+        "a": "Eğer burun içinde yeterli kıkırdak rezervi kalmamışsa, burna yeniden form ve destek vermek amacıyla hastanın kendi kaburgasından veya kulak kıkırdağından mikro greftler alınarak reconstructive işlem gerçekleştirilir."
+      },
+      {
+        "cat": "kombine",
+        "q": "Rinoplasti ile birlikte Otoplasti veya Bişektomi yapılabilir mi?",
+        "a": "Evet, tek anestezi altında hem burun hem de yüz simetrisini tamamlayan Otoplasti (Kepçe Kulak) veya Bişektomi (Yanak İnceltme) gibi kombine operasyonlar sıklıkla tercih edilmektedir."
+      },
+      {
+        "cat": "kombine",
+        "q": "Deviasyon (kemik eğriliği) ve et büyümesi de estetikle aynı anda çözülür mü?",
+        "a": "Kesinlikle. Fonksiyonel rinoplasti yaklaşımımızla, nefes almanızı engelleyen konka büyümesi (burun eti) ve septum deviasyonu estetik operasyonla eş zamanlı olarak tedavi edilir."
+      }
+    ]
+  },
+  "operationCases": {
+    "sectionBadge": "OPERASYON ARŞİVİ & SİNEMATİK ÇEKİMLER",
+    "sectionTitle": "Ameliyathane & Klinik Vakalar",
+    "sectionDesc": "Op. Dr. Sefa Keşan önderliğinde Piezo ultrasonik cerrahi teknolojisi ile gerçekleştirilen gerçek operasyon anları ve klinik takibi.",
+    "watchBtn": "Videoyu İzle",
+    "detailBtn": "Detayı İncele",
+    "items": [
+      {
+        "id": 1,
+        "type": "video",
+        "title": "Piezo Rinoplasti Hassas Doku Şekillendirme",
+        "category": "RHİNOPLASTİ",
+        "badge": "BURUN",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Rinoplasti sonrası 10. gün.\n\nOperasyonun ardından henüz çok erken bir dönem olmasına rağmen, Piezo ultrasonik kemik şekillendirme teknolojisi sayesinde hastamızın yüzündeki şişlik ve morluklar minimum seviyede tutulmuştur.\n\nBurun sırtının pürüzsüz hattı ve burun ucunun yüz oranlarıyla yakaladığı zarif uyum, iyileşme sürecinin ne kadar konforlu ilerlediğini net bir şekilde göstermektedir. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-1.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/Dd0_ndlNY96/?utm_source=ig_web_copy_link&cplk=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "title": "Piezo Rinoplasti Hassas Doku Şekillendirme",
+        "category": "RHİNOPLASTİ",
+        "badge": "BURUN",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Rhinoplasty'den 1 Hafta Sonra.\n\nİlk hafta atel ve bantların alınmasının ardından hastamızın buluştuğu bu yepyeni profil, açık rinoplasti ve kişiselleştirilmiş cerrahi planlamanın gücünü ortaya koyuyor.\n\nKombinasyon işlemlerimizle hem nefes alma fonksiyonları güvence altına alınmış hem de hastamızın doğal yüz hatlarını kusursuzca tamamlayan rafine bir burun formu elde edilmiştir. 🌟",
+        "coverImage": "/images/gallery/cover/cover-2.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/Ddqm5a-NO3y/?utm_source=ig_web_copy_link&xtok=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 3,
+        "type": "video",
+        "title": "Piezo Rinoplasti Hassas Doku Şekillendirme",
+        "category": "RHİNOPLASTİ",
+        "badge": "BURUN",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Sevgili hastamızın ilk hafta kontrolü ☺️🙏\n\nDoğal, dengeli ve yüzün karakteristik ifadesini bozmayan estetik yaklaşımlar en büyük önceliğimizdir. \n\nBu kontrol seansımızda, hassas doku diseksiyonu ve özenli iyileşme protokolümüzün meyvelerini görmekten mutluluk duyuyoruz. Hastamızın konforlu süreci ve yüzüyle bütünleşen yeni görünümü her şeye değer.",
+        "coverImage": "/images/gallery/cover/cover-3.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DRjXfbVjbL1/?utm_source=ig_web_copy_link&obrf=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 4,
+        "type": "video",
+        "title": "Piezo Rinoplasti Hassas Doku Şekillendirme",
+        "category": "RHİNOPLASTİ",
+        "badge": "BURUN",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "32 yaşındaki hastamızın uzun bir burnu vardı ve yüz hatlarını tamamlayacak daha zarif, incelikli bir şekil istiyordu.\n\nPiezo tekniğini kullanarak açık rinoplasti gerçekleştirdik ve yüzüyle uyumlu, beklentilerine uygun doğal ve şık bir burun yarattık.\n\nPiezo tekniği sayesinde morarma, şişlik ve ameliyat sonrası rahatsızlık minimum düzeydeydi.\n\nSonuç zarif, dengeli ve yüzüne çok yakışan bir burun oldu. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-4.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DdbZ7TWDent/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 5,
+        "type": "video",
+        "title": "Piezo Rinoplasti Hassas Doku Şekillendirme",
+        "category": "RHİNOPLASTİ",
+        "badge": "BURUN",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "35 yaşındaki hastamız, yüz hatlarıyla mükemmel bir uyum içinde olan, zarif ve şık bir burun elde etmek için rinoplasti ameliyatı geçirdi. ✨\n\nAmeliyatı Piezo teknolojisiyle açık yaklaşım kullanarak gerçekleştirdik ve doğal ve dengeli bir sonuç elde ettik.\n\nBu güzel dönüşümden çok memnunuz. 🌿",
+        "coverImage": "/images/gallery/cover/cover-5.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DdZMamODUUR/?utm_source=ig_web_copy_link&xtok=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 6,
+        "type": "video",
+        "title": "Piezo Rinoplasti Hassas Doku Şekillendirme",
+        "category": "RHİNOPLASTİ",
+        "badge": "BURUN",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Doğal, zarif ve yüz hatlarıyla mükemmel bir uyum içinde.\n\n27 yaşındaki hastamız için, yüz oranlarını tamamlayan ve doğal ifadesini koruyan kişiselleştirilmiş bir rinoplasti tasarladık.\n\nİşlem, Piezo teknolojisiyle birleştirilmiş açık rinoplasti yaklaşımı kullanılarak gerçekleştirildi; bu sayede burun kemiklerinin hassas ve kontrollü bir şekilde yeniden şekillendirilmesi sağlandı ve iyileşme sürecinde minimum şişlik ve morarma görüldü.\n\nAmacımız asla sadece güzel bir burun yaratmak değil, her yüz için doğru burnu yaratmaktır. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-6.jpg",
+        "instagramUrl": "https://www.instagram.com/p/Dck86e4DU6m/?utm_source=ig_web_copy_link&exln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 7,
+        "type": "video",
+        "title": "Piezo Rinoplasti Hassas Doku Şekillendirme",
+        "category": "RHİNOPLASTİ",
+        "badge": "BURUN",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Büyük değişim🫶 ✨ 22 yaşındaki hastamız için doğal ve uyumlu bir rinoplasti sonucu.\n\nBurun sırtındaki kamburu düzelttik ve yüz hatlarını güzelce tamamlayan daha yumuşak, daha dengeli bir profil elde etmek için burnu dikkatlice yeniden şekillendirdik.\n\nİşlem, minimal şişlik ve morarma ile hassas kemik şekillendirmesine olanak tanıyan Piezo teknolojisi ile açık rinoplasti yaklaşımı kullanılarak gerçekleştirildi.\n\nSonuç, yüzüyle uyumlu, zarif ve doğal görünümlü bir burun. 👃",
+        "coverImage": "/images/gallery/cover/cover-7.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DbGdGxXgq_o/?utm_source=ig_web_copy_link&rpxt=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 8,
+        "type": "video",
+        "title": "Piezo Rinoplasti Hassas Doku Şekillendirme",
+        "category": "RHİNOPLASTİ",
+        "badge": "BURUN",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "20 yaşındaki hastamız için doğal ve zarif bir rinoplasti sonucu.\n\nHastamızın isteği açıktı: yüzünü güzelce tamamlayan doğal görünümlü bir burun.\n\nPiezo teknolojisi ile açık rinoplasti yaklaşımı kullanarak, yüz hatlarıyla uyumu koruyarak burnu dikkatlice yeniden şekillendirdik.\n\nSonuç, tam istediği gibi yumuşak, doğal ve dengeli bir burun",
+        "coverImage": "/images/gallery/cover/cover-8.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DaNKO9gDSnf/?utm_source=ig_web_copy_link&obrf=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 9,
+        "type": "video",
+        "title": "Piezo Rinoplasti Hassas Doku Şekillendirme",
+        "category": "RHİNOPLASTİ",
+        "badge": "BURUN",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "47 yaşındaki hastamız için zarif ve dengeli bir rinoplasti sonucu.\n\nHastamızın kalın derili, büyük bir burnu vardı. Amacımız, doğal bir görünüm ve yüz hatlarıyla uyum sağlarken, burnu güvenli bir şekilde mümkün olduğunca inceltmek ve küçültmekti.\n\nAmeliyatı, hassas ve kontrollü şekillendirme sağlayan Piezo teknolojisiyle birleştirilmiş açık rinoplasti yaklaşımı kullanarak gerçekleştirdik.\n\nSonuç, yüzünü güzelce tamamlayan daha zarif, şık ve dengeli bir burun oldu. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-9.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DZ9p8FcjTQS/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 10,
+        "type": "video",
+        "title": "Piezo Rinoplasti Hassas Doku Şekillendirme",
+        "category": "RHİNOPLASTİ",
+        "badge": "BURUN",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": " 23 yaşındaki hastamız için güzel ve zarif bir rinoplasti sonucu.\n\nAmacımız, yüz hatlarına ve oranlarına mükemmel şekilde uyan doğal ve zarif bir burun yaratmaktı.\n\nİşlem, hassas ve kontrollü şekillendirmeye olanak tanıyan Piezo teknolojisi ile açık rinoplasti yaklaşımı kullanılarak gerçekleştirildi.\n\nNihai sonuç zarif, dengeli ve yüzüyle güzel bir uyum içinde. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-10.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DXwd3mYjUq3/?utm_source=ig_web_copy_link&exln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 11,
+        "type": "video",
+        "title": "Piezo Rinoplasti Hassas Doku Şekillendirme",
+        "category": "RHİNOPLASTİ",
+        "badge": "BURUN",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Hastamızın belirgin bir sırt kamburu vardı, bunu dikkatlice düzelttik ve yüz hatlarıyla daha iyi bir uyum sağlamak için burnu yeniden şekillendirdik.\n\nErkek rinoplastisinde amacımız sadece burnu küçültmek değil, güçlü, doğal ve erkeksi bir görünümü korurken rafine ve dengeli bir sonuç yaratmaktır.\n\nSonuç, daha temiz bir profil, iyileştirilmiş oranlar ve erkeksi karakterini kaybetmeden yüzünü tamamlayan doğal görünümlü bir burundur.",
+        "coverImage": "/images/gallery/cover/cover-11.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DWT2K7IDdeC/?utm_source=ig_web_copy_link&mdxt=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 12,
+        "type": "video",
+        "title": "Piezo Rinoplasti Hassas Doku Şekillendirme",
+        "category": "RHİNOPLASTİ",
+        "badge": "BURUN",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Hastamızın bize ilham kaynağı olarak gösterdiği burun şeklinden yola çıkarak, yüz hatlarına ve kişisel tercihlerine özel olarak tasarlanmış, zarif ve şık bir burun yarattık.\n\nDönüşüm dikkat çekici olup, yüzünü güzelce tamamlayan doğal ve uyumlu bir sonuç elde edilmiştir. ✨\n\n🔹 Açık rinoplasti yaklaşımı\n🔹 Piezo tekniği\n🔹 Kişiselleştirilmiş cerrahi planlama\n🔹 Doğal ve şık sonuç\n\nHer burun benzersizdir ve her rinoplasti, yüz uyumunu sağlamak için bireysel olarak tasarlanmalıdır. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-12.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DOs0d08jdF9/?utm_source=ig_web_copy_link&vrfl=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 13,
+        "type": "video",
+        "title": "Gevşek ve ince cilt burun estetiği",
+        "category": "İNCE CİLT RİNOPLASTİSİ",
+        "badge": "ÖZEL VAKA",
+        "badgeColor": "text-yellow-400 bg-yellow-400/10 border-yellow-400/30",
+        "desc": "İnce ve gevşek cilt yapısına sahip hastalarımızda, doku desteğini korumak ve kusursuz bir uyum yakalamak en kritik aşamadır.\n\nHastamızın anatomik özelliklerini titizlikle değerlendirerek, zayıf cilt yapısının altında güçlü ve kalıcı bir iskelet desteği inşa ettik. ✨\n\n🔹 Açık rinoplasti yaklaşımı\n🔹 İnce ciltler için özel destekleme teknikleri\n🔹 Piezo ile hassas doku yönetimi\n🔹 Pürüzsüz ve doğal hatlar\n\nİnce cilt rinoplastisinde tecrübe ve hassasiyet, hayal edilen zarif sonuca ulaşmanın anahtarıdır. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-13.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DN0RP_LWuYM/?utm_source=ig_web_copy_link&vrfl=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 14,
+        "type": "video",
+        "title": "Piezo Rinoplasti Hassas Doku Şekillendirme",
+        "category": "RHİNOPLASTİ",
+        "badge": "BURUN",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "20 yaşındaki hastamızın kalın ciltli bir yüz için güzel bir dönüşüm. Piezo tekniği kullanarak açık rhinoplasti yaptırdık ve daha rafine ve uyumlu bir burun oluşturduk, yüzün doğal özelliklerini tamamladı.\n\nSonuç zaten çok umut verici görünüyor ve iyileşme süreci devam ederken daha da rafine olmayı bekleniyor. 👃✨ 🌸👌",
+        "coverImage": "/images/gallery/cover/cover-14.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DNF0Rb1tZ7x/?utm_source=ig_web_copy_link&mdxt=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 15,
+        "type": "video",
+        "title": "Ameliyatsız Estetik & Botoks Uygulaması",
+        "category": "AMELİYATSIZ ESTETİK",
+        "badge": "BOTOKS & DOLGU",
+        "badgeColor": "text-pink-400 bg-pink-400/10 border-pink-400/30",
+        "desc": "Yüz ifadesinin doğal dinamizmini koruyarak daha dinlenmiş, taze ve genç bir görünüm elde etmek için uygulanan ameliyatsız estetik dokunuşları.\n\nHassas enjeksiyon teknikleriyle yüz hatlarına uyumlu, zarif ve doğal sonuçlar planlıyoruz. ✨\n\n🔹 Mimikleri dondurmadan doğal görünüm\n🔹 Kişiselleştirilmiş uygulama planı\n🔹 Konforlu ve hızlı işlem süreci\n\nDoğal güzelliğinizi ön plana çıkaran estetik çözümler. 💉✨",
+        "coverImage": "/images/gallery/cover/cover-15.jpg",
+        "videoUrl": "/videos/vaka-15.mp4",
+        "instagramUrl": "https://www.instagram.com/reel/DK9ml6_Nnew/?utm_source=ig_web_copy_link&psln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 16,
+        "type": "video",
+        "title": "Piezo Rinoplasti Hassas Doku Şekillendirme",
+        "category": "RHİNOPLASTİ",
+        "badge": "BURUN",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Rinoplasty 1.hafta kontrol, Piezo tekniği ile hassas kemik şekillendirme sayesinde hastamızın yüzündeki şişlik ve morluklar minimum seviyede tutulmuştur.\n\nBurun sırtının pürüzsüz hattı ve burun ucunun yüz oranlarıyla yakaladığı zarif uyum, iyileşme sürecinin ne kadar konforlu ilerlediğini net bir şekilde göstermektedir. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-16.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DKXsKS2NhJ5/?utm_source=ig_web_copy_link&xtok=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 17,
+        "type": "video",
+        "title": "Ameliyathane Anı & Piezo Hassas Cerrahi",
+        "category": "AMELİYATHANE OPERASYONLARI",
+        "badge": "CANLI CERRAHİ",
+        "badgeColor": "text-blue-400 bg-blue-400/10 border-blue-400/30",
+        "desc": "Ameliyathanede, Piezo ultrasonik cerrahi teknolojisi ile gerçekleştirilen hassas doku şekillendirme anları.\n\nCerrahi esnasında milimetrik kontrol sağlayarak kemik yapıları en güvenli ve pürüzsüz şekilde yeniden şekillendiriyor, hastalarımızın iyileşme sürecini konforlu kılacak adımları titizlikle atıyoruz. 🩺✨\n\n🔹 Ultrasonik kemik şekillendirme\n🔹 Minimal travma ve hassas diseksiyon\n🔹 Kişiselleştirilmiş cerrahi planlama\n\nHer operasyon, kusursuz bir estetik ve fonksiyonel uyum için oditoryum titizliğiyle gerçekleştirilir. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-17.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DIltoRpCxiB/?utm_source=ig_web_copy_link&exln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 18,
+        "type": "video",
+        "title": "Kalın Ciltli ve Eğri Burun Rinoplastisi",
+        "category": "RHİNOPLASTİ",
+        "badge": "BURUN",
+        "badgeColor": "text-cyan-400 bg-cyan-400/10 border-cyan-400/30",
+        "desc": "Kalın cilt yapısına ve eğriliğe sahip erkek hastamız için gerçekleştirdiğimiz başarılı operasyonun sonucu.\n\nErkek rinoplastisinde kalın deri ve eğrilik (deviasyon) yönetimi büyük bir titizlik gerektirir. Piezo teknolojisi ve açık yaklaşım kullanarak hem nefes alma problemlerini ortadan kaldırdık hem de hastamızın yüz hatlarıyla tam uyumlu, güçlü ve doğal bir maskülen profil inşa ettik. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-18.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DHGuOkPCRyQ/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 19,
+        "type": "video",
+        "title": "Piezo Rinoplasti Hassas Doku Şekillendirme",
+        "category": "RHİNOPLASTİ",
+        "badge": "BURUN",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Genç hastamız için gerçekleştirdiğimiz bu şık dönüşümde, yüzünün doğal ifadesini korumayı ve hatlarıyla kusursuz bir uyum yakalamayı amaçladık.\n\nPiezo ultrasonik cerrahi teknolojisi ile kemik dokuları en hassas şekilde şekillendirilerek, iyileşme sürecinin konforlu ve minimal ödemle ilerlemesi sağlandı.\n\nSonuç, genç yüz hatlarını zarifçe tamamlayan, son derece doğal ve estetik bir profil oldu. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-19.jpg",
+        "instagramUrl": "https://www.instagram.com/p/DExNN1qih-X/?utm_source=ig_web_copy_link&cplk=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 20,
+        "type": "video",
+        "title": "Piezo Rinoplasti Hassas Doku Şekillendirme",
+        "category": "RHİNOPLASTİ",
+        "badge": "BURUN",
+        "badgeColor": "text-purple-400 bg-purple-400/10 border-purple-400/30",
+        "desc": "Rinoplasty 1.hafta tampon çıkarımı masaj ve bantlama sonrası hastamızın yüz hatlarıyla uyumlu, doğal ve zarif bir burun profili ortaya çıkmıştır.\n\nPiezo ultrasonik cerrahi teknolojisi ile kemik dokuların hassas şekillendirilmesi sayesinde, iyileşme süreci minimum ödem ve morlukla ilerlemiş, hastamızın konforu en üst düzeyde sağlanmıştır. 👃✨",
+        "coverImage": "/images/gallery/cover/cover-20.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DKJ74aBtMG4/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA=="
+      },
+      {
+        "id": 21,
+        "type": "video",
+        "title": "Ameliyathane Operasyon Anı & Piezo Cerrahi",
+        "category": "AMELİYATHANE OPERASYONLARI",
+        "badge": "CANLI CERRAHİ",
+        "badgeColor": "text-blue-400 bg-blue-400/10 border-blue-400/30",
+        "desc": "Ameliyathanede titizlikle sürdürdüğümüz operasyon anlarından bir kesit. 🩺✨\n\nPiezo ultrasonik cerrahi teknolojisinin sağladığı milimetrik hassasiyet ile kemik dokularını en güvenli ve kontrollü şekilde şekillendiriyor; hastalarımızın hem estetik beklentilerini en üst düzeyde karşılıyor hem de nefes alma problemlerini kalıcı olarak çözüyoruz.\n\nHer detayda mükemmeliyet ve konfor odaklı yaklaşımımızla çalışmaya devam ediyoruz. 👃💪",
+        "coverImage": "/images/gallery/cover/cover-21.jpg",
+        "instagramUrl": "https://www.instagram.com/reel/DMdRBQMtvbw/?utm_source=ig_web_copy_link&vrfl=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA=="
+      }
+    ]
+  },
+  "recovery": {
+    "sectionBadge": "İYİLEŞME PERFORMANS GRAFİĞİ",
+    "sectionTitle": "Aşama Aşama Dokuların İyileşme Oranı",
+    "sectionSubtitle": "*Tıbbi standart ortalama doku yenilenme süreci",
+    "rateLabel": "İyileşme Oranı (% Dokusal Oturma)",
+    "activationLabel": "Aktivasyon",
+    "criticalTipTitle": "Kritik Tavsiye"
+  },
+  "recoveryData": {
+    "otoplasti": [
+      {
+        "day": "1. Gün",
+        "rate": 30,
+        "title": "Bandaj & İlk Kontrol",
+        "desc": "Özel koruyucu bandaj takılır, sosyal hayata engel ağrı hissedilmez.",
+        "tip": "Kulağın üzerine baskı yapılmamalıdır."
+      },
+      {
+        "day": "7. Gün",
+        "rate": 70,
+        "title": "Bandaj Çıkarılması",
+        "desc": "Kulak arkası dikişler kontrol edilir, hafif kafa bandına geçilir.",
+        "tip": "Geceleri koruyucu kafa bandı takılmalıdır."
+      },
+      {
+        "day": "1. Ay",
+        "rate": 90,
+        "title": "Açıların Oturması",
+        "desc": "Kulak kıvrımları ve kafa açısı %90 nihai formunu alır.",
+        "tip": "Temaslı sporlara başlanabilir."
+      },
+      {
+        "day": "3. Ay",
+        "rate": 100,
+        "title": "Tam İyileşme",
+        "desc": "Kıkırdak hafızası sabitlenir, izler belirsizleşir.",
+        "tip": "Rutin hayat kısıtlamasız devam eder."
+      }
+    ],
+    "bisektomi": [
+      {
+        "day": "1. Gün",
+        "rate": 40,
+        "title": "Ödem & Sıvı Beslenme",
+        "desc": "Ağız içi mikro kesiler nedeniyle ilk gün sıvı/yumuşak gıda tercih edilir.",
+        "tip": "Antiseptik gargaralar aksatılmamalıdır."
+      },
+      {
+        "day": "7. Gün",
+        "rate": 65,
+        "title": "Ödem Çözülmesi",
+        "desc": "Yanaklardaki ödemlerin çoğu dağılır, dikişler erimeye başlar.",
+        "tip": "Aşırı sıcak yiyeceklerden kaçınılmalıdır."
+      },
+      {
+        "day": "1. Ay",
+        "rate": 85,
+        "title": "V-Line Belirginleşmesi",
+        "desc": "Yanak içi boşluğu netleşir, elmacık kemikleri ön plana çıkar.",
+        "tip": "Nazik yüz masajlarına başlanabilir."
+      },
+      {
+        "day": "3. Ay",
+        "rate": 100,
+        "title": "Keskin Çene Hatları",
+        "desc": "Yüz kontürü ve Hollywood yanağı formu %100 oturur.",
+        "tip": "Nihai estetik hat elde edilir."
+      }
+    ],
+    "default": [
+      {
+        "day": "1. Gün",
+        "rate": 20,
+        "title": "Taburculuk & Soğuk Uygulama",
+        "desc": "Nefes almayı sağlayan silikon splintlerle konforlu istirahat dönemi.",
+        "tip": "Baş 45 derece yüksekte yatılmalıdır."
+      },
+      {
+        "day": "7. Gün",
+        "rate": 50,
+        "title": "Atel & Splint Çıkarılması",
+        "desc": "Atel ve silikonlar ağrısız çıkarılır. İlk yeni burun formu görülür.",
+        "tip": "Ilık duş alınabilir, burun bantlanır."
+      },
+      {
+        "day": "1. Ay",
+        "rate": 80,
+        "title": "Ödem Dağılımı & Rahat Nefes",
+        "desc": "Kaba ödemlerin %80'i çözülür. Yüz ifadesi doğallaşır.",
+        "tip": "Hafif yürüyüş ve sporlara başlanabilir."
+      },
+      {
+        "day": "1. Yıl",
+        "rate": 100,
+        "title": "Anatomik Oturma & Altın Oran",
+        "desc": "İnce doku ödemleri çözülür, burun ucu tam şeklini alır.",
+        "tip": "Yıllık rutin kontrol zamanı."
+      }
+    ]
+  },
+  "surgerySpecsLabels": {
+    "anesthesia": "ANESTEZİ TÜRÜ",
+    "duration": "OPERASYON SÜRESİ",
+    "stay": "HASTANEDE KALIŞ",
+    "returnWork": "İŞE DÖNÜŞ SÜRESİ"
+  },
+  "surgerySpecs": {
+    "otoplasti": {
+      "anesthesia": "Lokal / Sedasyon",
+      "duration": "1.5 - 2 Saat",
+      "stay": "Günübirlik",
+      "returnWork": "3 - 5 Gün"
+    },
+    "bisektomi": {
+      "anesthesia": "Lokal Anestezi",
+      "duration": "30 - 45 Dakika",
+      "stay": "Günübirlik",
+      "returnWork": "2 - 3 Gün"
+    },
+    "yag-enjeksiyonu": {
+      "anesthesia": "Lokal / Sedasyon",
+      "duration": "1 - 1.5 Saat",
+      "stay": "Günübirlik",
+      "returnWork": "3 - 5 Gün"
+    },
+    "default": {
+      "anesthesia": "Genel Anestezi",
+      "duration": "2 - 2.5 Saat",
+      "stay": "Günübirlik / 1 Gece",
+      "returnWork": "7. Gün"
+    }
+  },
+  "anatomy": {
+    "sectionBadge": "360° İNSAN KAFA ANATOMİSİ SİMÜLASYONU",
+    "sectionTitle": "Anatomik Profili Çevir & İncele",
+    "dragInstruction": "Fareyle Tut ve Çevir",
+    "modelBadge": "HASTA ANATOMİK PROFİL MODELİ"
+  },
+  "banner": {
+    "badge": "ÜCRETSİZ DİJİTAL ANALİZ",
+    "title": "Fotoğrafınızı Gönderin, Ön Analiz Alın",
+    "desc": "Profil fotoğrafınızı WhatsApp hattımıza ileterek yüz oranlarınıza en uygun ameliyat planı hakkında doktordan ön bilgi alabilirsiniz.",
+    "buttonText": "Fotoğraf Gönder & Analiz Al",
+    "whatsappMsg": "Merhaba, {{title}} operasyonu için profil fotoğrafımı gönderip ön bilgi almak istiyorum."
+  },
+  "relatedTreatments": {
+    "sectionTitle": "İlginizi Çekebilecek Diğer İşlemler",
+    "viewAll": "Tümünü Gör",
+    "cardBadge": "UZMANLIK"
+  },
+  "treatmentsList": {
+    "rinoplasti": "Rinoplasti (Burun Estetiği)",
+    "revizyon-rinoplasti": "Revizyon Rinoplasti",
+    "otoplasti": "Otoplasti (Kepçe Kulak)",
+    "yag-enjeksiyonu": "Yüz Yağ Enjeksiyonu",
+    "bisektomi": "Bisektomi (Yanaklı Estetiği)"
+  },
+  "treatmentDetail": {
+    "clinicalBadge": "KLİNİK UZMANLIK ALANI"
+  },
+  "whatsappDefaultMessage": "Merhaba, tedavi ve randevu hakkında bilgi almak istiyorum.",
+  "whatsappExamMessage": "Merhaba Op. Dr. Sefa Keşan, randevu ve muayene hakkında bilgi almak istiyorum."
 }
